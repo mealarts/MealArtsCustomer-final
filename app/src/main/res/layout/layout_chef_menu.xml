@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:id="@+id/cardVendor"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                app:cardBackgroundColor="@color/colorTrans"
+                android:background="@color/colorTrans"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivVendorImg"
+                    android:layout_gravity="center"
+                    android:src="@drawable/account_select"
+                    android:background="@color/colorTrans" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/spinner_back">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="2.5dp"
+                android:src="@drawable/chef_rating"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVendorRating"
+                android:gravity="center|end"
+                android:text="5"
+                android:layout_marginStart="2dp"
+                android:tooltipText="Chef Rating"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVendorName"
+        android:gravity="center"
+        android:text="Vendor Name"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dboy_west"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVendorInfo"
+            android:gravity="center|end"
+            android:text="12"
+            android:textSize="10sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:tooltipText="Delivery Charges"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

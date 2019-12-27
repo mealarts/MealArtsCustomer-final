@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MenuListActivity"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:background="@drawable/content_main_upper">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center|start">
+
+                    <ImageView
+                        android:id="@+id/ivToggleMenu"
+                        android:layout_width="40dp"
+                        android:layout_height="38dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/common_button_back"
+                        android:padding="8dp"
+                        android:src="@drawable/toggle_menu" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|start">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Location"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@drawable/location_back_dashed_textview"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/right_now_loc"
+                            android:padding="2dp"
+                            android:tint="@color/colorWhite"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvCurrentAddress"
+                                android:hint="Current Address"
+                                android:background="@color/colorTrans"
+                                android:textColorHint="@color/colorGray"
+                                android:textSize="12sp"
+                                android:inputType="textMultiLine"
+                                android:maxLines="2"
+                                android:textColor="@color/colorWhite"
+                                android:padding="5dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@drawable/location_back_dashed_textview"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivInfo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/common_button_back"
+                        android:src="@drawable/information" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_back"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/spMenuTimer" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhiteFade">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rcCategory"
+                        android:layout_marginTop="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="Category Timing"
+                        android:id="@+id/tvCategoryTiming"
+                        android:textSize="12sp"
+                        android:background="@color/colorWhiteFade"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rcVendor"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayFade"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|end"
+                        android:background="#ddd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tvVegSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <Switch
+                            android:id="@+id/switchVegType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true" />
+
+                        <ImageView
+                            android:id="@+id/ivVegSwitch"
+                            android:src="@drawable/veg"
+                            android:layout_marginEnd="10dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayFade"/>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/layoutNoItems"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/empty_menu"
+                                    android:layout_gravity="center"/>
+
+                                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:gravity="center"
+                                    android:text="No Items Available\nwithin Your Area"/>
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </FrameLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/layoutCartTotal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="10dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center|start"
+                android:text="Cart Total : "
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.8"
+                android:id="@+id/tvAddCartTotal"
+                android:textColor="@color/colorWhite"
+                android:gravity="center|start"
+                android:text="0/-"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/btnViewCart"
+                android:layout_gravity="center|end"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/common_button_back"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:text="View Cart"
+                android:textAllCaps="false"
+                android:drawableEnd="@drawable/arrow_right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rcLowerMenu"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutAddOns"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBlackFade"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"
+                    android:gravity="end">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="AddOns of Menu"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/ivCloseAddOn"
+                        android:src="@drawable/close"
+                        android:layout_gravity="end"
+                        android:padding="3dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <FrameLayout
+                        android:layout_width="79dp"
+                        android:layout_height="70dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:id="@+id/ivMenuImg"
+                            android:scaleType="fitCenter"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/mealarts_loader"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tvOfferPer"
+                            android:hint="50%"
+                            android:textColorHint="@color/colorWhite"
+                            android:gravity="top|start"
+                            android:paddingStart="7dp"
+                            android:paddingEnd="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="9sp"
+                            android:layout_gravity="start|top"
+                            android:background="@drawable/offer_tag"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvPrepTime"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:tooltipText="Preparation Time"
+                            android:textSize="10sp"
+                            android:layout_gravity="bottom|end"
+                            android:background="@color/colorBlackFade"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center|top">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/tvMenuName"
+                                android:text="Menu Name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:gravity="center|start"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/ivVegType"
+                                android:src="@drawable/veg"/>
+
+                        </LinearLayout>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.9"
+                            android:id="@+id/tvDescription"
+                            android:maxLines="3"
+                            android:ellipsize="start"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center|bottom">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                                android:id="@+id/tvMenuOrgPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|start"
+                                android:text="price"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"/>
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                                android:id="@+id/tvMenuPrice"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:gravity="center|start"
+                                android:text="price"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:id="@+id/menuCounter"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/add_cart_back"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark">
+
+                                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                    android:id="@+id/tvDecQty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/decrease_button_back"
+                                    android:gravity="center"
+                                    android:text="-"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="bold" />
+
+
+                                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                    android:id="@+id/tvMenuQty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorTrans"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="9dp" />
+
+                                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                                    android:id="@+id/tvIncQty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/increase_button_back"
+                                    android:gravity="center"
+                                    android:text="+"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvMenuTotalPrice"
+                            android:text="price"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp"
+                            android:gravity="center|end"
+                            android:layout_gravity="end"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="15dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"
+                        android:layout_weight="0.9"/>
+
+                    <ImageView
+                        android:id="@+id/ivGrid"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/common_button_back"
+                        android:src="@drawable/icon_grid"
+                        android:tint="@color/colorDarkGray" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/ivList"
+                        android:src="@drawable/icon_list"
+                        android:tint="@color/colorDarkGray"
+                        android:background="@drawable/common_button_back"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:id="@+id/rcAddOns"
+                    android:background="@color/colorWhite"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/signin_button_back">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.8"
+                        android:id="@+id/tvMenuTotal"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@drawable/clickable_textview_white_red"
+                        android:gravity="center|start"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:id="@+id/tvContinueAddOns"
+                        android:text="Add Item"
+                        android:drawableEnd="@drawable/arrow_right"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@drawable/clickable_textview_white_red"
+                        android:gravity="center|end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutInfo"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:text="INFORMATION"
+                android:textSize="20sp"
+                android:gravity="center|start"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivCloseInfo"
+                android:src="@drawable/close"
+                android:padding="10dp"
+                android:background="@drawable/common_button_back"/>
+
+        </LinearLayout>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Breakfast"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBrkfastInfo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGray"
+            android:layout_marginTop="20dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Lunch"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLunchInfo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGray"
+            android:layout_marginTop="20dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Snacks"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSnacksInfo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGray"
+            android:layout_marginTop="20dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="Dinner"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDinnerInfo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutLoader"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorBlackFade">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivLoader"
+            android:background="@drawable/loader_back_circle"
+            android:src="@drawable/mealarts_loader"
+            android:layout_gravity="center" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLoadError"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorWhite"
+            android:textSize="16sp"
+            android:text="ffff"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutCartAlert"
+        android:orientation="vertical"
+        android:background="@color/colorBlackFade"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/review_button_back"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/timeout_alert"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAlertMessage"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Sorry for Inconvenience !!\nDue to some Changes in Chef's Menu, We have to clear your cart !!"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvClearCart"
+                android:text="OK"
+                android:textColor="@drawable/clickable_textview_white_black"
+                android:background="@drawable/signin_button_back"
+                android:padding="5dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLocationAlert"
+        android:orientation="vertical"
+        android:background="@color/colorBlackFade"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/review_button_back"
+            android:padding="10dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Flat No, Building Name, Landmark"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFlatNo"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="FlatNo"
+                android:gravity="center|start"
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLandmark"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textMultiLine"
+                android:hint="Building Name, Landmark"
+                android:gravity="center|start"
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSetAddress"
+                android:text="Set Address"
+                android:textColor="@drawable/clickable_textview_white_black"
+                android:background="@drawable/signin_button_back"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Set Flat No, Building Name, Landmark From Here Only If Your Above Address Is Enough To Deliver Order Otherwise Set From Above 'Location'."
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

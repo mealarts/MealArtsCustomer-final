@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/login_bg"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="75dp">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorWhite"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="20dp"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center|top"
+                        android:alpha="0.05"
+                        android:visibility="gone"
+                        android:src="@drawable/mealarts_app_icon"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="15dp">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtFullName"
+                            android:background="@drawable/text_rounded_back"
+                            android:hint="Full Name"
+                            android:inputType="text"
+                            android:textColorHint="@color/colorDarkGray"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtEmail"
+                            android:background="@drawable/text_rounded_back"
+                            android:hint="Email Id"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorDarkGray"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtContact"
+                                android:background="@drawable/text_rounded_back"
+                                android:hint="Phone Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textColorHint="@color/colorDarkGray"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:padding="10dp"
+                                android:layout_margin="5dp"/>
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvChangeContact"
+                                android:text="Change"
+                                android:background="@drawable/common_button_back"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="10dp"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_margin="5dp"/>
+
+                        </FrameLayout>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtPassword"
+                            android:background="@drawable/text_rounded_back"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/colorDarkGray"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:visibility="gone"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtConfPassword"
+                            android:background="@drawable/text_rounded_back"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/colorDarkGray"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:visibility="gone"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvTnC"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_margin="10dp"
+                            android:textSize="15sp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/tvRegister"
+                            android:text="Sign up"
+                            android:textAllCaps="true"
+                            android:background="@drawable/signin_button_back"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Already Have an Account ?"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvLogin"
+                    android:textColor="@drawable/clickable_textview_red_fade"
+                    android:text="LOG IN"
+                    android:background="@drawable/signup_button_back"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoader"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorBlackFade">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivLoader"
+            android:background="@drawable/loader_back_circle"
+            android:src="@drawable/mealarts_loader"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>

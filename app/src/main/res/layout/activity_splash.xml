@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/splash_bg"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLogo"
+        android:src="@drawable/mealarts_logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutOffline"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOfflineMessage"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="20sp"
+            android:background="@color/colorGrayFade"
+            android:text="Offline"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

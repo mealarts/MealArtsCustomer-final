@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".DeliveryAddressActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/appbar_layout_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:contentScrim="@color/colorTrans"
+                app:expandedTitleMarginStart="200dp"
+                app:expandedTitleMarginEnd="800dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.9">
+
+                    <fragment
+                        android:id="@+id/setAddressMap"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/ivCurrentLoc"
+                        android:layout_gravity="top|end"
+                        android:src="@drawable/current_location"
+                        android:layout_margin="10dp"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/drag_marker"
+                        android:layout_marginTop="-50dp"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/ivMarkerLoader"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/marker"
+                        android:layout_marginBottom="15dp"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    app:layout_collapseMode="pin" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--Location Layout-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/layoutLocation">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Delivery Location"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtLocation"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="LOCATION"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorGray"
+                        android:inputType="textMultiLine"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:gravity="center|start"
+                        android:textAlignment="textStart"
+                        android:lastBaselineToBottomHeight="10dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtHouseFlatNo"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="HOUSE / FLAT / OFFICE NO./ BUILDING NAME"
+                        android:textColorHint="@color/colorGray"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:gravity="center|start"
+                        android:textAlignment="textStart"
+                        android:lastBaselineToBottomHeight="10dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtLandmark"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="ROAD NAME / LANDMARK"
+                        android:textColorHint="@color/colorGray"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:gravity="center|start"
+                        android:textAlignment="textStart"
+                        android:lastBaselineToBottomHeight="10dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="?attr/actionBarSize">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutHome"
+                        android:orientation="vertical"
+                        android:layout_gravity="start">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorDarkGray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutWork"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Work"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorDarkGray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutOther"
+                        android:orientation="vertical"
+                        android:layout_gravity="end">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:padding="5dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorDarkGray"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeliveryLocation"
+            android:text="Save and Proceed"
+            android:textSize="15sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/signin_button_back"
+            android:textColor="@drawable/clickable_textview_white_red"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--upper-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:background="@drawable/common_button_back"
+            android:src="@drawable/back_arrow"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/spinner_back"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:id="@+id/edtFindLocation"
+                android:hint="Search For Area, Street name..."
+                android:background="@color/colorTrans"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:textColorHint="@color/colorGray"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:gravity="center|end"
+                android:layout_marginStart="5dp"
+                android:imeOptions="actionSearch"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ivSearch"
+                android:background="@drawable/common_button_back"
+                android:src="@drawable/search"
+                android:layout_gravity="center|start"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--bottom-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGray"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/rcLowerMenu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoader"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorBlackFade">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivLoader"
+            android:background="@drawable/loader_back_circle"
+            android:src="@drawable/mealarts_loader"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>

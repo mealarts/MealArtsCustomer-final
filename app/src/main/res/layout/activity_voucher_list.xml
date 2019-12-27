@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".VoucherListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:background="@drawable/common_button_back"
+            android:src="@drawable/back_arrow"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voucher List"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcVoucherList"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutVoucher"
+            android:orientation="vertical"
+            android:background="@color/colorBlackFade"
+            android:gravity="center"
+            android:padding="30dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/review_button_back"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:minWidth="120dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tvVoucherCode"
+                        android:minWidth="120dp"
+                        android:text="voucher"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="45dp"
+                        android:background="@color/colorGrayFade"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_margin="2dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="49dp"
+                        android:src="@drawable/voucher_ribbon"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvVoucherMsg"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Yay !!"
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvChangeVoucher"
+                        android:text="Discard"
+                        android:textColor="@drawable/clickable_textview_white_black"
+                        android:background="@drawable/signin_button_back"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvGrabVoucher"
+                        android:text="Grab It"
+                        android:textColor="@drawable/clickable_textview_white_black"
+                        android:background="@drawable/signin_button_back"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutNoVoucher"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_coupon_found"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

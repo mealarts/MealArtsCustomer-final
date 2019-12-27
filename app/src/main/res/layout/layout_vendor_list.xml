@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/layoutVendor">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardVendor"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/ivVendorImg"
+                android:layout_width="85dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@color/colorTrans"
+                android:src="@drawable/account_select" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:id="@+id/tvVendorName"
+                    android:gravity="center|start"
+                    android:text="Vendor Name"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvVendorRating"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="13sp"
+                        android:background="@drawable/rating_badge_0"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center|end"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ivNewVendor"
+                        android:src="@drawable/new_vendor1"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVendorCat"
+                android:gravity="center|start"
+                android:text="Category"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:textColor="@color/colorDarkGray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrayFade"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVendorSpeciality"
+                android:gravity="center|start"
+                android:text="Speciality"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:textColor="@color/colorDarkGray"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVendorCuisines"
+                android:gravity="center|start"
+                android:text="Cuisines"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:textColor="@color/colorDarkGray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayFade"/>
+
+</LinearLayout>

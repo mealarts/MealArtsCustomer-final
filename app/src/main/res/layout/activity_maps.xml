@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/layoutHeader"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:background="@drawable/common_button_back"
+            android:src="@drawable/back_arrow"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Order"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivRefresh"
+            android:src="@drawable/refresh"
+            android:padding="2dp"
+            android:tooltipText="Refresh"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center|end"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/layoutBeforeDelivery"
+                    android:orientation="vertical"
+                    android:background="@color/colorGIF"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:id="@+id/ivStatus" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:id="@+id/layoutLocation"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Detailed Current Order"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/arrow_right"
+                            android:tint="@color/colorPrimaryDark"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvOTP"
+                            android:text="OTP : 22175"
+                            android:layout_gravity="bottom|end"
+                            android:textAllCaps="true"
+                            android:background="@drawable/status_badge"
+                            android:textColor="@color/colorWhite"
+                            android:padding="5dp"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            android:layout_marginStart="10dp"/>
+
+                    </LinearLayout>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvOrderId"
+                        android:text="order #0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDeliverySlot"
+                        android:text="Delivery slot"
+                        android:gravity="start"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvOrderStatus"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="Order Status"/>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvTotalItem"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="0 Item "
+                            android:layout_marginEnd="5dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvOrderTotal"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorDarkGray"
+                            android:text="₹ 0"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layoutDBoy"
+                    android:background="@drawable/spinner_back"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/ivDBoy"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_select"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:text="Your Order Delivery Assigned To "
+                            android:textColor="@color/colorGray"
+                            android:textStyle="bold"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                            android:id="@+id/tvDBoyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:gravity="center|start"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:layout_marginStart="25dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginStart="10dp">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/call"/>
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                                android:id="@+id/tvDBoyContact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:autoLink="phone"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center|start"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkGray"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/rcLowerMenu"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutLoader"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorBlackFade">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivLoader"
+                android:background="@drawable/loader_back_circle"
+                android:src="@drawable/mealarts_loader"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

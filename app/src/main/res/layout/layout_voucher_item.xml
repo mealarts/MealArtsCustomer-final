@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:minWidth="120dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvVoucherCode"
+                android:minWidth="120dp"
+                android:text="voucher"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:paddingEnd="15dp"
+                android:paddingStart="45dp"
+                android:background="@color/colorGrayFade"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:src="@drawable/voucher_ribbon"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnApplyVoucher"
+            android:layout_margin="10dp"
+            android:text="Apply"
+            android:textColor="@drawable/clickable_textview_red_fade"
+            android:background="@color/colorTrans"
+            android:layout_gravity=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVoucherTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:text="asdf"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVoucherDesc"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="13sp"
+            android:text="12/12/12"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvErrorMessage"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:text="12/12/12"
+            android:textAllCaps="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVoucherDate"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="14sp"
+            android:text="12/12/12"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"/>
+
+</LinearLayout>

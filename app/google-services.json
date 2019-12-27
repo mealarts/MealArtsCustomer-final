@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097332750437",
+    "firebase_url": "https://mealarts-99ca4.firebaseio.com",
+    "project_id": "mealarts-99ca4",
+    "storage_bucket": "mealarts-99ca4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097332750437:android:c9aacfc7327fe129",
+        "android_client_info": {
+          "package_name": "com.mealarts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097332750437-379uhrp772ibbp5nm79ld4p4qhermd91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mealarts",
+            "certificate_hash": "c634310cc3effc37ba743dbde14d39989e4e67bf"
+          }
+        },
+        {
+          "client_id": "1097332750437-24gf03u02ha4v2vu3ochhrpvtloiohif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbarLhZk5ASWbntxbDgxb-5Ee6EKUXhQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097332750437-24gf03u02ha4v2vu3ochhrpvtloiohif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".OTPActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/login_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="50dp">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="Verify OTP"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="sit back and relax !"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="while we verify your number."
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="30dp"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="70dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="15dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtOTP"
+                                android:background="@drawable/text_rounded_back"
+                                android:hint="Enter OTP"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:textColorHint="@color/colorDarkGray"
+                                android:textSize="18sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:padding="10dp"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/tvVerifyOTP"
+                            android:text="Verify"
+                            android:background="@drawable/signin_button_back"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvResend"
+                                android:text="Resend"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:background="@drawable/common_button_back"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvResendTimer"
+                                android:text="Resend"
+                                android:gravity="center|end"
+                                android:padding="5dp"
+                                android:layout_gravity="center|end"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:background="@drawable/common_button_back"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoader"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorBlackFade">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivLoader"
+            android:background="@drawable/loader_back_circle"
+            android:src="@drawable/mealarts_loader"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>

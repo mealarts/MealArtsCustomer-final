@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisitorRegActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:src="@drawable/splash_bg"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorTrans">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/welcome_banner"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/mealarts_logo"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="end|center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy Home Made\nDelicious Food."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/scrim_bottom">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please provide your contact number to be our valuable customer and get new offers."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtVisContact"
+                android:background="@drawable/text_rounded_back"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/colorDarkGray"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="10dp"
+                android:maxLength="10"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tvVisLogin"
+                android:text="continue"
+                android:textAllCaps="true"
+                android:background="@drawable/signin_button_back"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/layoutAddressType">
+
+    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddressType"
+        android:text="Type"
+        android:textSize="15sp"
+        android:textColor="@color/colorDarkGray"
+        android:background="@drawable/spinner_back"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+</LinearLayout>

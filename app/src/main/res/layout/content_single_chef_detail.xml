@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorGrayFade"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:padding="5dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Location : "
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCity"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="City"
+                android:textSize="13sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=" , "
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvArea"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Area"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:padding="5dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Special Foods : "
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVendorCat"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Breakfast"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|start"
+            android:padding="5dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Cuisines : "
+                android:textSize="14sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:id="@+id/tvVendorCuisines"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="South Indian"
+                android:textSize="13sp"/>
+
+            <com.mealarts.Helpers.CustomRatingBar
+                android:layout_width="80dp"
+                android:layout_height="15dp"
+                app:maxStars="5"
+                app:starOff="@drawable/empty_star"
+                app:starHalf="@drawable/half_star"
+                app:starOn="@drawable/filled_star"
+                app:stars="0"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:id="@+id/layoutChefRating"
+                app:halfStars="true"
+                app:onlyForDisplay="true"
+                android:layout_gravity="center|end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|start"
+                android:padding="5dp">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorDarkGray"
+                    android:text="REVIEWS"
+                    android:textSize="15sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/tvTotalNoRating"
+                    android:gravity="end"
+                    android:textColor="@color/colorDarkGray"
+                    android:text="(0)"
+                    android:textSize="15sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rcReview"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layoutNoReview"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_review"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="No Review Available"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnOrderNow"
+                android:text="Order Now"
+                android:textColor="@drawable/clickable_textview_white_red"
+                android:background="@drawable/signin_button_back"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

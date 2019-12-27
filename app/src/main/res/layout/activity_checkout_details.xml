@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckoutDetailsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:background="@drawable/common_button_back"
+            android:src="@drawable/back_arrow"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkout Details"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spinner_back">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:id="@+id/tvCustomerName"
+                            android:hint="Name"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:padding="8dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvAddressType"
+                            android:text="home"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/spinner_back"
+                            android:textSize="14sp"
+                            android:padding="8dp"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvFullAddress"
+                        android:hint="Full Address"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:padding="8dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvEmail"
+                        android:hint="Email"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvContact"
+                        android:hint="Mobile Number"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@drawable/spinner_back">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Delivery Slot "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center|start"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvCategory"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_back"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rgSlotTime"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutLoader"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorBlackFade">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivLoader"
+                android:background="@drawable/loader_back_circle"
+                android:src="@drawable/mealarts_loader"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnContinue"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/signin_button_back"
+        android:textColor="@drawable/clickable_textview_white_red"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

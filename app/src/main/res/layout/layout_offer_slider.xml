@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/slider"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:ignore="ContentDescription" />
+
+    <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btnOrderNow"
+        android:text="Order now"
+        android:background="@drawable/signin_button_back"
+        android:textColor="@drawable/clickable_textview_white_black"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center|start"/>
+
+</FrameLayout>

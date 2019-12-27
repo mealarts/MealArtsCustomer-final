@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddToCartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ivBack"
+                    android:background="@drawable/common_button_back"
+                    android:src="@drawable/back_arrow"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center|start"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Cart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:id="@+id/rcCart"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="5dp"
+                        android:gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorGrayFade">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cart Amount : "
+                            android:gravity="center|end"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginStart="10dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:id="@+id/tvCartTotal"
+                            android:text="₹ 0/-"
+                            android:gravity="center|end"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutCheckout"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/btnClearCart"
+                            android:text="Clear Cart"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:background="@drawable/cat_back_main"
+                            android:textColor="@drawable/clickable_textview_black_white"
+                            android:layout_margin="10dp"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.5"
+                            android:id="@+id/btnCheckout"
+                            android:text="Checkout"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:background="@drawable/signin_button_back"
+                            android:textColor="@drawable/clickable_textview_white_red"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/layoutNoItems"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/empty_cart_icon"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="No Items Available in Cart"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnOrderNow"
+                        android:text="Order Now"
+                        android:textColor="@drawable/clickable_textview_white_red"
+                        android:background="@drawable/signin_button_back"
+                        android:textAllCaps="false"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkGray"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/rcLowerMenu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutCartAlert"
+        android:orientation="vertical"
+        android:background="@color/colorBlackFade"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/review_button_back"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/timeout_alert"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAlertMessage"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Sorry for Inconvenience !!\nDue to some Changes in Chef's Menu, We have to clear your cart !!"
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvClearCart"
+                    android:text="OK"
+                    android:textColor="@drawable/clickable_textview_white_black"
+                    android:background="@drawable/signin_button_back"
+                    android:padding="5dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutMenuAlert"
+        android:orientation="vertical"
+        android:background="@color/colorBlackFade"
+        android:gravity="center"
+        android:padding="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/review_button_back"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:src="@drawable/menu_unavailable"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAlertMessage1"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Sorry for Inconvenience !! Your Cart item(s)' quantity for today is fulled, We have to clear your cart !!"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvClearCart1"
+                android:text="OK"
+                android:textColor="@drawable/clickable_textview_white_black"
+                android:background="@drawable/signin_button_back"
+                android:padding="5dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

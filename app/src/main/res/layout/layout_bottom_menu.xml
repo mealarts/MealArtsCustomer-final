@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/cart" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
+            android:id="@+id/tvCartCount"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:minWidth="20dp"
+            android:gravity="center|top"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/badge_count"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+
+    </FrameLayout>
+
+    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMenu"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="12sp"
+        android:text="Menu"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Breakfast"
+        android:gravity="center"
+        android:textColor="@drawable/clickable_textview_black_white"
+        android:textSize="13sp"
+        android:background="@drawable/cat_click_back"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+    android:id="@+id/tvCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Breakfast"
+    android:gravity="center"
+    android:textColor="@drawable/clickable_textview_black_white"
+    android:textSize="14sp"
+    android:background="@drawable/cat_click_back"
+    android:layout_margin="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"/>
+
+</LinearLayout>-->

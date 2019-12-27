@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleOrderDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivBack"
+            android:background="@drawable/common_button_back"
+            android:src="@drawable/back_arrow"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start"/>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOrderId"
+                    android:text="order #0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvOrderStatus"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Order Status"/>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGray"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTotalItem"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="0 Item "
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvOrderTotal"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"/>
+
+                </LinearLayout>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOrderDate"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="12sp"
+                    android:text="Order Date"
+                    android:layout_marginTop="5dp"/>
+
+                <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDeliveryDate"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="12sp"
+                    android:text="Delivery Date"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/location"
+                        android:tint="@color/colorDarkGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvAddressType"
+                            android:textSize="16sp"
+                            android:text="Address Type"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvAddress"
+                            android:textSize="14sp"
+                            android:text="Delivery Address"
+                            android:textColor="@color/colorDarkGray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrayFade"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:text="bill details"
+                    android:textAllCaps="true"
+                    android:gravity="start|bottom"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#fff"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <LinearLayout
+                    android:background="@color/colorGrayFade"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="1.0"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp" >
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Menu"
+                        android:gravity="center" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Rate"
+                        android:gravity="center" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_weight="0.05"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text=" x "
+                        android:gravity="center" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvItemQty"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Qty"
+                        android:gravity="center" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_weight="0.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvItemGST"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="GST"
+                        android:gravity="center" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:id="@+id/tvItemPrice"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Total"
+                        android:gravity="center|end" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rcOrderItems" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrayFade"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Item Total"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvItemTotal"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="GST Amount"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvGstAmount"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0 /-"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Delivery Charges"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvDeliveryCharge"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Packaging Charges"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvPackingCharge"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Voucher Discount"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvVoucherDisc"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:background="@color/colorGrayFade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/tvPaidType"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Paid Via"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="Total"
+                        android:gravity="center|start"
+                        android:layout_marginEnd="5dp"/>
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:id="@+id/tvGrandTotal"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorDarkGray"
+                        android:text="₹ 0"
+                        android:gravity="center|end"
+                        android:layout_marginEnd="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutLoader"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorBlackFade">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivLoader"
+                android:background="@drawable/loader_back_circle"
+                android:src="@drawable/mealarts_loader"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

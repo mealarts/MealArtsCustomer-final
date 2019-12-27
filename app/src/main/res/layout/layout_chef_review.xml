@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutChefDetail"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivChef"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="1dp">
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChefName"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center|start"
+                android:text="chef"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAreaCity"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center|start"
+                android:text="Area, City"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.mealarts.Helpers.CustomRatingBar
+                android:layout_width="70dp"
+                android:layout_height="15dp"
+                app:maxStars="5"
+                app:starOff="@drawable/empty_star"
+                app:starHalf="@drawable/half_star"
+                app:starOn="@drawable/filled_star"
+                app:stars="4.5"
+                android:id="@+id/layoutChefRating"
+                app:halfStars="true"
+                app:onlyForDisplay="true"/>
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Review"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_right"
+            android:tint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkGray"/>
+
+</LinearLayout>
