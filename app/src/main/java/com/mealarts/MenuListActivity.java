@@ -95,7 +95,7 @@ public class MenuListActivity extends AppCompatActivity{
     LinearLayout layoutAddOns, menuCounter;
     ImageView ivCloseAddOn, ivMenuImg, ivVegType, ivGrid, ivList,ivVegSwitch;
     TextView tvOfferPer, tvPrepTime, tvMenuName, tvDescription, tvMenuOrgPrice, tvMenuPrice,
-            tvMenuQty, tvMenuTotalPrice, tvContinueAddOns,tvVegSwitch;
+            tvMenuQty, tvMenuTotalPrice, tvContinueAddOns,tvVegSwitch,tvVegSelect,tvNonVegSelect,tvAllSelect;
     public static TextView tvDecQty, tvIncQty, tvMenuTotal;
     RecyclerView rcAddOns;
     Switch switchVegType;
@@ -198,6 +198,11 @@ public class MenuListActivity extends AppCompatActivity{
         tvContinueAddOns = findViewById(R.id.tvContinueAddOns);
         tvMenuTotal = findViewById(R.id.tvMenuTotal);
         tvVegSwitch = findViewById(R.id.tvVegSwitch);
+        tvVegSelect = findViewById(R.id.tvVegSelect);
+        tvNonVegSelect = findViewById(R.id.tvNonVegSelect);
+        tvAllSelect = findViewById(R.id.tvAllSelect);
+
+
         rcAddOns = findViewById(R.id.rcAddOns);
         rcAddOns.setHasFixedSize(true);
         rcAddOns.setLayoutManager(new LinearLayoutManager(MenuListActivity.this));
@@ -213,32 +218,92 @@ public class MenuListActivity extends AppCompatActivity{
         }
 
         tempMenu=new ArrayList<>();
-        switchVegType.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            tempMenu.clear();
-            if(isChecked){
-                tvVegSwitch.setText("Veg");
+
+        tvVegSelect.setOnClickListener(v -> {
+                tvVegSelect.setTextColor(Color.WHITE);
+                tvNonVegSelect.setTextColor(Color.BLACK);
+                tvAllSelect.setBackgroundResource(0);
+                tvNonVegSelect.setBackgroundResource(0);
+                tvVegSelect.setBackgroundResource(R.drawable.veg_type_back);
+                tvVegSelect.setTextColor(Color.WHITE);
+                tempMenu.clear();
+                ivVegSwitch.setVisibility(View.VISIBLE);
                 ivVegSwitch.setImageResource(R.drawable.veg);
+                Log.d("/*menuarray", "vegselect clicked "+MenuArray.size());
                 for(int i=0;i< MenuArray.size();i++) {
-                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
+                    Log.d("/*menuarray", MenuArray.get(i).getVegType());
                     if(MenuArray.get(i).getVegType().trim().equals("veg"))
                         tempMenu.add(MenuArray.get(i));
                 }
                 menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                 rcMenu.setAdapter(menuAdapter);
+            Log.d("/*rcmenu_set","veg Menuarray:"+MenuArray.size());
+                menuAdapterListener(menuAdapter, CategoryID);
+
+        });
+
+        tvNonVegSelect.setOnClickListener(v -> {
+            tvNonVegSelect.setTextColor(Color.WHITE);
+            tvVegSelect.setTextColor(Color.BLACK);
+            tvAllSelect.setBackgroundResource(0);
+            tvVegSelect.setBackgroundResource(0);
+            tvNonVegSelect.setBackgroundResource(R.drawable.nonveg_type_back);
+            tempMenu.clear();
+            ivVegSwitch.setVisibility(View.VISIBLE);
+            ivVegSwitch.setImageResource(R.drawable.nonveg);
+            for(int i=0;i< MenuArray.size();i++) {
+                Log.d("/*menuarray", MenuArray.get(i).getVegType());
+                if(MenuArray.get(i).getVegType().trim().equals("nonveg"))
+                    tempMenu.add(MenuArray.get(i));
             }
-            else {
-                tvVegSwitch.setText("Non-Veg");
-                ivVegSwitch.setImageResource(R.drawable.nonveg);
-                for(int i=0;i< MenuArray.size();i++) {
-                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
-                    if(MenuArray.get(i).getVegType().trim().equals("nonveg"))
-                        tempMenu.add(MenuArray.get(i));
-                }
-                menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
-                rcMenu.setAdapter(menuAdapter);
-            }
+            menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
+            rcMenu.setAdapter(menuAdapter);
+            Log.d("/*rcmenu_set","nonveg Menuarray:"+MenuArray.size());
             menuAdapterListener(menuAdapter, CategoryID);
         });
+
+        tvAllSelect.setOnClickListener(v -> {
+            tvVegSelect.setTextColor(Color.BLACK);
+            tvNonVegSelect.setTextColor(Color.BLACK);
+            tvVegSelect.setBackgroundResource(0);
+            tvNonVegSelect.setBackgroundResource(0);
+            tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
+            tempMenu.clear();
+            tempMenu.addAll(MenuArray);
+            ivVegSwitch.setVisibility(View.INVISIBLE);
+            menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
+            rcMenu.setAdapter(menuAdapter);
+            Log.d("/*rcmenu_set","all Menuarray:"+MenuArray.size());
+            menuAdapterListener(menuAdapter, CategoryID);
+        });
+
+
+//        switchVegType.setOnCheckedChangeListener((buttonView, isChecked) -> {
+//            tempMenu.clear();
+//            if(isChecked){
+//                tvVegSwitch.setText("Veg");
+//                ivVegSwitch.setImageResource(R.drawable.veg);
+//                for(int i=0;i< MenuArray.size();i++) {
+//                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
+//                    if(MenuArray.get(i).getVegType().trim().equals("veg"))
+//                        tempMenu.add(MenuArray.get(i));
+//                }
+//                menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
+//                rcMenu.setAdapter(menuAdapter);
+//            }
+//            else {
+//                tvVegSwitch.setText("Non-Veg");
+//                ivVegSwitch.setImageResource(R.drawable.nonveg);
+//                for(int i=0;i< MenuArray.size();i++) {
+//                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
+//                    if(MenuArray.get(i).getVegType().trim().equals("nonveg"))
+//                        tempMenu.add(MenuArray.get(i));
+//                }
+//                menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
+//                rcMenu.setAdapter(menuAdapter);
+//            }
+//            menuAdapterListener(menuAdapter, CategoryID);
+//        });
 
         ivGrid.setOnClickListener(v -> {
             rcAddOns.setLayoutManager(new GridLayoutManager(MenuListActivity.this, 2));
@@ -1123,17 +1188,19 @@ public class MenuListActivity extends AppCompatActivity{
                                     }
 
                                     //set switch for veg and filter veg menu
-                                    switchVegType.setChecked(true);
+//                                    switchVegType.setChecked(true);
                                     tempMenu.clear();
-                                    tvVegSwitch.setText("Veg");
-                                    ivVegSwitch.setImageResource(R.drawable.veg);
-                                    for(int j=0;j< MenuArray.size();j++) {
-                                      //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
-                                        if(MenuArray.get(j).getVegType().trim().equals("veg"))
-                                            tempMenu.add(MenuArray.get(j));
-                                    }
+//                                    tvVegSwitch.setText("Veg");
+//                                    ivVegSwitch.setImageResource(R.drawable.veg);
+//                                    for(int j=0;j< MenuArray.size();j++) {
+//                                        Log.d("/*menuarray", MenuArray.get(j).getVegType());
+//                                        if(MenuArray.get(j).getVegType().trim().equals("veg"))
+//                                            tempMenu.add(MenuArray.get(j));
+//                                    }
+                                    tempMenu.addAll(MenuArray);
                                     menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                                     rcMenu.setAdapter(menuAdapter);
+                                    Log.d("/*rcmenu_set","1 !VendorID.equals(\"\") Menuarray:"+MenuArray.size());
 
                                     //original
 //                                    menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(i).getMenuArray(), CategoryId);
@@ -1162,17 +1229,19 @@ public class MenuListActivity extends AppCompatActivity{
                                     }
 
                                     //set switch for veg and filter veg menu
-                                    switchVegType.setChecked(true);
+//                                    switchVegType.setChecked(true);
                                     tempMenu.clear();
-                                    tvVegSwitch.setText("Veg");
-                                    ivVegSwitch.setImageResource(R.drawable.veg);
-                                    for(int j=0;j< MenuArray.size();j++) {
-                                        //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
-                                        if(MenuArray.get(j).getVegType().trim().equals("veg"))
-                                            tempMenu.add(MenuArray.get(j));
-                                    }
+//                                    tvVegSwitch.setText("Veg");
+//                                    ivVegSwitch.setImageResource(R.drawable.veg);
+//                                    for(int j=0;j< MenuArray.size();j++) {
+//                                        //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
+//                                        if(MenuArray.get(j).getVegType().trim().equals("veg"))
+//                                            tempMenu.add(MenuArray.get(j));
+//                                    }
+                                    tempMenu.addAll(MenuArray);
                                     menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                                     rcMenu.setAdapter(menuAdapter);
+                                    Log.d("/*rcmenu_set","2 cartArray != null && cartArray.length() != 0 && cartJsonObj != null Menuarray:"+MenuArray.size());
 
 //                                    menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(i).getMenuArray(), CategoryId);
 //                                    rcMenu.setAdapter(menuAdapter);
@@ -1196,17 +1265,19 @@ public class MenuListActivity extends AppCompatActivity{
                             }
 
                             //set switch for veg and filter veg menu
-                            switchVegType.setChecked(true);
+//                            switchVegType.setChecked(true);
                             tempMenu.clear();
-                            tvVegSwitch.setText("Veg");
-                            ivVegSwitch.setImageResource(R.drawable.veg);
-                            for(int j=0;j< MenuArray.size();j++) {
-                                //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
-                                if(MenuArray.get(j).getVegType().trim().equals("veg"))
-                                    tempMenu.add(MenuArray.get(j));
-                            }
+//                            tvVegSwitch.setText("Veg");
+//                            ivVegSwitch.setImageResource(R.drawable.veg);
+//                            for(int j=0;j< MenuArray.size();j++) {
+//                                //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
+//                                if(MenuArray.get(j).getVegType().trim().equals("veg"))
+//                                    tempMenu.add(MenuArray.get(j));
+//                            }
+                            tempMenu.addAll(MenuArray);
                             menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                             rcMenu.setAdapter(menuAdapter);
+                            Log.d("/*rcmenu_set","3 redirected here from drawer or bottom menu Menuarray:"+MenuArray.size());
 
 //                            menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(0).getMenuArray(), CategoryId);
 //                            rcMenu.setAdapter(menuAdapter);
@@ -1226,6 +1297,7 @@ public class MenuListActivity extends AppCompatActivity{
                             VendorArray.get(0).setSelected(true);
                             menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(0).getMenuArray(), CategoryId);
                             rcMenu.setAdapter(menuAdapter);
+                            Log.d("/*rcmenu_set","4 menuAdapter == null Menuarray:"+MenuArray.size());
                         }
 
                         menuAdapterListener(menuAdapter, CategoryId);
@@ -1255,21 +1327,28 @@ public class MenuListActivity extends AppCompatActivity{
                                 layoutNoItems.setVisibility(View.GONE);
                             }
                             MenuArray = VendorArray.get(position).getMenuArray();// get menu of selected vendor
-                            Log.d("/*menuarray","menuarray updated(123)");
+                            Log.d("/*menuarray","vendoradapter menuarray updated(123) "+MenuArray.size());
+                            Log.d("/*menuarray",""+VendorArray.get(position).getVendorName()+","+VendorArray.get(position).getMenuArray().toString());
 
                             //set switch for veg and filter veg menu
-                            switchVegType.setChecked(true);
+//                            switchVegType.setChecked(true);
+                            tvVegSelect.setTextColor(Color.BLACK);
+                            tvNonVegSelect.setTextColor(Color.BLACK);
+                            tvVegSelect.setBackgroundResource(0);
+                            tvNonVegSelect.setBackgroundResource(0);
+                            tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
                             tempMenu.clear();
-                            tvVegSwitch.setText("Veg");
-                            ivVegSwitch.setImageResource(R.drawable.veg);
-                            for(int i=0;i< MenuArray.size();i++) {
-                               // Log.d("/*menuarray", MenuArray.get(i).getVegType());
-                                if(MenuArray.get(i).getVegType().trim().equals("veg"))
-                                    tempMenu.add(MenuArray.get(i));
-                            }
-
+//                            tvVegSwitch.setText("Veg");
+//                            ivVegSwitch.setImageResource(R.drawable.veg);
+//                            for(int i=0;i< MenuArray.size();i++) {
+//                               // Log.d("/*menuarray", MenuArray.get(i).getVegType());
+//                                if(MenuArray.get(i).getVegType().trim().equals("veg"))
+//                                    tempMenu.add(MenuArray.get(i));
+//                            }
+                            tempMenu.addAll(MenuArray);
                             menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                             rcMenu.setAdapter(menuAdapter);
+                            Log.d("/*rcmenu_set","5 vendoradapter listener Menuarray:"+MenuArray.size());
 
                             //original
 //                            menuAdapter = new MenuAdapter(MenuListActivity.this, MenuArray, CategoryId);
@@ -1463,6 +1542,51 @@ public class MenuListActivity extends AppCompatActivity{
                             rcAddOns.setAdapter(addOnsMenuAdapter);
                             AddOnsList = tempMenu.get(menuPosition).getAddOnsList();
                             addOnsAdapterListener(addOnsMenuAdapter);
+
+                            Log.d("/*abc_menulistactivity","addons add clicked "+menuPosition);
+                            if(!tempMenu.get(menuPosition).getProductImg().isEmpty()) {
+                                Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(menuPosition).getProductImg()).into(ivMenuImg);
+                                //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
+                            }
+                            else if(!tempMenu.get(menuPosition).getProductImgDefault().isEmpty()) {
+                                Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + tempMenu.get(menuPosition).getProductImgDefault()).into(ivMenuImg);
+                                //Log.d("/*menu_products",URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()+"");
+                            }
+                            else Glide.with(MenuListActivity.this).load(R.drawable.mealarts_icon).into(ivMenuImg);
+
+                            if(tempMenu.get(menuPosition).getVegType().toLowerCase().equals("veg"))
+                                Glide.with(MenuListActivity.this).load(R.drawable.veg)
+                                        .placeholder(R.drawable.mealarts_loader).into(ivVegType);
+                            else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
+                                    .placeholder(R.drawable.mealarts_loader).into(ivVegType);
+
+                            if(tempMenu.get(menuPosition).getOfferPer() > 0)
+                                tvOfferPer.setVisibility(View.VISIBLE);
+                            else tvOfferPer.setVisibility(View.GONE);
+
+                            tvOfferPer.setText(tempMenu.get(menuPosition).getOfferPer()+"%");
+                            tvPrepTime.setText(tempMenu.get(menuPosition).getMenuPrepTime()+" min");
+                            tvMenuOrgPrice.setText("₹ "+tempMenu.get(menuPosition).getOriginalPrice());
+                            tvMenuPrice.setText("₹ "+tempMenu.get(menuPosition).getSellingPrice());
+                            tvMenuName.setText(tempMenu.get(menuPosition).getProductName().trim());
+                            tvDescription.setText(tempMenu.get(menuPosition).getMenuDesc());
+
+                            //if(hasAddOns) {
+//                tvMenuQty.setText(tempMenu.get(position).getQty());
+                                addonClicked=true;
+                                Animation slide_up_1s = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_1000);
+                                layoutAddOns.setAnimation(slide_up_1s);
+                                layoutAddOns.setVisibility(View.VISIBLE);
+                                AddOnsMenuAdapter addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(menuPosition).getAddOnsList(), "List");
+                                rcAddOns.setAdapter(addOnsMenuAdapter);
+                                addOnsAdapterListener(addOnsMenuAdapter);
+//                                try {
+//                                    setCartTotal();
+//                                }
+//                                catch (Exception e){
+//                                    Log.d("/*abc_menulistactivity","setCartTotal e:"+e.toString());
+//                                }
+                            //}
                         }
                         setCartTotal();
                        // setAddOnsTempTotal();
@@ -1727,6 +1851,7 @@ public class MenuListActivity extends AppCompatActivity{
 
         menuAdapter.showAddOnsListener((position, hasAddOns, AddOnsArray) -> {
             Log.d("/*abc_menulistactivity","addons add clicked "+position);
+            int qty=0;
             if(!tempMenu.get(position).getProductImg().isEmpty()) {
                 Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(position).getProductImg()).into(ivMenuImg);
                 //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
@@ -1747,6 +1872,24 @@ public class MenuListActivity extends AppCompatActivity{
                 tvOfferPer.setVisibility(View.VISIBLE);
             else tvOfferPer.setVisibility(View.GONE);
 
+            try{
+                JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
+                JSONArray cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
+                for(int i=0;i<cartArray.length();i++){
+                    JSONObject cartItemObj = cartArray.getJSONObject(i);
+                    if(cartItemObj.getString("ProductName").trim().equals(tempMenu.get(position).getProductName().trim())){
+                        qty=cartItemObj.getInt("Quantity");
+                        Log.d("/*abc_menulistactivity","je:"+qty);
+                        tvMenuQty.setText(""+qty);
+//                        tvMenuTotalPrice.setText("test");
+                        tvMenuTotalPrice.setVisibility(View.VISIBLE);
+                        tvMenuTotalPrice.setText(""+(qty*Integer.parseInt(tempMenu.get(position).getSellingPrice())));
+                    }
+                }
+            }
+            catch (JSONException je){
+                Log.d("/*abc_menulistactivity","je:"+je.toString());
+            }
             tvOfferPer.setText(tempMenu.get(position).getOfferPer()+"%");
             tvPrepTime.setText(tempMenu.get(position).getMenuPrepTime()+" min");
             tvMenuOrgPrice.setText("₹ "+tempMenu.get(position).getOriginalPrice());
@@ -1754,8 +1897,9 @@ public class MenuListActivity extends AppCompatActivity{
             tvMenuName.setText(tempMenu.get(position).getProductName().trim());
             tvDescription.setText(tempMenu.get(position).getMenuDesc());
 
+
             if(hasAddOns) {
-//                tvMenuQty.setText(tempMenu.get(position).getQty());
+
                 addonClicked=true;
                 Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
                 layoutAddOns.setAnimation(slide_up);

@@ -6,412 +6,412 @@
 6    android:versionName="1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="17"
-9-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
+9        android:minSdkVersion="19"
+9-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="28" />
-10-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
+10-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 11    <!--
 12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
 13         Google Maps Android API v2, but you must specify either coarse or fine
 14         location permissions for the 'MyLocation' functionality.
 15    -->
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:11:5-79
-16-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:11:22-76
+16-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:11:5-79
+16-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:11:22-76
 17
 18    <dist:module dist:instant="true" />
-18-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:13:5-40
-18-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:13:18-37
+18-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:13:5-40
+18-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:13:18-37
 19
 20    <uses-permission android:name="android.permission.INTERNET" />
-20-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:15:5-67
-20-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:15:22-64
+20-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:15:5-67
+20-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:15:22-64
 21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-21-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:16:5-76
-21-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:16:22-73
+21-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:16:5-76
+21-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:16:22-73
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:17:5-79
-22-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:17:22-76
+22-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:17:5-79
+22-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:17:22-76
 23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-23-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:18:5-81
-23-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:18:22-78
+23-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:18:5-81
+23-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:18:22-78
 24    <uses-permission android:name="android.permission.WAKE_LOCK" />
-24-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:19:5-68
-24-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:19:22-65
+24-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:19:5-68
+24-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:19:22-65
 25
 26    <uses-feature android:name="android.hardware.location.network" />
-26-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:21:5-70
-26-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:21:19-67
+26-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:21:5-70
+26-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:21:19-67
 27    <uses-feature android:name="android.hardware.location.gps" />
-27-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:22:5-66
-27-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:22:19-63
+27-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:22:5-66
+27-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:22:19-63
 28
 29    <uses-permission android:name="android.permission.CALL_PHONE" />
-29-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:24:5-69
-29-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:24:22-66
+29-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:24:5-69
+29-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:24:22-66
 30
 31    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
 32    <permission
-32-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:7:5-9:47
+32-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:7:5-9:47
 33        android:name="com.mealarts.permission.C2D_MESSAGE"
-33-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:8:9-63
+33-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:8:9-63
 34        android:protectionLevel="signature" />
-34-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:9:9-44
+34-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:9:9-44
 35
 36    <uses-permission android:name="com.mealarts.permission.C2D_MESSAGE" />
-36-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:11:5-79
-36-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:11:22-76
+36-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:11:5-79
+36-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:11:22-76
 37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-37-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:17:5-82
-37-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:17:22-79
+37-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:17:5-82
+37-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:17:22-79
 38    <!--
 39 Required so the device vibrates on receiving a push notification.
 40         Vibration settings of the device still apply.
 41    -->
 42    <uses-permission android:name="android.permission.VIBRATE" />
-42-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:23:5-66
-42-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:23:22-63
+42-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:23:5-66
+42-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:23:22-63
 43    <!--
 44 Use to restore notifications the user hasn't interacted with.
 45         They could be missed notifications if the user reboots their device if this isn't in place.
 46    -->
 47    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
-47-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:29:5-81
-47-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:29:22-78
+47-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:29:5-81
+47-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:29:22-78
 48    <!-- Samsung -->
 49    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-49-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:31:5-86
-49-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:31:22-83
+49-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:31:5-86
+49-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:31:22-83
 50    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
-50-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:32:5-87
-50-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:32:22-84
+50-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:32:5-87
+50-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:32:22-84
 51    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-51-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:33:5-81
-51-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:33:22-78
+51-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:33:5-81
+51-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:33:22-78
 52    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
-52-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:34:5-83
-52-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:34:22-80
+52-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:34:5-83
+52-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:34:22-80
 53    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-53-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:35:5-88
-53-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:35:22-85
+53-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:35:5-88
+53-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:35:22-85
 54    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
-54-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:36:5-92
-54-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:36:22-89
+54-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:36:5-92
+54-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:36:22-89
 55    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
-55-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:37:5-84
-55-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:37:22-81
+55-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:37:5-84
+55-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:37:22-81
 56    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
-56-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:38:5-83
-56-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:38:22-80
+56-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:38:5-83
+56-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:38:22-80
 57    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-57-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:39:5-91
-57-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:39:22-88
+57-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:39:5-91
+57-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:39:22-88
 58    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-58-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:40:5-92
-58-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:40:22-89
+58-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:40:5-92
+58-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:40:22-89
 59    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
-59-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:41:5-93
-59-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:41:22-90
+59-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:41:5-93
+59-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:41:22-90
 60    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
-60-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:42:5-73
-60-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:42:22-70
+60-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:42:5-73
+60-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:42:22-70
 61    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-61-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:43:5-82
-61-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:43:22-79
+61-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:43:5-82
+61-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:43:22-79
 62    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
-62-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:44:5-83
-62-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:44:22-80
+62-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:44:5-83
+62-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:44:22-80
 63    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-63-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:45:5-88
-63-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:45:22-85
+63-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:45:5-88
+63-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:45:22-85
 64    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-64-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:46:5-89
-64-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:46:22-86
+64-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:46:5-89
+64-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:46:22-86
 65
 66    <uses-feature
-66-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+66-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 67        android:glEsVersion="0x00020000"
-67-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+67-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
 68        android:required="true" />
-68-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+68-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 69
 70    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-70-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:26:5-110
-70-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:26:22-107
+70-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:26:5-110
+70-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:26:22-107
 71    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-71-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:10:5-81
-71-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:10:22-78
+71-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:10:5-81
+71-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:10:22-78
 72    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-72-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:11:5-80
-72-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:11:22-77
+72-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:11:5-80
+72-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:11:22-77
 73
 74    <application
-74-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:26:5-199:19
+74-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:26:5-199:19
 75        android:name="androidx.multidex.MultiDexApplication"
 76        android:allowBackup="true"
-76-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:27:9-35
+76-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:27:9-35
 77        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-77-->[androidx.core:core:1.1.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\44d66c12e0a4cf67afa666826994811b\core-1.1.0\AndroidManifest.xml:24:18-86
+77-->[androidx.core:core:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44d66c12e0a4cf67afa666826994811b\core-1.1.0\AndroidManifest.xml:24:18-86
 78        android:debuggable="true"
 79        android:hardwareAccelerated="false"
-79-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:31:9-44
+79-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:31:9-44
 80        android:icon="@mipmap/ic_launcher"
-80-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:28:9-43
+80-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:28:9-43
 81        android:label="@string/app_name"
-81-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:29:9-41
+81-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:29:9-41
 82        android:largeHeap="true"
-82-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:30:9-33
+82-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:30:9-33
 83        android:roundIcon="@mipmap/ic_launcher_round"
-83-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:32:9-54
+83-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:32:9-54
 84        android:supportsRtl="true"
-84-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:33:9-35
+84-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:33:9-35
 85        android:theme="@style/AppTheme"
-85-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:34:9-40
+85-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:34:9-40
 86        android:usesCleartextTraffic="true" >
-86-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:35:9-44
+86-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:35:9-44
 87        <activity
-87-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:9-39:58
+87-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:9-39:58
 88            android:name="com.mealarts.AddressListActivity"
-88-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:19-54
+88-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:19-54
 89            android:screenOrientation="portrait"
-89-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:38:13-49
+89-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:38:13-49
 90            android:theme="@style/AppTheme.NoActionBar" />
-90-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:39:13-56
+90-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:39:13-56
 91        <activity
-91-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:40:9-43:59
+91-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:40:9-43:59
 92            android:name="com.mealarts.ManageAddressActivity"
-92-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:41:13-50
+92-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:41:13-50
 93            android:screenOrientation="portrait"
-93-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:42:13-49
+93-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:42:13-49
 94            android:theme="@style/AppTheme.NoActionBar" /> <!-- android:networkSecurityConfig="@xml/network_security_config" -->
-94-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:43:13-56
+94-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:43:13-56
 95        <activity
-95-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:44:9-47:59
+95-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:44:9-47:59
 96            android:name="com.mealarts.VisitorRegActivity"
-96-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:45:13-47
+96-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:45:13-47
 97            android:screenOrientation="portrait"
-97-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:46:13-49
+97-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:46:13-49
 98            android:theme="@style/AppTheme.NoActionBar" />
-98-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:47:13-56
+98-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:47:13-56
 99        <activity
-99-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:48:9-51:59
+99-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:48:9-51:59
 100            android:name="com.mealarts.WelcomeActivity"
-100-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:49:13-44
+100-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:49:13-44
 101            android:screenOrientation="portrait"
-101-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:50:13-49
+101-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:50:13-49
 102            android:theme="@style/AppTheme.NoActionBar" />
-102-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:51:13-56
+102-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:51:13-56
 103        <activity
-103-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:52:9-55:59
+103-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:52:9-55:59
 104            android:name="com.mealarts.CheckoutDetailsActivity"
-104-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:53:13-52
+104-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:53:13-52
 105            android:screenOrientation="portrait"
-105-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:54:13-49
+105-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:54:13-49
 106            android:theme="@style/AppTheme.NoActionBar" />
-106-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:55:13-56
+106-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:55:13-56
 107        <activity
-107-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:56:9-59:59
+107-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:56:9-59:59
 108            android:name="com.mealarts.VoucherListActivity"
-108-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:57:13-48
+108-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:57:13-48
 109            android:screenOrientation="portrait"
-109-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:58:13-49
+109-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:58:13-49
 110            android:theme="@style/AppTheme.NoActionBar" />
-110-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:59:13-56
+110-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:59:13-56
 111
 112        <uses-library
-112-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:61:9-63:40
+112-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:61:9-63:40
 113            android:name="org.apache.http.legacy"
-113-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:62:13-50
+113-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:62:13-50
 114            android:required="false" />
-114-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:63:13-37
+114-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:63:13-37
 115
 116        <activity
-116-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:65:9-68:59
+116-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:65:9-68:59
 117            android:name="com.mealarts.ChefDetailActivity"
-117-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:66:13-47
+117-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:66:13-47
 118            android:screenOrientation="portrait"
-118-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:67:13-49
+118-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:67:13-49
 119            android:theme="@style/AppTheme.NoActionBar" />
-119-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:68:13-56
+119-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:68:13-56
 120        <activity
-120-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:69:9-72:59
+120-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:69:9-72:59
 121            android:name="com.mealarts.SingleOrderDetailActivity"
-121-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:70:13-54
+121-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:70:13-54
 122            android:screenOrientation="portrait"
-122-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:71:13-49
+122-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:71:13-49
 123            android:theme="@style/AppTheme.NoActionBar" />
-123-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:72:13-56
+123-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:72:13-56
 124        <activity
-124-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:73:9-76:59
+124-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:73:9-76:59
 125            android:name="com.mealarts.PayTMPaymentActivity"
-125-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:74:13-49
+125-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:74:13-49
 126            android:screenOrientation="portrait"
-126-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:75:13-49
+126-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:75:13-49
 127            android:theme="@style/AppTheme.NoActionBar" />
-127-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:76:13-56
+127-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:76:13-56
 128        <activity
-128-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:77:9-80:59
+128-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:77:9-80:59
 129            android:name="com.mealarts.PolicyTermsActivity"
-129-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:78:13-48
+129-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:78:13-48
 130            android:screenOrientation="portrait"
-130-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:79:13-49
+130-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:79:13-49
 131            android:theme="@style/AppTheme.NoActionBar" />
-131-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:80:13-56
+131-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:80:13-56
 132        <activity
-132-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:81:9-84:59
+132-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:81:9-84:59
 133            android:name="com.mealarts.ContactUsActivity"
-133-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:82:13-46
+133-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:82:13-46
 134            android:screenOrientation="portrait"
-134-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:83:13-49
+134-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:83:13-49
 135            android:theme="@style/AppTheme.NoActionBar" />
-135-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:84:13-56
+135-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:84:13-56
 136        <activity
-136-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:85:9-88:59
+136-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:85:9-88:59
 137            android:name="com.mealarts.AllChefActivity"
-137-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:86:13-44
+137-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:86:13-44
 138            android:screenOrientation="portrait"
-138-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:87:13-49
+138-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:87:13-49
 139            android:theme="@style/AppTheme.NoActionBar" />
-139-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:88:13-56
+139-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:88:13-56
 140        <activity
-140-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:89:9-92:59
+140-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:89:9-92:59
 141            android:name="com.mealarts.AboutUsActivity"
-141-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:90:13-44
+141-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:90:13-44
 142            android:screenOrientation="portrait"
-142-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:91:13-49
+142-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:91:13-49
 143            android:theme="@style/AppTheme.NoActionBar" />
-143-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:92:13-56
+143-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:92:13-56
 144        <activity
-144-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:93:9-102:20
+144-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:93:9-102:20
 145            android:name="com.mealarts.MainActivity"
-145-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:94:13-41
+145-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:94:13-41
 146            android:screenOrientation="portrait"
-146-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:95:13-49
+146-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:95:13-49
 147            android:theme="@style/AppTheme.NoActionBar" >
-147-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:96:13-56
+147-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:96:13-56
 148            <intent-filter>
-148-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:97:13-101:29
+148-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:97:13-101:29
 149                <action android:name="android.intent.action.MAIN" />
-149-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:17-69
-149-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:25-66
+149-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:17-69
+149-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:25-66
 150
 151                <category android:name="android.intent.category.DEFAULT" />
-151-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:17-76
-151-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:27-73
+151-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:17-76
+151-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:27-73
 152            </intent-filter>
 153        </activity>
 154        <activity
-154-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:103:9-106:59
+154-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:103:9-106:59
 155            android:name="com.mealarts.CheckoutActivity"
-155-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:104:13-45
+155-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:104:13-45
 156            android:screenOrientation="portrait"
-156-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:105:13-49
+156-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:105:13-49
 157            android:theme="@style/AppTheme.NoActionBar" />
-157-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:106:13-56
+157-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:106:13-56
 158        <activity
-158-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:107:9-110:59
+158-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:107:9-110:59
 159            android:name="com.mealarts.PasswordActivity"
-159-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:108:13-45
+159-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:108:13-45
 160            android:screenOrientation="portrait"
-160-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:109:13-49
+160-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:109:13-49
 161            android:theme="@style/AppTheme.NoActionBar" />
-161-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:110:13-56
+161-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:110:13-56
 162        <activity
-162-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:111:9-114:59
+162-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:111:9-114:59
 163            android:name="com.mealarts.DeliveryAddressActivity"
-163-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:112:13-52
+163-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:112:13-52
 164            android:screenOrientation="portrait"
-164-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:113:13-49
+164-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:113:13-49
 165            android:theme="@style/AppTheme.NoActionBar" />
-165-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:114:13-56
+165-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:114:13-56
 166        <activity
-166-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:115:9-118:59
+166-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:115:9-118:59
 167            android:name="com.mealarts.AddToCartActivity"
-167-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:116:13-46
+167-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:116:13-46
 168            android:screenOrientation="portrait"
-168-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:117:13-49
+168-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:117:13-49
 169            android:theme="@style/AppTheme.NoActionBar" />
-169-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:118:13-56
+169-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:118:13-56
 170        <activity
-170-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:119:9-122:59
+170-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:119:9-122:59
 171            android:name="com.mealarts.ProfileActivity"
-171-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:120:13-44
+171-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:120:13-44
 172            android:screenOrientation="portrait"
-172-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:121:13-49
+172-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:121:13-49
 173            android:theme="@style/AppTheme.NoActionBar" />
-173-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:122:13-56
+173-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:122:13-56
 174        <activity
-174-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:123:9-126:59
+174-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:123:9-126:59
 175            android:name="com.mealarts.OTPActivity"
-175-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:124:13-40
+175-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:124:13-40
 176            android:screenOrientation="portrait"
-176-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:125:13-49
+176-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:125:13-49
 177            android:theme="@style/AppTheme.NoActionBar" />
-177-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:126:13-56
+177-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:126:13-56
 178        <activity
-178-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:127:9-130:59
+178-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:127:9-130:59
 179            android:name="com.mealarts.RegistrationActivity"
-179-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:128:13-49
+179-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:128:13-49
 180            android:screenOrientation="portrait"
-180-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:129:13-49
+180-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:129:13-49
 181            android:theme="@style/AppTheme.NoActionBar" />
-181-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:130:13-56
+181-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:130:13-56
 182        <activity
-182-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:131:9-134:59
+182-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:131:9-134:59
 183            android:name="com.mealarts.LogInActivity"
-183-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:132:13-42
+183-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:132:13-42
 184            android:screenOrientation="portrait"
-184-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:133:13-49
+184-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:133:13-49
 185            android:theme="@style/AppTheme.NoActionBar" />
-185-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:134:13-56
+185-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:134:13-56
 186        <activity
-186-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:135:9-138:59
+186-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:135:9-138:59
 187            android:name="com.mealarts.MenuListActivity"
-187-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:136:13-45
+187-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:136:13-45
 188            android:screenOrientation="portrait"
-188-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:137:13-49
+188-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:137:13-49
 189            android:theme="@style/AppTheme.NoActionBar" />
-189-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:138:13-56
+189-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:138:13-56
 190        <activity
-190-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:139:9-148:20
+190-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:139:9-148:20
 191            android:name="com.mealarts.SplashActivity"
-191-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:140:13-43
+191-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:140:13-43
 192            android:screenOrientation="portrait"
-192-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:141:13-49
+192-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:141:13-49
 193            android:theme="@style/AppTheme.NoActionBar" >
-193-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:142:13-56
+193-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:142:13-56
 194            <intent-filter>
-194-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:143:13-147:29
+194-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:143:13-147:29
 195                <action android:name="android.intent.action.MAIN" />
-195-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:17-69
-195-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:25-66
+195-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:17-69
+195-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:25-66
 196
 197                <category android:name="android.intent.category.LAUNCHER" />
-197-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:17-77
-197-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:27-74
+197-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:17-77
+197-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:27-74
 198            </intent-filter>
 199        </activity>
 200        <activity
-200-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:149:9-155:55
+200-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:149:9-155:55
 201            android:name="com.mealarts.MapsActivity"
-201-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:150:13-41
+201-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:150:13-41
 202            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-202-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:151:13-91
+202-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:151:13-91
 203            android:launchMode="singleTask"
-203-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:152:13-44
+203-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:152:13-44
 204            android:resizeableActivity="true"
-204-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:153:13-46
+204-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:153:13-46
 205            android:screenOrientation="portrait"
-205-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:154:13-49
+205-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:154:13-49
 206            android:supportsPictureInPicture="true" />
-206-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:155:13-52
+206-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:155:13-52
 207
 208        <meta-data
-208-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:157:9-159:39
+208-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:157:9-159:39
 209            android:name="com.onesignal.NotificationOpened.DEFAULT"
-209-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:158:13-68
+209-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:158:13-68
 210            android:value="DISABLE" />
-210-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:159:13-36
+210-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:159:13-36
 211        <!--
 212             The API key for Google Maps-based APIs is defined as a string resource.
 213             (See the file "res/values/google_maps_api.xml").
@@ -421,363 +421,363 @@
 217             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 218        -->
 219        <meta-data
-219-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:168:9-170:55
+219-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:168:9-170:55
 220            android:name="com.google.android.geo.API_KEY"
-220-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:169:13-58
+220-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:169:13-58
 221            android:value="@string/google_maps_key" />
-221-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:170:13-52
+221-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:170:13-52
 222        <meta-data
-222-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:171:9-173:69
+222-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:171:9-173:69
 223            android:name="com.google.android.gms.version"
-223-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:172:13-58
+223-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:172:13-58
 224            android:value="@integer/google_play_services_version" />
-224-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:173:13-66
+224-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:173:13-66
 225        <!-- OTP SMS Listener -->
 226        <receiver android:name="com.mealarts.Helpers.SmsReceiver" >
-226-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:9-182:20
-226-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:19-54
+226-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:9-182:20
+226-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:19-54
 227            <intent-filter>
-227-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:179:13-181:29
+227-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:179:13-181:29
 228                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-228-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:17-82
-228-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:25-79
+228-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:17-82
+228-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:25-79
 229            </intent-filter>
 230        </receiver>
 231
 232        <service
-232-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:184:9-191:19
+232-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:184:9-191:19
 233            android:name="com.mealarts.Helpers.OneSignal.NotificationExtender"
-233-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:185:13-67
+233-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:185:13-67
 234            android:exported="false"
-234-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:186:13-37
+234-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:186:13-37
 235            android:permission="android.permission.BIND_JOB_SERVICE" >
-235-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:187:13-69
+235-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:187:13-69
 236            <intent-filter>
-236-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:188:13-190:29
+236-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:188:13-190:29
 237                <action android:name="com.onesignal.NotificationExtender" />
-237-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:17-77
-237-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:25-74
+237-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:17-77
+237-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:25-74
 238            </intent-filter>
 239        </service>
 240
 241        <meta-data
-241-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:193:9-195:72
+241-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:193:9-195:72
 242            android:name="io.fabric.ApiKey"
-242-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:194:13-44
+242-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:194:13-44
 243            android:value="2f3b7f7e77b3f40f25f9ecf345bc8432d7495f79" />
-243-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:195:13-69
+243-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:195:13-69
 244        <meta-data
-244-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:196:9-198:36
+244-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:196:9-198:36
 245            android:name="firebase_crashlytics_collection_enabled"
-245-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:197:13-67
+245-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:197:13-67
 246            android:value="true" />
-246-->F:\MealArtsCustomerHGD\MealArtsCustomer-master\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:198:13-33
+246-->E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:198:13-33
 247        <!-- Autocomplete -->
 248        <activity
-248-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:16:9-23:20
+248-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:16:9-23:20
 249            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-249-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:17:13-91
+249-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:17:13-91
 250            android:exported="false"
-250-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:18:13-37
+250-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:18:13-37
 251            android:hardwareAccelerated="true"
-251-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:19:13-47
+251-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:19:13-47
 252            android:label="@string/places_autocomplete_label"
-252-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:20:13-62
+252-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:20:13-62
 253            android:theme="@style/PlacesAutocompleteThemeOverlay"
-253-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:21:13-66
+253-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:21:13-66
 254            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
-254-->[com.google.android.libraries.places:places:2.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:22:13-71
+254-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\110da1732c10d63155adf0fdb2deb598\places-2.0.0\AndroidManifest.xml:22:13-71
 255        </activity>
 256
 257        <meta-data
-257-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:49:9-51:51
+257-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:49:9-51:51
 258            android:name="onesignal_app_id"
-258-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:50:13-44
+258-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:50:13-44
 259            android:value="f4116b76-3b50-48a3-808c-a65886481c1c" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
-259-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:51:13-48
+259-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:51:13-48
 260        <meta-data
-260-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:53:9-55:70
+260-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:53:9-55:70
 261            android:name="onesignal_google_project_number"
-261-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:54:13-59
+261-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:54:13-59
 262            android:value="str:REMOTE" />
-262-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:55:13-67
+262-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:55:13-67
 263
 264        <receiver
-264-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:57:9-67:20
+264-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:57:9-67:20
 265            android:name="com.onesignal.GcmBroadcastReceiver"
-265-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:58:13-62
+265-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:58:13-62
 266            android:permission="com.google.android.c2dm.permission.SEND" >
-266-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:59:13-73
+266-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:59:13-73
 267
 268            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
 269            <intent-filter android:priority="999" >
-269-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:62:13-66:29
-269-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:62:28-50
+269-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:62:13-66:29
+269-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:62:28-50
 270                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-270-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:17-81
-270-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:25-78
+270-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:17-81
+270-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:25-78
 271
 272                <category android:name="com.mealarts" />
-272-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:65:17-61
-272-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:65:27-58
+272-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:65:17-61
+272-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:65:27-58
 273            </intent-filter>
 274        </receiver>
 275        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
-275-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:68:9-77
-275-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:68:19-74
+275-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:68:9-77
+275-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:68:19-74
 276
 277        <service android:name="com.onesignal.GcmIntentService" />
-277-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:70:9-66
-277-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:70:18-63
+277-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:70:9-66
+277-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:70:18-63
 278        <service
-278-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:71:9-73:72
+278-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:71:9-73:72
 279            android:name="com.onesignal.GcmIntentJobService"
-279-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:72:13-61
+279-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:72:13-61
 280            android:permission="android.permission.BIND_JOB_SERVICE" />
-280-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:73:13-69
+280-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:73:13-69
 281        <service
-281-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:74:9-76:72
+281-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:74:9-76:72
 282            android:name="com.onesignal.RestoreJobService"
-282-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:75:13-59
+282-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:75:13-59
 283            android:permission="android.permission.BIND_JOB_SERVICE" />
-283-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:76:13-69
+283-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:76:13-69
 284        <service
-284-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:77:9-79:72
+284-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:77:9-79:72
 285            android:name="com.onesignal.RestoreKickoffJobService"
-285-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:78:13-66
+285-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:78:13-66
 286            android:permission="android.permission.BIND_JOB_SERVICE" />
-286-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:79:13-69
+286-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:79:13-69
 287        <service
-287-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:80:9-82:43
+287-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:80:9-82:43
 288            android:name="com.onesignal.SyncService"
-288-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:81:13-53
+288-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:81:13-53
 289            android:stopWithTask="true" />
-289-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:82:13-40
+289-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:82:13-40
 290        <service
-290-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:83:9-85:72
+290-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:83:9-85:72
 291            android:name="com.onesignal.SyncJobService"
-291-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:84:13-56
+291-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:84:13-56
 292            android:permission="android.permission.BIND_JOB_SERVICE" />
-292-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:85:13-69
+292-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:85:13-69
 293
 294        <activity
-294-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:87:9-89:75
+294-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:87:9-89:75
 295            android:name="com.onesignal.PermissionsActivity"
-295-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:88:13-61
+295-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:88:13-61
 296            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-296-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:89:13-72
+296-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:89:13-72
 297
 298        <service android:name="com.onesignal.NotificationRestoreService" />
-298-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:91:9-76
-298-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:91:18-73
+298-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:91:9-76
+298-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:91:18-73
 299
 300        <receiver android:name="com.onesignal.BootUpReceiver" >
-300-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:93:9-98:20
-300-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:93:19-62
+300-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:93:9-98:20
+300-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:93:19-62
 301            <intent-filter>
-301-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:94:13-97:29
+301-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:94:13-97:29
 302                <action android:name="android.intent.action.BOOT_COMPLETED" />
-302-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:95:17-79
-302-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:95:25-76
+302-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:95:17-79
+302-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:95:25-76
 303                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-303-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:96:17-82
-303-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:96:25-79
+303-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:96:17-82
+303-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:96:25-79
 304            </intent-filter>
 305        </receiver>
 306        <receiver android:name="com.onesignal.UpgradeReceiver" >
-306-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:99:9-103:20
-306-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:99:19-63
+306-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:99:9-103:20
+306-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:99:19-63
 307            <intent-filter>
-307-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:100:13-102:29
+307-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:100:13-102:29
 308                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-308-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:101:17-84
-308-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:101:25-81
+308-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:101:17-84
+308-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:101:25-81
 309            </intent-filter>
 310        </receiver>
 311
 312        <service
-312-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\14c7583cb9548373227f1e52c27133bb\jetified-firebase-crash-16.2.1\AndroidManifest.xml:25:9-29:19
+312-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\842be636a338bee9b92e3e957c9fef49\jetified-firebase-crash-16.2.1\AndroidManifest.xml:25:9-29:19
 313            android:name="com.google.firebase.components.ComponentDiscoveryService"
-313-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\14c7583cb9548373227f1e52c27133bb\jetified-firebase-crash-16.2.1\AndroidManifest.xml:25:18-89
+313-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\842be636a338bee9b92e3e957c9fef49\jetified-firebase-crash-16.2.1\AndroidManifest.xml:25:18-89
 314            android:exported="false" >
-314-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:29:13-37
+314-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:29:13-37
 315            <meta-data
-315-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\14c7583cb9548373227f1e52c27133bb\jetified-firebase-crash-16.2.1\AndroidManifest.xml:26:13-28:85
+315-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\842be636a338bee9b92e3e957c9fef49\jetified-firebase-crash-16.2.1\AndroidManifest.xml:26:13-28:85
 316                android:name="com.google.firebase.components:com.google.firebase.crash.component.FirebaseCrashRegistrar"
-316-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\14c7583cb9548373227f1e52c27133bb\jetified-firebase-crash-16.2.1\AndroidManifest.xml:27:17-121
+316-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\842be636a338bee9b92e3e957c9fef49\jetified-firebase-crash-16.2.1\AndroidManifest.xml:27:17-121
 317                android:value="com.google.firebase.components.ComponentRegistrar" />
-317-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\14c7583cb9548373227f1e52c27133bb\jetified-firebase-crash-16.2.1\AndroidManifest.xml:28:17-82
+317-->[com.google.firebase:firebase-crash:16.2.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\842be636a338bee9b92e3e957c9fef49\jetified-firebase-crash-16.2.1\AndroidManifest.xml:28:17-82
 318            <meta-data
-318-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:30:13-32:85
+318-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:30:13-32:85
 319                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-319-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:31:17-139
+319-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:31:17-139
 320                android:value="com.google.firebase.components.ComponentRegistrar" />
-320-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:32:17-82
+320-->[com.google.android.gms:play-services-measurement-api:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f95941b6964bfa0f4e1add845e0c261f\play-services-measurement-api-17.0.1\AndroidManifest.xml:32:17-82
 321            <meta-data
-321-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+321-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
 322                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-322-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+322-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
 323                android:value="com.google.firebase.components.ComponentRegistrar" />
-323-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+323-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
 324        </service>
 325        <!--
 326             FirebaseMessagingService performs security checks at runtime,
 327             but set to not exported to explicitly avoid allowing another app to call it.
 328        -->
 329        <service
-329-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+329-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
 330            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-330-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+330-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
 331            android:exported="false" >
-331-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+331-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
 332            <intent-filter android:priority="-500" >
-332-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:31:13-33:29
-332-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:31:28-51
+332-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:31:13-33:29
+332-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:31:28-51
 333                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-333-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:32:17-78
-333-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\c439859cb9c1cff37756b5f3c42351da\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:32:25-75
+333-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:32:17-78
+333-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\cec482cfa8ab57223ffe549c29db103c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:32:25-75
 334            </intent-filter>
 335        </service>
 336
 337        <receiver
-337-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+337-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
 338            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-338-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+338-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
 339            android:exported="true"
-339-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+339-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
 340            android:permission="com.google.android.c2dm.permission.SEND" >
-340-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+340-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
 341            <intent-filter>
-341-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+341-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\096f0accd79b6d1090e0e393046c3545\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
 342                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-342-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:17-81
-342-->[com.onesignal:OneSignal:3.11.2] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\a943ed89e064b0747a8d75903553d1a6\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:25-78
+342-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:17-81
+342-->[com.onesignal:OneSignal:3.11.2] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\95353b283605de8e6223255234e08995\jetified-OneSignal-3.11.2\AndroidManifest.xml:63:25-78
 343            </intent-filter>
 344        </receiver>
 345
 346        <activity
-346-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+346-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 347            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-347-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+347-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 348            android:exported="false"
-348-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+348-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 349            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-349-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+349-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\ecc6a5b119024368e4fa8b3a3d8952ad\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 350
 351        <provider
-351-->[com.google.firebase:firebase-common:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+351-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
 352            android:name="com.google.firebase.provider.FirebaseInitProvider"
-352-->[com.google.firebase:firebase-common:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+352-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
 353            android:authorities="com.mealarts.firebaseinitprovider"
-353-->[com.google.firebase:firebase-common:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+353-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
 354            android:exported="false"
-354-->[com.google.firebase:firebase-common:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+354-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
 355            android:initOrder="100" />
-355-->[com.google.firebase:firebase-common:18.0.0] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+355-->[com.google.firebase:firebase-common:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\d269765af22615732618b02d717d9f20\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
 356
 357        <receiver
-357-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:29:9-33:20
+357-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:29:9-33:20
 358            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-358-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:30:13-85
+358-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:30:13-85
 359            android:enabled="true"
-359-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:31:13-35
+359-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:31:13-35
 360            android:exported="false" >
-360-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:32:13-37
+360-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:32:13-37
 361        </receiver>
 362        <receiver
-362-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:34:9-42:20
+362-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:34:9-42:20
 363            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-363-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:35:13-100
+363-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:35:13-100
 364            android:enabled="true"
-364-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:36:13-35
+364-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:36:13-35
 365            android:exported="true"
-365-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:37:13-36
+365-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:37:13-36
 366            android:permission="android.permission.INSTALL_PACKAGES" >
-366-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:38:13-69
+366-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:38:13-69
 367            <intent-filter>
-367-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:39:13-41:29
+367-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:39:13-41:29
 368                <action android:name="com.android.vending.INSTALL_REFERRER" />
-368-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:40:17-79
-368-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:40:25-76
+368-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:40:17-79
+368-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:40:25-76
 369            </intent-filter>
 370        </receiver>
 371
 372        <service
-372-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:44:9-47:40
+372-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:44:9-47:40
 373            android:name="com.google.android.gms.measurement.AppMeasurementService"
-373-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:45:13-84
+373-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:45:13-84
 374            android:enabled="true"
-374-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:46:13-35
+374-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:46:13-35
 375            android:exported="false" />
-375-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:47:13-37
+375-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:47:13-37
 376        <service
-376-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:48:9-52:72
+376-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:48:9-52:72
 377            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-377-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:49:13-87
+377-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:49:13-87
 378            android:enabled="true"
-378-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:50:13-35
+378-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:50:13-35
 379            android:exported="false"
-379-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:51:13-37
+379-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:51:13-37
 380            android:permission="android.permission.BIND_JOB_SERVICE" />
-380-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:52:13-69
+380-->[com.google.android.gms:play-services-measurement:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\56a98874cf5b8298bcad26fa0a49eb5a\play-services-measurement-17.0.1\AndroidManifest.xml:52:13-69
 381
 382        <provider
-382-->[com.squareup.picasso:picasso:2.71828] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\eb984cf8e1d4c52de03b98363398022d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+382-->[com.squareup.picasso:picasso:2.71828] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b9a152f41700809be26418fccf272f66\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 383            android:name="com.squareup.picasso.PicassoProvider"
-383-->[com.squareup.picasso:picasso:2.71828] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\eb984cf8e1d4c52de03b98363398022d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+383-->[com.squareup.picasso:picasso:2.71828] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b9a152f41700809be26418fccf272f66\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 384            android:authorities="com.mealarts.com.squareup.picasso"
-384-->[com.squareup.picasso:picasso:2.71828] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\eb984cf8e1d4c52de03b98363398022d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+384-->[com.squareup.picasso:picasso:2.71828] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b9a152f41700809be26418fccf272f66\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 385            android:exported="false" />
-385-->[com.squareup.picasso:picasso:2.71828] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\eb984cf8e1d4c52de03b98363398022d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+385-->[com.squareup.picasso:picasso:2.71828] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b9a152f41700809be26418fccf272f66\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 386
 387        <activity
-387-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:14:9-17:47
+387-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:14:9-17:47
 388            android:name="com.paytm.pgsdk.PaytmPGActivity"
-388-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:15:13-59
+388-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:15:13-59
 389            android:screenOrientation="portrait"
-389-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:16:13-49
+389-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:16:13-49
 390            android:theme="@style/AppTheme" />
-390-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:17:13-44
+390-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:17:13-44
 391
 392        <service
-392-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:19:9-21:40
+392-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:19:9-21:40
 393            android:name="com.paytm.pgsdk.IntentServicePostNotification"
-393-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:20:13-73
+393-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:20:13-73
 394            android:exported="false" />
-394-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:21:13-37
+394-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:21:13-37
 395        <service
-395-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:22:9-24:40
+395-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:22:9-24:40
 396            android:name="com.paytm.pgsdk.IntentServicePreNotification"
-396-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:23:13-72
+396-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:23:13-72
 397            android:exported="false" />
-397-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:24:13-37
+397-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:24:13-37
 398        <service
-398-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:25:9-28:39
+398-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:25:9-28:39
 399            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
-399-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:26:13-78
+399-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:26:13-78
 400            android:enabled="true"
-400-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:27:13-35
+400-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:27:13-35
 401            android:exported="true" />
-401-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:28:13-36
+401-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:28:13-36
 402        <service
-402-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:29:9-32:39
+402-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:29:9-32:39
 403            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
-403-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:30:13-74
+403-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:30:13-74
 404            android:enabled="true"
-404-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:31:13-35
+404-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:31:13-35
 405            android:exported="true" />
-405-->[com.paytm:pgplussdk:1.3.3] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\696338a857cd5debddbfc41737c14150\jetified-pgplussdk-1.3.3\AndroidManifest.xml:32:13-36
+405-->[com.paytm:pgplussdk:1.3.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\6b982fc7f2d8d1e0e120412227fba0bf\jetified-pgplussdk-1.3.3\AndroidManifest.xml:32:13-36
 406
 407        <provider
-407-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\2f938a01fd5fffc29dda174afb67da7a\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+407-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\30b6d18b04e758d07c25c326ec3a13c8\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
 408            android:name="com.crashlytics.android.CrashlyticsInitProvider"
-408-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\2f938a01fd5fffc29dda174afb67da7a\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+408-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\30b6d18b04e758d07c25c326ec3a13c8\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
 409            android:authorities="com.mealarts.crashlyticsinitprovider"
-409-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\2f938a01fd5fffc29dda174afb67da7a\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+409-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\30b6d18b04e758d07c25c326ec3a13c8\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
 410            android:exported="false"
-410-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\2f938a01fd5fffc29dda174afb67da7a\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+410-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\30b6d18b04e758d07c25c326ec3a13c8\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
 411            android:initOrder="90" />
-411-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\waakan\.gradle\caches\transforms-2\files-2.1\2f938a01fd5fffc29dda174afb67da7a\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+411-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\30b6d18b04e758d07c25c326ec3a13c8\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
 412    </application>
 413
 414</manifest>

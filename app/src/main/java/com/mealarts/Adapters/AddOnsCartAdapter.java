@@ -1,5 +1,6 @@
 package com.mealarts.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Paint;
 import android.os.Build;
@@ -19,7 +20,6 @@ import com.mealarts.AddToCartActivity;
 import com.mealarts.AsyncTask.URLServices;
 import com.mealarts.Helpers.CustomToast;
 import com.mealarts.Helpers.SharedPref;
-import com.mealarts.MenuListActivity;
 import com.mealarts.R;
 
 import org.json.JSONArray;
@@ -49,6 +49,7 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
         return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.add_ons_list_layout, parent,false));
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tvAddCart.setVisibility(View.GONE);
@@ -229,6 +230,7 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private void setCartTotal() throws JSONException {
         float cartTotal = 0, gstTotal=0, PackingCharge=0;
         JSONObject cartObj = new JSONObject(sharedPref.getUserCart());

@@ -1,10 +1,9 @@
 package com.mealarts.Adapters;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,17 +18,11 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.mealarts.AddressListActivity;
 import com.mealarts.AsyncTask.SSLCertification;
 import com.mealarts.AsyncTask.URLServices;
-import com.mealarts.CheckoutDetailsActivity;
 import com.mealarts.DeliveryAddressActivity;
 import com.mealarts.Helpers.CustomToast;
 import com.mealarts.Helpers.Utils.AddressUtils;
-import com.mealarts.MainActivity;
-import com.mealarts.ManageAddressActivity;
-import com.mealarts.MenuListActivity;
-import com.mealarts.ProfileActivity;
 import com.mealarts.R;
 
 import org.json.JSONException;
@@ -59,6 +52,7 @@ public class AddressItemAdapter extends RecyclerView.Adapter<AddressItemAdapter.
         return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_address_item, parent, false));
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 

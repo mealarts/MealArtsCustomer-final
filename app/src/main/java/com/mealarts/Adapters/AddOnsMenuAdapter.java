@@ -1,5 +1,6 @@
 package com.mealarts.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Paint;
 import android.util.Log;
@@ -74,6 +75,7 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
                 : R.layout.add_ons_list_layout, parent,false));
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         try {
@@ -174,6 +176,7 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void setCartTotal() throws JSONException {
         float cartTotal = 0, gstTotal=0, PackingCharge=0;
         int menuItem=0,addOnItem=0,totalItem=0;
@@ -216,6 +219,7 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
         Log.d("/*addonsmenuadp",(menuItem+addOnItem) + " Items " + "₹ " + Math.round(cartTotal) + "/-");
     }
 
+    @SuppressLint("SetTextI18n")
     private void setAddOnsTempTotal() throws JSONException{
         Log.d("/*addonsmenuadp","in setAddOnsTempTotal");
 //        int TotalPerMenu = 0;

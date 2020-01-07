@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Paint;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -170,7 +171,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
         holder.tvIncQty.setOnClickListener(v -> {
             MenuListActivity.getMenuPosition = position;
             Log.e("PosItem", String.valueOf(MenuListActivity.getMenuPosition));
-            if(mShowAddOnsListener!=null)
+            if(mIncListener!=null)
                 mIncListener.onItemIncClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
             else
                 Log.d("/*abc","mIncListener empty");
@@ -195,7 +196,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
         holder.tvDecQty.setOnClickListener(v -> {
             MenuListActivity.getMenuPosition = position;
             Log.e("PosItem", String.valueOf(MenuListActivity.getMenuPosition));
-            if(mShowAddOnsListener!=null)
+            if(mDecListener!=null)
                 mDecListener.onItemDecClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
             else
                 Log.d("/*abc","mDecListener empty");

@@ -1,5 +1,6 @@
 package com.mealarts.Adapters;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
@@ -49,6 +50,7 @@ public class AddressListItemAdapter extends RecyclerView.Adapter<AddressListItem
         return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_address_listitem, parent, false));
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
