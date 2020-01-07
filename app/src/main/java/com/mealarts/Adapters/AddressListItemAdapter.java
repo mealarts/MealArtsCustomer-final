@@ -60,9 +60,15 @@ public class AddressListItemAdapter extends RecyclerView.Adapter<AddressListItem
         if(AddressList.get(position).getAddressType().equals("Other"))
             holder.ivAddressType.setImageResource(R.drawable.other_add);
 
-        holder.tvFullAddress.setText(AddressList.get(position).getFlat() + ","
-                + AddressList.get(position).getLandmark() + ", "
-                + AddressList.get(position).getLocation());
+        if(AddressList.get(position).getLocation().toLowerCase().contains(AddressList.get(position).getLandmark().toLowerCase())) {
+            holder.tvFullAddress.setText(AddressList.get(position).getFlat() + ", "
+                    + AddressList.get(position).getLocation());
+        }
+        else {
+            holder.tvFullAddress.setText(AddressList.get(position).getFlat() + ", "
+                    + AddressList.get(position).getLandmark() + ", "
+                    + AddressList.get(position).getLocation());
+        }
 
         holder.layoutAddress.setOnClickListener(v -> {
             try {

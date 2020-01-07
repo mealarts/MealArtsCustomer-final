@@ -403,6 +403,8 @@ public class DeliveryAddressActivity extends AppCompatActivity implements OnMapR
                 edtLocation.setText(String.valueOf(addresses.get(0).getAddressLine(0)));
                 edtLandmark.setText(subLocality);
 
+                edtHouseFlatNo.setText("");
+
                 // Locate the first location
                 if(i==0)
                     mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
@@ -442,11 +444,11 @@ public class DeliveryAddressActivity extends AppCompatActivity implements OnMapR
                         String subLocality = listAddresses.get(0).getSubLocality();
 
                         edtLocation.setText(String.valueOf(listAddresses.get(0).getAddressLine(0)));
-
-                    edtLandmark.setText(subLocality);
-                    locationCount = 0;
-                    if(layoutLoader.getVisibility() == View.VISIBLE)
-                        layoutLoader.setVisibility(View.GONE);
+                        edtHouseFlatNo.setText("");
+                        edtLandmark.setText(subLocality);
+                        locationCount = 0;
+                        if(layoutLoader.getVisibility() == View.VISIBLE)
+                            layoutLoader.setVisibility(View.GONE);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

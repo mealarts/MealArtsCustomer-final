@@ -364,7 +364,7 @@
                                     android:id="@+id/edtChefMessage"
                                     android:inputType="textMultiLine"
                                     android:textSize="14sp"
-                                    android:hint="Any Special Message for Your Chef ?"
+                                    android:hint="Any Special Message for our Chef ?"
                                     android:lastBaselineToBottomHeight="10dp" />
 
                             </com.google.android.material.textfield.TextInputLayout>

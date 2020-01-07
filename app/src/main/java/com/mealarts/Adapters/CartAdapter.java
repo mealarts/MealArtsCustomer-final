@@ -94,6 +94,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
         holder.productCounter.setVisibility(View.VISIBLE);
 
         holder.tvIncQty.setOnClickListener(v -> {
+            Log.d("/*abc","Cart adapter Inc");
             try {
 
                 JSONObject cartObj = new JSONObject(sharedPrefs.getUserCart());
@@ -153,6 +154,17 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
 
                     if(cartItemObjs.getString("isgst").equals("yes"))
                         gstTotal+=Float.parseFloat(cartItemObjs.getString("QtyPrice"))*(Float.parseFloat(cartItemObjs.getString("gstp"))/100);
+
+                    if(cartItemObjs.has(context.getResources().getString(R.string.AddOnsJsonArray))){
+                        JSONArray addOnsArray = cartItemObjs.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
+                        if(addOnsArray.length() != 0){
+                            for(int j = 0 ; j < addOnsArray.length() ; j++){
+                                JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+                                cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
+                                pChargeTotal += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
+                            }
+                        }
+                    }
                 }
                 cartJSONObj.put("TotalAmount", String.valueOf(cartTotal));
                 cartJSONObj.put("totalGST",String.valueOf(gstTotal));
@@ -169,9 +181,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
 
         holder.tvDecQty.setOnClickListener(v -> {
             try {
+                Log.d("/*abc","Cart adapter Dec");
 
                 JSONObject cartObj = new JSONObject(sharedPrefs.getUserCart());
-
 
                 JSONArray cartArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
                 for (int i = 0; i < cartArray.length(); i++) {
@@ -275,6 +287,17 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
                     pChargeTotal += Float.parseFloat(cartItemObjs.getString("p_charge"));
                     if(cartItemObjs.getString("isgst").equals("yes"))
                         gstTotal+=Float.parseFloat(cartItemObjs.getString("QtyPrice"))*(Float.parseFloat(cartItemObjs.getString("gstp"))/100);
+
+                    if(cartItemObjs.has(context.getResources().getString(R.string.AddOnsJsonArray))){
+                        JSONArray addOnsArray = cartItemObjs.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
+                        if(addOnsArray.length() != 0){
+                            for(int j = 0 ; j < addOnsArray.length() ; j++){
+                                JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+                                cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
+                                pChargeTotal += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
+                            }
+                        }
+                    }
                 }
                 cartJSONObj.put("TotalAmount", String.valueOf(cartTotal));
                 cartJSONObj.put("totalGST",String.valueOf(gstTotal));

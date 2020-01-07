@@ -96,6 +96,7 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
             }
 
             holder.tvIncQty.setOnClickListener(v -> {
+                Log.d("/*abc_addons_cart","inc:"+QtyCount);
                 int TotalPrice;
                 try{
                     JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
@@ -121,11 +122,13 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
                     }
                     setCartTotal();
                 }catch (JSONException e){
+                    Log.d("/*abc_addons_cart","inc catch "+e.toString());
                     e.printStackTrace();
                 }
             });
 
             holder.tvDecQty.setOnClickListener(v -> {
+                Log.d("/*abc_addons_cart","dec clicked");
                 int TotalPrice;
                 try{
                     JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
@@ -135,41 +138,49 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
                         JSONArray addOnsTempArray = cartItemObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
                         for(int l = 0 ; l < addOnsTempArray.length(); l++) {
                             JSONObject addOnsObj = addOnsTempArray.getJSONObject(l);
-                            if (addOnsObj.getString("addon_id").equals(CartAddOnsList.get(position).getString("addon_id"))) {
-                                QtyCount = addOnsObj.getInt("Quantity");
-                                if (QtyCount > 0) {
-                                    QtyCount--;
-                                    if(QtyCount > 0){
-                                        holder.tvQty.setText(String.valueOf(QtyCount));
-                                        TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
-                                        holder.tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
-                                        CartAddOnsList.get(position).put("TotalPackAmt", CartAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
-                                        addOnsObj.put("Quantity", QtyCount);
-                                        addOnsObj.put("QtyPrice", TotalPrice);
-                                    }else {
-                                        holder.tvTotalPrice.setVisibility(View.INVISIBLE);
-                                        holder.productCounter.setVisibility(View.GONE);
-                                        CartAddOnsList.get(position).put("Quantity",String.valueOf(QtyCount));
-                                        final ArrayList<JSONObject> result = new ArrayList<>(addOnsTempArray.length());
-                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                                            addOnsTempArray.remove(l);
-                                            CartAddOnsList.remove(l);
-                                            customToast.showCustomToast(context, "Removed successfully !");
-                                        } else {
-                                            for (int n = 0; n < result.size(); n++) {
-                                                if (result.get(n).getString("addon_id").equals(CartAddOnsList.get(position).getString("addon_id"))) {
-                                                    result.remove(n);
-                                                    CartAddOnsList.remove(n);
-                                                    customToast.showCustomToast(context, "Removed successfully !");
+                            try{
+                                if (addOnsObj.getString("addon_id").equals(CartAddOnsList.get(position).getString("addon_id"))) {
+                                    QtyCount = addOnsObj.getInt("Quantity");
+                                    if (QtyCount > 0) {
+                                        Log.d("/*abc","dec:"+QtyCount+">0");
+                                        QtyCount--;
+                                        if(QtyCount > 0){
+                                            Log.d("/*abc","dec:"+QtyCount);
+                                            holder.tvQty.setText(String.valueOf(QtyCount));
+                                            TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
+                                            holder.tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
+                                            CartAddOnsList.get(position).put("TotalPackAmt", CartAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
+                                            addOnsObj.put("Quantity", QtyCount);
+                                            addOnsObj.put("QtyPrice", TotalPrice);
+                                        }else {
+                                            Log.d("/*abc","dec:"+QtyCount+"<0");
+                                            holder.tvTotalPrice.setVisibility(View.INVISIBLE);
+                                            holder.productCounter.setVisibility(View.GONE);
+                                            CartAddOnsList.get(position).put("Quantity",String.valueOf(QtyCount));
+                                            final ArrayList<JSONObject> result = new ArrayList<>(addOnsTempArray.length());
+                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                                                addOnsTempArray.remove(l);
+                                                CartAddOnsList.remove(l);
+                                                customToast.showCustomToast(context, "Removed successfully !");
+                                            } else {
+                                                for (int n = 0; n < result.size(); n++) {
+                                                    if (result.get(n).getString("addon_id").equals(CartAddOnsList.get(position).getString("addon_id"))) {
+                                                        result.remove(n);
+                                                        CartAddOnsList.remove(n);
+                                                        customToast.showCustomToast(context, "Removed successfully !");
+                                                    }
                                                 }
-                                            }
-                                            for (final JSONObject obj : result) {
-                                                addOnsTempArray.put(obj);
+                                                for (final JSONObject obj : result) {
+                                                    addOnsTempArray.put(obj);
+                                                }
                                             }
                                         }
                                     }
+                                    break;
                                 }
-                                break;
+                            }
+                            catch (Exception e){
+                                Log.d("/*abc_addons_cart","dec catch "+e.toString());
                             }
                         }
                     }
@@ -241,8 +252,7 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
                     for(int j = 0 ; j < addOnsArray.length() ; j++){
                         JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
                         cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
-                        PackingCharge += (Float.parseFloat(addOnsObj.getString("Quantity"))
-                                * Float.parseFloat(addOnsObj.getString("p_charge")));
+                        PackingCharge += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
                     }
                 }
             }
@@ -252,5 +262,6 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
         cartJSONObj.put("totalGST",String.valueOf(gstTotal));
         sharedPref.setUserCart(String.valueOf(cartObj));
         AddToCartActivity.tvCartTotal.setText("₹ " + cartTotal+"/-");
+        Log.d("/*abc_menulistactivity","addons cart adapter: cartotal="+cartTotal);
     }
 }

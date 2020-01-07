@@ -33,27 +33,31 @@
                 android:id="@+id/ivCurrentLoc"
                 android:layout_gravity="top|end"
                 android:src="@drawable/current_location"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:src="@drawable/drag_marker"
-                android:layout_marginTop="-50dp"/>
+                android:layout_marginTop="-50dp"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/ivMarkerLoader"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:src="@drawable/marker"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="15dp"
+                tools:ignore="ContentDescription" />
 
         </FrameLayout>
 
@@ -79,7 +83,8 @@
                     android:text="Set Delivery Location"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -100,7 +105,8 @@
                         android:padding="5dp"
                         android:gravity="center|start"
                         android:textAlignment="textStart"
-                        android:lastBaselineToBottomHeight="10dp"/>
+                        android:lastBaselineToBottomHeight="10dp"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,7 +127,8 @@
                         android:padding="5dp"
                         android:gravity="center|start"
                         android:textAlignment="textStart"
-                        android:lastBaselineToBottomHeight="10dp"/>
+                        android:lastBaselineToBottomHeight="10dp"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,7 +149,8 @@
                         android:padding="5dp"
                         android:gravity="center|start"
                         android:textAlignment="textStart"
-                        android:lastBaselineToBottomHeight="10dp"/>
+                        android:lastBaselineToBottomHeight="10dp"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -163,7 +171,8 @@
             android:text="Save and Proceed"
             android:textSize="15sp"
             android:background="@drawable/signin_button_back"
-            android:textColor="@drawable/clickable_textview_white_red"/>
+            android:textColor="@drawable/clickable_textview_white_red"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
@@ -184,7 +193,8 @@
             android:src="@drawable/back_arrow"
             android:padding="8dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -206,10 +216,11 @@
                 android:textColorHint="@color/colorGray"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_gravity="center"
-                android:gravity="center|end"
+                android:gravity="center|start"
                 android:layout_marginStart="5dp"
                 android:imeOptions="actionSearch"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:layout_width="25dp"

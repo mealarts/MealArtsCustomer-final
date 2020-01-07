@@ -24,6 +24,7 @@ public class AddressTypeAdapter extends RecyclerView.Adapter<AddressTypeAdapter.
     public void setListener(OnAddressTypeClickListener listener) {
         mListener = listener;
     }
+
     public interface OnAddressTypeClickListener{
         void onAddressTypeClick(TextView tvAddressType, int position);
     }
@@ -43,7 +44,8 @@ public class AddressTypeAdapter extends RecyclerView.Adapter<AddressTypeAdapter.
 
         if(AddressTypeList.get(position).getSelected())
             holder.tvAddressType.setBackgroundResource(R.drawable.selected_address_back);
-        else holder.tvAddressType.setBackgroundResource(R.drawable.spinner_back);
+        else
+            holder.tvAddressType.setBackgroundResource(R.drawable.spinner_back);
 
         if(position == 0)
             holder.layoutAddressType.setGravity(Gravity.START);

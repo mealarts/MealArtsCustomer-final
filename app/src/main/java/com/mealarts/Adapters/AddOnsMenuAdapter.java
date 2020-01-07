@@ -27,6 +27,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.mealarts.MenuListActivity.layoutCartTotal;
+import static com.mealarts.MenuListActivity.tvAddCartTotal;
+
 public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.MyViewHolder>{
 
     private Context context;
@@ -112,7 +115,7 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
                         }
                     }
                     setCartTotal();
-                    setAddOnsTempTotal();
+                   // setAddOnsTempTotal();
                 }else {
                     cartObj.put(context.getResources().getString(R.string.AddOnsJsonArray), new JSONArray());
                     sharedPref.setUserCart(String.valueOf(cartObj));
@@ -173,11 +176,14 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
 
     public void setCartTotal() throws JSONException {
         float cartTotal = 0, gstTotal=0, PackingCharge=0;
+        int menuItem=0,addOnItem=0,totalItem=0;
         JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
         JSONObject cartJSONObj = cartObj.getJSONObject(context.getResources().getString(R.string.CartJsonObj));
         JSONArray cartArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
         for(int i = 0 ; i < cartArray.length(); i++){
             JSONObject cartItemObjs = cartArray.getJSONObject(i) ;
+            menuItem++;
+            totalItem+=cartItemObjs.getInt("Quantity");
             cartTotal += Float.parseFloat(cartItemObjs.getString("QtyPrice"));
             PackingCharge += (Float.parseFloat(cartItemObjs.getString("Quantity"))
                     * Float.parseFloat(cartItemObjs.getString("p_charge")));
@@ -193,7 +199,10 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
                 if(addOnsArray.length() != 0){
                     for(int j = 0 ; j < addOnsArray.length() ; j++){
                         JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+                        addOnItem++;
+                        totalItem+=addOnsObj.getInt("Quantity");
                         cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
+                        PackingCharge += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
                     }
                 }
             }
@@ -202,40 +211,83 @@ public class AddOnsMenuAdapter extends RecyclerView.Adapter<AddOnsMenuAdapter.My
         cartJSONObj.put("totalPackCharge", PackingCharge);
         cartJSONObj.put("totalGST",String.valueOf(gstTotal));
         sharedPref.setUserCart(String.valueOf(cartObj));
-        MenuListActivity.tvAddCartTotal.setText("₹ " + Math.round(cartTotal) +"/-");
+        tvAddCartTotal.setText("₹ " + Math.round(cartTotal) +"/-");
+        MenuListActivity.tvMenuTotal.setText(menuItem + " Menus, "+addOnItem+" AddOns, "+totalItem+ " Items   ₹ " + Math.round(cartTotal) + "/-");
+        Log.d("/*addonsmenuadp",(menuItem+addOnItem) + " Items " + "₹ " + Math.round(cartTotal) + "/-");
     }
 
     private void setAddOnsTempTotal() throws JSONException{
-        int TotalPerMenu = 0;
-        int TotalQtyCount = 0;
-        JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
-        JSONArray cartJsonArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
-        for (int k = 0; k < cartJsonArray.length(); k++) {
-            JSONObject cartItemObj = cartJsonArray.getJSONObject(k);
-            TotalPerMenu = cartItemObj.getInt("QtyPrice");
-            TotalQtyCount = Integer.parseInt(cartItemObj.getString("Quantity"));
+        Log.d("/*addonsmenuadp","in setAddOnsTempTotal");
+//        int TotalPerMenu = 0;
+//        int TotalQtyCount = 0;
+//        JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
+//        JSONArray cartJsonArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
+//        for (int k = 0; k < cartJsonArray.length(); k++) {
+//            JSONObject cartItemObj = cartJsonArray.getJSONObject(k);
+//            TotalPerMenu = cartItemObj.getInt("QtyPrice");
+//            TotalQtyCount = Integer.parseInt(cartItemObj.getString("Quantity"));
+//
+//            if(cartItemObj.has(context.getResources().getString(R.string.AddOnsJsonArray))
+//                    && cartItemObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray)).length() != 0){
+//                Log.d("/*addonsmenuadp","in cartItemObj.has(AddOnsJsonArray))");
+//                JSONArray addOnsArray = cartItemObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
+//                for(int j = 0 ; j < addOnsArray.length() ; j++){
+//                    JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+//                    if(addOnsObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
+//                        TotalPerMenu += addOnsObj.getInt("QtyPrice");
+//                        TotalQtyCount += Integer.parseInt(addOnsObj.getString("Quantity"));
+//                    }
+//                }
+//            }else if(cartObj.has("AddOnsJsonArray")) {
+//                Log.d("/*addonsmenuadp","not in cartItemObj.has(AddOnsJsonArray))");
+//                JSONArray addOnArray = cartObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
+//                for (int j = 0; j < addOnArray.length(); j++) {
+//                    JSONObject addOnObj = addOnArray.getJSONObject(j);
+//                    if(addOnObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
+//                        TotalPerMenu += addOnObj.getInt("QtyPrice");
+//                        TotalQtyCount += Integer.parseInt(addOnObj.getString("Quantity"));
+//                    }
+//                }
+//            }
+//        }
 
-            if(cartItemObj.has(context.getResources().getString(R.string.AddOnsJsonArray))
-                    && cartItemObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray)).length() != 0){
-                JSONArray addOnsArray = cartItemObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
-                for(int j = 0 ; j < addOnsArray.length() ; j++){
-                    JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
-                    if(addOnsObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
-                        TotalPerMenu += addOnsObj.getInt("QtyPrice");
-                        TotalQtyCount += Integer.parseInt(addOnsObj.getString("Quantity"));
-                    }
-                }
-            }else if(cartObj.has("AddOnsJsonArray")) {
-                JSONArray addOnArray = cartObj.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
-                for (int j = 0; j < addOnArray.length(); j++) {
-                    JSONObject addOnObj = addOnArray.getJSONObject(j);
-                    if(addOnObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
-                        TotalPerMenu += addOnObj.getInt("QtyPrice");
-                        TotalQtyCount += Integer.parseInt(addOnObj.getString("Quantity"));
+        JSONObject cartObj;
+        float cartTotal = 0, gstTotal=0, PackingCharge=0,itemCount=0;
+        cartObj = new JSONObject(sharedPref.getUserCart());
+        JSONObject cartJSONObj = cartObj.getJSONObject(context.getResources().getString(R.string.CartJsonObj));
+        JSONArray cartArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
+
+        for(int i = 0 ; i < cartArray.length(); i++){
+            JSONObject cartItemObjs = cartArray.getJSONObject(i) ;
+            itemCount++;
+            cartTotal += Float.parseFloat(cartItemObjs.getString("QtyPrice"));
+            PackingCharge += /*(Float.parseFloat(cartItemObjs.getString("Quantity")) * )*/
+                    Float.parseFloat(cartItemObjs.getString("p_charge"));
+
+            Log.d("/*adp",cartItemObjs.getString("QtyPrice")+", "+cartItemObjs.getString("gstp"));
+
+            if(cartItemObjs.getString("isgst").equals("yes"))
+                gstTotal+=Float.parseFloat(cartItemObjs.getString("QtyPrice"))
+                        *(Float.parseFloat(cartItemObjs.getString("gstp"))/100);
+
+            if(cartItemObjs.has(context.getResources().getString(R.string.AddOnsJsonArray))){
+                JSONArray addOnsArray = cartItemObjs.getJSONArray(context.getResources().getString(R.string.AddOnsJsonArray));
+                if(addOnsArray.length() != 0){
+                    for(int j = 0 ; j < addOnsArray.length() ; j++){
+                        JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+                        itemCount++;
+                        cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
+                        PackingCharge += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
                     }
                 }
             }
         }
-        MenuListActivity.tvMenuTotal.setText(TotalQtyCount + " Items " + "₹ " + Math.round(TotalPerMenu) + "/-");
+        cartJSONObj.put("TotalAmount", String.valueOf(cartTotal));
+        cartJSONObj.put("totalPackCharge", PackingCharge);
+        cartJSONObj.put("totalGST",String.valueOf(gstTotal));
+        sharedPref.setUserCart(String.valueOf(cartObj));
+        tvAddCartTotal.setText("₹ " + Math.round(cartTotal) +"/-");
+        MenuListActivity.tvMenuTotal.setText(itemCount + " Items " + "₹ " + Math.round(cartTotal) + "/-");
+        Log.d("/*addonsmenuadp",itemCount + " Items " + "₹ " + Math.round(cartTotal) + "/-");
     }
 }

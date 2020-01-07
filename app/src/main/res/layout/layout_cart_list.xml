@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorBlackFade">
+    android:layout_height="wrap_content"><!--android:background="@color/colorBlackFade" -->
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        app:cardCornerRadius="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
         app:cardBackgroundColor="@color/colorGrayFade">
 
         <LinearLayout

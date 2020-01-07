@@ -587,7 +587,8 @@
                             android:maxLines="2"
                             android:textColor="@color/colorWhite"
                             android:padding="5dp"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -606,7 +607,8 @@
                     android:padding="5dp"
                     android:visibility="invisible"
                     android:src="@drawable/search_main"
-                    android:background="@drawable/common_button_back"/>
+                    android:background="@drawable/common_button_back"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 

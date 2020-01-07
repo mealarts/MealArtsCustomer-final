@@ -39,6 +39,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.google.gson.JsonObject;
 import com.mealarts.Adapters.AddOnsMenuAdapter;
 import com.mealarts.Adapters.BottomMenuAdapter;
 import com.mealarts.Adapters.CategoryAdapter;
@@ -76,6 +77,8 @@ import java.util.Map;
 
 @SuppressLint("SetTextI18n")
 public class MenuListActivity extends AppCompatActivity{
+
+    boolean addonClicked;
 
     RecyclerView rcDrawerMenu, rcLowerMenu, rcCategory, rcVendor, rcMenu;
     Spinner spMenuTimer;
@@ -131,9 +134,12 @@ public class MenuListActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_list);
+
         FromWhere = getIntent().getBooleanExtra("FromWhere", false);
         if(FromWhere)
             VendorID = getIntent().getStringExtra("VendorId");
+
+        addonClicked=false;
 
         sharedPref = new SharedPref(MenuListActivity.this);
         connection = new CheckExtras(MenuListActivity.this);
@@ -213,7 +219,7 @@ public class MenuListActivity extends AppCompatActivity{
                 tvVegSwitch.setText("Veg");
                 ivVegSwitch.setImageResource(R.drawable.veg);
                 for(int i=0;i< MenuArray.size();i++) {
-                    Log.d("/*menuarray", MenuArray.get(i).getVegType());
+                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
                     if(MenuArray.get(i).getVegType().trim().equals("veg"))
                         tempMenu.add(MenuArray.get(i));
                 }
@@ -224,13 +230,14 @@ public class MenuListActivity extends AppCompatActivity{
                 tvVegSwitch.setText("Non-Veg");
                 ivVegSwitch.setImageResource(R.drawable.nonveg);
                 for(int i=0;i< MenuArray.size();i++) {
-                    Log.d("/*menuarray", MenuArray.get(i).getVegType());
+                    //Log.d("/*menuarray", MenuArray.get(i).getVegType());
                     if(MenuArray.get(i).getVegType().trim().equals("nonveg"))
                         tempMenu.add(MenuArray.get(i));
                 }
                 menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                 rcMenu.setAdapter(menuAdapter);
             }
+            menuAdapterListener(menuAdapter, CategoryID);
         });
 
         ivGrid.setOnClickListener(v -> {
@@ -376,7 +383,13 @@ public class MenuListActivity extends AppCompatActivity{
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if(isTaskRoot()){
+        }
+        if(addonClicked){
+            Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
+            layoutAddOns.setAnimation(slide_down);
+            layoutAddOns.setVisibility(View.GONE);
+            addonClicked=false;
+        }else if(isTaskRoot()){
             if (doubleBackToExitPressedOnce) {
                 super.onBackPressed();
                 return;
@@ -454,6 +467,8 @@ public class MenuListActivity extends AppCompatActivity{
         super.onResume();
         sharedPref.setPos(1);
         setBottomMenu();
+        layoutAddOns.setVisibility(View.GONE);
+
         drawerAdapter = new DrawerAdapter(MenuListActivity.this);
         rcDrawerMenu.setAdapter(drawerAdapter);
         try {
@@ -503,6 +518,7 @@ public class MenuListActivity extends AppCompatActivity{
             }
             getServerTime();
             setCategory();
+            setCartTotal();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -987,7 +1003,8 @@ public class MenuListActivity extends AppCompatActivity{
                                         AddOnsObj.put("MenuId", MenuID);
                                         AddOnsList.add(AddOnsObj);
                                     }
-                                }addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, AddOnsList, "List");
+                                }
+                                addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, AddOnsList, "List");
                                 rcAddOns.setAdapter(addOnsMenuAdapter);
                                 addOnsAdapterListener(addOnsMenuAdapter);
 
@@ -1111,7 +1128,7 @@ public class MenuListActivity extends AppCompatActivity{
                                     tvVegSwitch.setText("Veg");
                                     ivVegSwitch.setImageResource(R.drawable.veg);
                                     for(int j=0;j< MenuArray.size();j++) {
-                                        Log.d("/*menuarray", MenuArray.get(j).getVegType());
+                                      //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
                                         if(MenuArray.get(j).getVegType().trim().equals("veg"))
                                             tempMenu.add(MenuArray.get(j));
                                     }
@@ -1143,8 +1160,22 @@ public class MenuListActivity extends AppCompatActivity{
                                     }else {
                                         layoutNoItems.setVisibility(View.GONE);
                                     }
-                                    menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(i).getMenuArray(), CategoryId);
+
+                                    //set switch for veg and filter veg menu
+                                    switchVegType.setChecked(true);
+                                    tempMenu.clear();
+                                    tvVegSwitch.setText("Veg");
+                                    ivVegSwitch.setImageResource(R.drawable.veg);
+                                    for(int j=0;j< MenuArray.size();j++) {
+                                        //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
+                                        if(MenuArray.get(j).getVegType().trim().equals("veg"))
+                                            tempMenu.add(MenuArray.get(j));
+                                    }
+                                    menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                                     rcMenu.setAdapter(menuAdapter);
+
+//                                    menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(i).getMenuArray(), CategoryId);
+//                                    rcMenu.setAdapter(menuAdapter);
                                 }else{
                                     VendorArray.get(i).setSelected(false);
                                 }
@@ -1163,8 +1194,22 @@ public class MenuListActivity extends AppCompatActivity{
                             }else {
                                 layoutNoItems.setVisibility(View.GONE);
                             }
-                            menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(0).getMenuArray(), CategoryId);
+
+                            //set switch for veg and filter veg menu
+                            switchVegType.setChecked(true);
+                            tempMenu.clear();
+                            tvVegSwitch.setText("Veg");
+                            ivVegSwitch.setImageResource(R.drawable.veg);
+                            for(int j=0;j< MenuArray.size();j++) {
+                                //  Log.d("/*menuarray", MenuArray.get(j).getVegType());
+                                if(MenuArray.get(j).getVegType().trim().equals("veg"))
+                                    tempMenu.add(MenuArray.get(j));
+                            }
+                            menuAdapter = new MenuAdapter(MenuListActivity.this,tempMenu, CategoryID);
                             rcMenu.setAdapter(menuAdapter);
+
+//                            menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(0).getMenuArray(), CategoryId);
+//                            rcMenu.setAdapter(menuAdapter);
                         }
                         if(menuAdapter == null){
                             try {
@@ -1181,7 +1226,10 @@ public class MenuListActivity extends AppCompatActivity{
                             VendorArray.get(0).setSelected(true);
                             menuAdapter = new MenuAdapter(MenuListActivity.this,VendorArray.get(0).getMenuArray(), CategoryId);
                             rcMenu.setAdapter(menuAdapter);
-                        }menuAdapterListener(menuAdapter, CategoryId);
+                        }
+
+                        menuAdapterListener(menuAdapter, CategoryId);
+                        Log.d("/*abc_menulistactivity","menuadapterListener set");
 
                         vendorAdapter.setListener((position, cardVendor) -> {
                             for(int i = 0 ; i < VendorArray.size() ; i++){
@@ -1215,7 +1263,7 @@ public class MenuListActivity extends AppCompatActivity{
                             tvVegSwitch.setText("Veg");
                             ivVegSwitch.setImageResource(R.drawable.veg);
                             for(int i=0;i< MenuArray.size();i++) {
-                                Log.d("/*menuarray", MenuArray.get(i).getVegType());
+                               // Log.d("/*menuarray", MenuArray.get(i).getVegType());
                                 if(MenuArray.get(i).getVegType().trim().equals("veg"))
                                     tempMenu.add(MenuArray.get(i));
                             }
@@ -1263,14 +1311,17 @@ public class MenuListActivity extends AppCompatActivity{
         Log.e("Request", customRequest.toString()+"_"+postData.toString());
     }
 
+    //when "Add+" button is clicked in menu adapter
     public void menuAdapterListener(MenuAdapter menuAdapter, String CategoryId){
 
-        menuAdapter.setListener((menuPosition, QtyCount, tvQty, layoutAddOnsClick, tvTotalPrice, tvAddCart, productCounter) -> {
+        menuAdapter.setAddListener((menuPosition, QtyCount, tvQty, layoutAddOnsClick, tvTotalPrice, tvAddCart, productCounter) -> {
             try {
                 cartObj = new JSONObject(sharedPref.getUserCart());
-                JSONObject locationJson = cartObj.getJSONObject(getResources().getString(R.string.LocationJson));
-                if(!locationJson.has("FlatHouseNo")
-                        || (locationJson.has("FlatHouseNo")
+                Log.d("/*abc_add_clicked","cartObj:"+cartObj.toString());
+//                for(int i=0;i<tempMenu.size();i++)
+//                    Log.d("/*abc_menuarray","menuaaray:"+tempMenu.get(i).getProductName());
+                JSONObject locationJson = cartObj.getJSONObject(getResources().getString(R.string.LocationJson)); //get location json of user location details
+                if(!locationJson.has("FlatHouseNo") || (locationJson.has("FlatHouseNo")
                         && locationJson.getString("FlatHouseNo").isEmpty())){
                     Log.d("/*menu","address empty");
                     Intent intent = new Intent(MenuListActivity.this, AddressListActivity.class);
@@ -1280,13 +1331,15 @@ public class MenuListActivity extends AppCompatActivity{
                 }else {
                     layoutLoader.setVisibility(View.VISIBLE);
                     JSONObject cartJsonObj = cartObj.getJSONObject(getResources().getString(R.string.CartJsonObj));
+
+                    //checking whether cart contains dishes from another chef or category
                     if (!cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray)).toString().equals("[]")
                             && (!cartJsonObj.getString("CategoryId").equals(CategoryId)
                             || !cartJsonObj.getString("DeliveryDate").equals(DeliveryDate)
                             || !cartJsonObj.getString("VendorId").equals(VendorID))) {
                         Log.d("/*menu","another chef/category dishes");
                         AlertDialog.Builder builder = new AlertDialog.Builder(MenuListActivity.this);
-                        builder.setMessage("Your Cart contains dishes from another Chef or Category, \n Are You sure to discard the previous selection and add new dishes from current Chef or Category?")
+                        builder.setMessage("Your Cart contains dishes from another Chef or Category.\nAre You sure to discard the previous selection and add new dishes from current Chef or Category?")
                                 .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
                                 .setPositiveButton("Yes", (dialog, which) -> {
                                     try {
@@ -1308,32 +1361,32 @@ public class MenuListActivity extends AppCompatActivity{
                         AlertDialog dialog = builder.create();
                         dialog.show();
                     } else {
-                        if(!MenuArray.get(menuPosition).getProductImg().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + MenuArray.get(menuPosition).getProductImg()).into(ivMenuImg);
-                            //Log.d("/*menu_menu",URLServices.MenuImg + MenuArray.get(menuPosition).getProductImg()+"");
+                        if(!tempMenu.get(menuPosition).getProductImg().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(menuPosition).getProductImg()).into(ivMenuImg);
+                            //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(menuPosition).getProductImg()+"");
                         }
-                        else if(!MenuArray.get(menuPosition).getProductImgDefault().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + MenuArray.get(menuPosition).getProductImgDefault()).into(ivMenuImg);
-                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + MenuArray.get(menuPosition).getProductImgDefault()+"");
+                        else if(!tempMenu.get(menuPosition).getProductImgDefault().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + tempMenu.get(menuPosition).getProductImgDefault()).into(ivMenuImg);
+                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + tempMenu.get(menuPosition).getProductImgDefault()+"");
                         }
                         else Glide.with(MenuListActivity.this).load(R.drawable.mealarts_icon).into(ivMenuImg);
 
-                        if(MenuArray.get(menuPosition).getVegType().toLowerCase().equals("veg"))
+                        if(tempMenu.get(menuPosition).getVegType().toLowerCase().equals("veg"))
                             Glide.with(MenuListActivity.this).load(R.drawable.veg)
                                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
                         else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                                 .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-                        if(MenuArray.get(menuPosition).getOfferPer() > 0)
+                        if(tempMenu.get(menuPosition).getOfferPer() > 0)
                             tvOfferPer.setVisibility(View.VISIBLE);
                         else tvOfferPer.setVisibility(View.GONE);
 
-                        tvOfferPer.setText(MenuArray.get(menuPosition).getOfferPer()+"%");
-                        tvPrepTime.setText(MenuArray.get(menuPosition).getMenuPrepTime()+" min");
-                        tvMenuOrgPrice.setText("₹ "+MenuArray.get(menuPosition).getOriginalPrice());
-                        tvMenuPrice.setText("₹ "+MenuArray.get(menuPosition).getSellingPrice());
-                        tvMenuName.setText(MenuArray.get(menuPosition).getProductName().trim());
-                        tvDescription.setText(MenuArray.get(menuPosition).getMenuDesc());
+                        tvOfferPer.setText(tempMenu.get(menuPosition).getOfferPer()+"%");
+                        tvPrepTime.setText(tempMenu.get(menuPosition).getMenuPrepTime()+" min");
+                        tvMenuOrgPrice.setText("₹ "+tempMenu.get(menuPosition).getOriginalPrice());
+                        tvMenuPrice.setText("₹ "+tempMenu.get(menuPosition).getSellingPrice());
+                        tvMenuName.setText(tempMenu.get(menuPosition).getProductName().trim());
+                        tvDescription.setText(tempMenu.get(menuPosition).getMenuDesc());
 
                         //tvDecQty, tvIncQty, tvContinueAddOns;
 
@@ -1349,68 +1402,70 @@ public class MenuListActivity extends AppCompatActivity{
 
                         QtyCount = 0;
                         QtyCount++;
+                        Log.d("/*abc_Menulist","QtyCount:"+QtyCount);
                         tvQty.setText(String.valueOf(QtyCount));
                         tvMenuQty.setText(String.valueOf(QtyCount));
-                        tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(menuPosition).getSellingPrice())));
+                        tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(menuPosition).getSellingPrice())));
                         layoutAddOnsClick.setVisibility(View.VISIBLE);
-                        tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(menuPosition).getSellingPrice())));
+                        tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(menuPosition).getSellingPrice())));
                         tvMenuTotalPrice.setVisibility(View.VISIBLE);
                         tvAddCart.setVisibility(View.GONE);
                         productCounter.setVisibility(View.VISIBLE);
 
                         JSONArray cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
                         JSONObject cartItemObj = new JSONObject();
-                        cartItemObj.put("VendorName", MenuArray.get(menuPosition).getVendorName());
-                        cartItemObj.put("MenuId", MenuArray.get(menuPosition).getMenuId());
-                        cartItemObj.put("ProductId", MenuArray.get(menuPosition).getProductId());
-                        cartItemObj.put("ProductName", MenuArray.get(menuPosition).getProductName());
-                        cartItemObj.put("SellingPrice", MenuArray.get(menuPosition).getSellingPrice());
-                        cartItemObj.put("OfferPer", MenuArray.get(menuPosition).getOfferPer());
-                        cartItemObj.put("Unit", MenuArray.get(menuPosition).getUnit());
+                        cartItemObj.put("VendorName", tempMenu.get(menuPosition).getVendorName());
+                        cartItemObj.put("MenuId", tempMenu.get(menuPosition).getMenuId());
+                        cartItemObj.put("ProductId", tempMenu.get(menuPosition).getProductId());
+                        cartItemObj.put("ProductName", tempMenu.get(menuPosition).getProductName());
+                        Log.d("/*abc_add_clicked","product name:"+tempMenu.get(menuPosition).getProductName());
+                        cartItemObj.put("SellingPrice", tempMenu.get(menuPosition).getSellingPrice());
+                        cartItemObj.put("OfferPer", tempMenu.get(menuPosition).getOfferPer());
+                        cartItemObj.put("Unit", tempMenu.get(menuPosition).getUnit());
 
-                        //Log.d("/*menulist","img: "+MenuArray.get(menuPosition).getProductImg()+", "+MenuArray.get(menuPosition).getProductImgDefault());
-                        if(MenuArray.get(menuPosition).getProductImg().isEmpty()){
+                        //Log.d("/*menulist","img: "+tempMenu.get(menuPosition).getProductImg()+", "+tempMenu.get(menuPosition).getProductImgDefault());
+                        if(tempMenu.get(menuPosition).getProductImg().isEmpty()){
                             //Log.d("/*menu","null");
-                            cartItemObj.put("ProductImg", MenuArray.get(menuPosition).getProductImgDefault());
+                            cartItemObj.put("ProductImg", tempMenu.get(menuPosition).getProductImgDefault());
                         }
                         else {
-                            cartItemObj.put("ProductImg", MenuArray.get(menuPosition).getProductImg());
+                            cartItemObj.put("ProductImg", tempMenu.get(menuPosition).getProductImg());
                         }
 
-                        cartItemObj.put("VegType", MenuArray.get(menuPosition).getVegType());
-                        cartItemObj.put("ProdIngredients", MenuArray.get(menuPosition).getProdIngredients());
+                        cartItemObj.put("VegType", tempMenu.get(menuPosition).getVegType());
+                        cartItemObj.put("ProdIngredients", tempMenu.get(menuPosition).getProdIngredients());
                         cartItemObj.put("Quantity", QtyCount);
-                        cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(MenuArray.get(menuPosition).getSellingPrice()) * QtyCount));
+                        cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(tempMenu.get(menuPosition).getSellingPrice()) * QtyCount));
                         //hgd
 //                        cartItemObj.put("isgst",isGST);
 //                        cartItemObj.put("gstp",gstPercent);
-                        cartItemObj.put("isgst",MenuArray.get(menuPosition).getIsGST());
-                        cartItemObj.put("gstp",MenuArray.get(menuPosition).getGST_Perc());
-                        if(MenuArray.get(menuPosition).getIsGST().equals("yes"))
-                            cartItemObj.put("gst_amt",(Math.round(Integer.parseInt(MenuArray.get(menuPosition).getSellingPrice()) * QtyCount))*Float.parseFloat(MenuArray.get(menuPosition).getGST_Perc())/100);
+                        cartItemObj.put("isgst",tempMenu.get(menuPosition).getIsGST());
+                        cartItemObj.put("gstp",tempMenu.get(menuPosition).getGST_Perc());
+                        if(tempMenu.get(menuPosition).getIsGST().equals("yes"))
+                            cartItemObj.put("gst_amt",(Math.round(Integer.parseInt(tempMenu.get(menuPosition).getSellingPrice()) * QtyCount))*Float.parseFloat(tempMenu.get(menuPosition).getGST_Perc())/100);
                         else
                             cartItemObj.put("gst_amt",0);
 
-                        cartItemObj.put("p_charge",Math.round(Float.parseFloat(MenuArray.get(menuPosition).getPack_charge()) * QtyCount));
+                        cartItemObj.put("p_charge",Math.round(Float.parseFloat(tempMenu.get(menuPosition).getPack_charge()) * QtyCount));
 
                         cartItemObj.put(getResources().getString(R.string.AddOnsJsonArray), new JSONArray());
                         cartArray.put(cartItemObj);
                         sharedPref.setUserCart(cartObj.toString());
                         bottomMenuAdapter.notifyDataSetChanged();
                         Log.e("Cart_menulistactivity", sharedPref.getUserCart() + "_");
-                        tvMenuTotal.setText(QtyCount + " Items " +"₹ " + Math.round(Integer.parseInt(MenuArray.get(menuPosition).getSellingPrice()) * QtyCount) +"/-");
+                       // tvMenuTotal.setText(QtyCount + " Menu, Items " +"₹ " + Math.round(Integer.parseInt(tempMenu.get(menuPosition).getSellingPrice()) * QtyCount) +"/-");
 
-                        if(MenuArray.get(menuPosition).getAddOns()) {
+                        if(tempMenu.get(menuPosition).getAddOns()) {
                             Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
                             layoutAddOnsClick.setAnimation(slide_up);
                             layoutAddOnsClick.setVisibility(View.VISIBLE);
-                            addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, MenuArray.get(menuPosition).getAddOnsList(), "List");
+                            addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(menuPosition).getAddOnsList(), "List");
                             rcAddOns.setAdapter(addOnsMenuAdapter);
-                            AddOnsList = MenuArray.get(menuPosition).getAddOnsList();
+                            AddOnsList = tempMenu.get(menuPosition).getAddOnsList();
                             addOnsAdapterListener(addOnsMenuAdapter);
                         }
                         setCartTotal();
-                        setAddOnsTempTotal();
+                       // setAddOnsTempTotal();
                     }
                     layoutLoader.setVisibility(View.GONE);
                 }
@@ -1421,160 +1476,163 @@ public class MenuListActivity extends AppCompatActivity{
         });
 
         menuAdapter.setIncListener((position, QtyCount, tvQty, layoutAddOnsClick, tvTotalPrice, tvAddCart, productCounter) -> {
+            Log.d("/*abc_menulistactivity","menuadp inc ");
             try {
                 JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
                 JSONArray cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
                 for(int i = 0 ; i < cartArray.length() ; i++){
                     JSONObject cartItemObj = cartArray.getJSONObject(i);
                     QtyCount = cartItemObj.getInt("Quantity");
-                    if(cartItemObj.getString("ProductId").equals(MenuArray.get(position).getProductId())){
-                        if(!MenuArray.get(position).getProductImg().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + MenuArray.get(position).getProductImg()).into(ivMenuImg);
-                            //Log.d("/*menu_menu",URLServices.MenuImg + MenuArray.get(position).getProductImg()+"");
+                    if(cartItemObj.getString("ProductId").equals(tempMenu.get(position).getProductId())){
+                        if(!tempMenu.get(position).getProductImg().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(position).getProductImg()).into(ivMenuImg);
+                            //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
                         }
-                        else if(!MenuArray.get(position).getProductImgDefault().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()).into(ivMenuImg);
-                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()+"");
+                        else if(!tempMenu.get(position).getProductImgDefault().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()).into(ivMenuImg);
+                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()+"");
                         }
                         else Glide.with(MenuListActivity.this).load(R.drawable.mealarts_icon).into(ivMenuImg);
 
-                        if(MenuArray.get(position).getVegType().toLowerCase().equals("veg"))
+                        if(tempMenu.get(position).getVegType().toLowerCase().equals("veg"))
                             Glide.with(MenuListActivity.this).load(R.drawable.veg)
                                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
                         else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                                 .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-                        if(MenuArray.get(position).getOfferPer() > 0)
+                        if(tempMenu.get(position).getOfferPer() > 0)
                             tvOfferPer.setVisibility(View.VISIBLE);
                         else tvOfferPer.setVisibility(View.GONE);
 
-                        tvOfferPer.setText(MenuArray.get(position).getOfferPer()+"%");
-                        tvPrepTime.setText(MenuArray.get(position).getMenuPrepTime()+" min");
-                        tvMenuOrgPrice.setText("₹ "+MenuArray.get(position).getOriginalPrice());
-                        tvMenuPrice.setText("₹ "+MenuArray.get(position).getSellingPrice());
-                        tvMenuName.setText(MenuArray.get(position).getProductName().trim());
-                        tvDescription.setText(MenuArray.get(position).getMenuDesc());
+                        tvOfferPer.setText(tempMenu.get(position).getOfferPer()+"%");
+                        tvPrepTime.setText(tempMenu.get(position).getMenuPrepTime()+" min");
+                        tvMenuOrgPrice.setText("₹ "+tempMenu.get(position).getOriginalPrice());
+                        tvMenuPrice.setText("₹ "+tempMenu.get(position).getSellingPrice());
+                        tvMenuName.setText(tempMenu.get(position).getProductName().trim());
+                        tvDescription.setText(tempMenu.get(position).getMenuDesc());
 
                         QtyCount ++;
                         cartItemObj.put("Quantity", QtyCount);
-                        cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(MenuArray.get(position).getSellingPrice())
+                        cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(tempMenu.get(position).getSellingPrice())
                                 * QtyCount));
 //                        //hgd
-                        if(MenuArray.get(position).getIsGST().equals("yes")) {
-                            cartItemObj.put("gst_amt", (Math.round(Integer.parseInt(MenuArray.get(position).getSellingPrice()) * QtyCount)) * Float.parseFloat(MenuArray.get(position).getGST_Perc()) / 100);
-                            Log.d("/*ma",""+(Math.round(Integer.parseInt(MenuArray.get(position).getSellingPrice())
-                                    * QtyCount)) * Float.parseFloat(MenuArray.get(position).getGST_Perc()) / 100);
+                        if(tempMenu.get(position).getIsGST().equals("yes")) {
+                            cartItemObj.put("gst_amt", (Math.round(Integer.parseInt(tempMenu.get(position).getSellingPrice()) * QtyCount)) * Float.parseFloat(tempMenu.get(position).getGST_Perc()) / 100);
+                            Log.d("/*ma",""+(Math.round(Integer.parseInt(tempMenu.get(position).getSellingPrice())
+                                    * QtyCount)) * Float.parseFloat(tempMenu.get(position).getGST_Perc()) / 100);
                         }
                         else
                             cartItemObj.put("gst_amt",0);
 
                         //15novhgd
-                        cartItemObj.put("p_charge",Math.round(Integer.parseInt(MenuArray.get(position).getPack_charge()) * QtyCount));
+                        cartItemObj.put("p_charge",Math.round(Integer.parseInt(tempMenu.get(position).getPack_charge()) * QtyCount));
 //                        if(cartItemObj.getString("isgst").equals("yes"))
 //                            gstTotal+=Float.parseFloat(cartItemObj.getString("QtyPrice"))*(Float.parseFloat(cartItemObj.getString("gstp"))/100);
-                        //cartItemObj.put("gst",Math.round((Integer.parseInt(MenuArray.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(MenuArray.get(position).getGST_Perc())/100)));
-//                        Log.d("/*ma_gst",QtyCount+", "+MenuArray.get(position).getGST_Perc()+", "
-//                                + Math.round((Integer.parseInt(MenuArray.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(MenuArray.get(position).getGST_Perc())/100)));
+                        //cartItemObj.put("gst",Math.round((Integer.parseInt(tempMenu.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(tempMenu.get(position).getGST_Perc())/100)));
+//                        Log.d("/*ma_gst",QtyCount+", "+tempMenu.get(position).getGST_Perc()+", "
+//                                + Math.round((Integer.parseInt(tempMenu.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(tempMenu.get(position).getGST_Perc())/100)));
                         //cartArray.put(cartItemObj);
                         tvQty.setText(String.valueOf(QtyCount));
                         tvMenuQty.setText(String.valueOf(QtyCount));
-                        tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(position).getSellingPrice())));
-                        tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(position).getSellingPrice())));
+                        tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(position).getSellingPrice())));
+                        tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(position).getSellingPrice())));
                         layoutAddOnsClick.setVisibility(View.VISIBLE);
                         bottomMenuAdapter.notifyDataSetChanged();
                         menuAdapter.notifyDataSetChanged();
 
                         //cartObj.put(context.getResources().getString(R.string.CartJsonArray),cartArray);
                         sharedPref.setUserCart(cartObj.toString());
-                        if(MenuArray.get(position).getAddOns() && layoutAddOns.getVisibility() == View.GONE) {
+                        if(tempMenu.get(position).getAddOns() && layoutAddOns.getVisibility() == View.GONE) {
                             /*Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
                             layoutAddOns.setAnimation(slide_up);
                             layoutAddOns.setVisibility(View.VISIBLE);*/
-                            addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, MenuArray.get(position).getAddOnsList(), "List");
+                            addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(position).getAddOnsList(), "List");
                             rcAddOns.setAdapter(addOnsMenuAdapter);
-                            AddOnsList = MenuArray.get(position).getAddOnsList();
+                            AddOnsList = tempMenu.get(position).getAddOnsList();
                             addOnsAdapterListener(addOnsMenuAdapter);
                         }
                         //Log.e("Cart_madp2", sharedPref.getUserCart()+"_");
                     }
-                    Log.e("Ids", cartItemObj.getString("ProductId")+"_"+(MenuArray.get(position).getProductId())+"_"+position);
+                    Log.e("Ids", cartItemObj.getString("ProductId")+"_"+(tempMenu.get(position).getProductId())+"_"+position);
                 }
                 setCartTotal();
-                setAddOnsTempTotal();
+               // setAddOnsTempTotal();
             } catch (JSONException e) {
+                Log.d("/*abc","inc:"+e.toString());
                 e.printStackTrace();
             }
         });
 
         menuAdapter.setDecListener((position, QtyCount, tvQty, layoutAddOnsClick, tvTotalPrice, tvAddCart, productCounter) -> {
+            Log.d("/*abc_menulistactivity","menuadp dec");
             try {
                 JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
                 JSONArray cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
                 for (int i = 0; i < cartArray.length(); i++) {
                     JSONObject cartItemObj = cartArray.getJSONObject(i);
                     QtyCount = cartItemObj.getInt("Quantity");
-                    if (cartItemObj.getString("ProductId").equals(MenuArray.get(position).getProductId())) {
-                        if(!MenuArray.get(position).getProductImg().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + MenuArray.get(position).getProductImg()).into(ivMenuImg);
-                            //Log.d("/*menu_menu",URLServices.MenuImg + MenuArray.get(position).getProductImg()+"");
+                    if (cartItemObj.getString("ProductId").equals(tempMenu.get(position).getProductId())) {
+                        if(!tempMenu.get(position).getProductImg().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(position).getProductImg()).into(ivMenuImg);
+                            //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
                         }
-                        else if(!MenuArray.get(position).getProductImgDefault().isEmpty()) {
-                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()).into(ivMenuImg);
-                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()+"");
+                        else if(!tempMenu.get(position).getProductImgDefault().isEmpty()) {
+                            Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()).into(ivMenuImg);
+                            //Log.d("/*menu_products",URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()+"");
                         }
                         else Glide.with(MenuListActivity.this).load(R.drawable.mealarts_icon).into(ivMenuImg);
 
-                        if(MenuArray.get(position).getVegType().toLowerCase().equals("veg"))
+                        if(tempMenu.get(position).getVegType().toLowerCase().equals("veg"))
                             Glide.with(MenuListActivity.this).load(R.drawable.veg)
                                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
                         else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                                 .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-                        if(MenuArray.get(position).getOfferPer() > 0)
+                        if(tempMenu.get(position).getOfferPer() > 0)
                             tvOfferPer.setVisibility(View.VISIBLE);
                         else tvOfferPer.setVisibility(View.GONE);
 
-                        tvOfferPer.setText(MenuArray.get(position).getOfferPer()+"%");
-                        tvPrepTime.setText(MenuArray.get(position).getMenuPrepTime()+" min");
-                        tvMenuOrgPrice.setText("₹ "+MenuArray.get(position).getOriginalPrice());
-                        tvMenuPrice.setText("₹ "+MenuArray.get(position).getSellingPrice());
-                        tvMenuName.setText(MenuArray.get(position).getProductName().trim());
-                        tvDescription.setText(MenuArray.get(position).getMenuDesc());
+                        tvOfferPer.setText(tempMenu.get(position).getOfferPer()+"%");
+                        tvPrepTime.setText(tempMenu.get(position).getMenuPrepTime()+" min");
+                        tvMenuOrgPrice.setText("₹ "+tempMenu.get(position).getOriginalPrice());
+                        tvMenuPrice.setText("₹ "+tempMenu.get(position).getSellingPrice());
+                        tvMenuName.setText(tempMenu.get(position).getProductName().trim());
+                        tvDescription.setText(tempMenu.get(position).getMenuDesc());
                         if (QtyCount > 0) {
                             QtyCount--;
                             tvQty.setText(String.valueOf(QtyCount));
                             tvMenuQty.setText(String.valueOf(QtyCount));
-                            tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(position).getSellingPrice())));
-                            tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(MenuArray.get(position).getSellingPrice())));
+                            tvTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(position).getSellingPrice())));
+                            tvMenuTotalPrice.setText("₹ " + Math.round(QtyCount * Integer.parseInt(tempMenu.get(position).getSellingPrice())));
                             if (QtyCount > 0) {
                                 cartItemObj.put("Quantity", QtyCount);
-                                cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(MenuArray.get(position).getSellingPrice()) * QtyCount));
+                                cartItemObj.put("QtyPrice", Math.round(Integer.parseInt(tempMenu.get(position).getSellingPrice()) * QtyCount));
                                 //hgd
-                                if(MenuArray.get(position).getIsGST().equals("yes"))
-                                    cartItemObj.put("gst_amt",(Math.round(Integer.parseInt(MenuArray.get(position).getSellingPrice()) * QtyCount))*Float.parseFloat(MenuArray.get(position).getGST_Perc())/100);
+                                if(tempMenu.get(position).getIsGST().equals("yes"))
+                                    cartItemObj.put("gst_amt",(Math.round(Integer.parseInt(tempMenu.get(position).getSellingPrice()) * QtyCount))*Float.parseFloat(tempMenu.get(position).getGST_Perc())/100);
                                 else
                                     cartItemObj.put("gst_amt",0);
 
                                 //15novhgd
-                                cartItemObj.put("p_charge",Math.round(Integer.parseInt(MenuArray.get(position).getPack_charge()) * QtyCount));
+                                cartItemObj.put("p_charge",Math.round(Integer.parseInt(tempMenu.get(position).getPack_charge()) * QtyCount));
 
 //                                    if(cartItemObj.getString("isgst").equals("yes"))
 //                                        gstTotal+=Float.parseFloat(cartItemObj.getString("QtyPrice"))*(Float.parseFloat(cartItemObj.getString("gstp"))/100);
-                                // cartItemObj.put("gst",Math.round((Integer.parseInt(MenuArray.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(MenuArray.get(position).getGST_Perc())/100)));
-//                                    Log.d("/*ma_gst",QtyCount+", "+MenuArray.get(position).getGST_Perc()+", "
-//                                                  + Math.round((Integer.parseInt(MenuArray.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(MenuArray.get(position).getGST_Perc())/100)));
+                                // cartItemObj.put("gst",Math.round((Integer.parseInt(tempMenu.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(tempMenu.get(position).getGST_Perc())/100)));
+//                                    Log.d("/*ma_gst",QtyCount+", "+tempMenu.get(position).getGST_Perc()+", "
+//                                                  + Math.round((Integer.parseInt(tempMenu.get(position).getSellingPrice())*QtyCount)*(Float.parseFloat(tempMenu.get(position).getGST_Perc())/100)));
                                 //cartArray.put(cartItemObj);
 
                                 layoutAddOnsClick.setVisibility(View.VISIBLE);
                                 tvAddCart.setVisibility(View.GONE);
                                 productCounter.setVisibility(View.VISIBLE);
-                                if(MenuArray.get(position).getAddOns() && layoutAddOns.getVisibility() == View.GONE) {
+                                if(tempMenu.get(position).getAddOns() && layoutAddOns.getVisibility() == View.GONE) {
                                    /* Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
                                     layoutAddOns.setAnimation(slide_up);
                                     layoutAddOns.setVisibility(View.VISIBLE);*/
-                                    addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, MenuArray.get(position).getAddOnsList(), "List");
+                                    addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(position).getAddOnsList(), "List");
                                     rcAddOns.setAdapter(addOnsMenuAdapter);
-                                    AddOnsList = MenuArray.get(position).getAddOnsList();
+                                    AddOnsList = tempMenu.get(position).getAddOnsList();
                                     addOnsAdapterListener(addOnsMenuAdapter);
                                 }
                             } else {
@@ -1595,7 +1653,7 @@ public class MenuListActivity extends AppCompatActivity{
                                         }
                                     }
                                     for (int n = 0; n < result.size(); n++) {
-                                        if (result.get(n).getString("ProductId").equals(MenuArray.get(position).getProductId())) {
+                                        if (result.get(n).getString("ProductId").equals(tempMenu.get(position).getProductId())) {
                                             result.remove(n);
                                             customToast.showCustomToast(MenuListActivity.this, "Removed from cart successfully !");
                                         }
@@ -1605,7 +1663,7 @@ public class MenuListActivity extends AppCompatActivity{
                                     }
                                 }
 
-                                if(MenuArray.get(position).getAddOns()) {
+                                if(tempMenu.get(position).getAddOns()) {
                                     try {
                                         JSONArray addOnsTempArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
                                         final ArrayList<JSONObject> addOnsTempResult = new ArrayList<>(addOnsTempArray.length());
@@ -1644,7 +1702,7 @@ public class MenuListActivity extends AppCompatActivity{
                                     }
                                 }
                                 //cartObj.put(context.getResources().getString(R.string.CartJsonArray),cartArray);
-                                if(MenuArray.get(position).getAddOns() && layoutAddOns.getVisibility() == View.VISIBLE) {
+                                if(tempMenu.get(position).getAddOns() && layoutAddOns.getVisibility() == View.VISIBLE) {
                                     Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
                                     layoutAddOns.setAnimation(slide_down);
                                     layoutAddOns.setVisibility(View.GONE);
@@ -1657,68 +1715,111 @@ public class MenuListActivity extends AppCompatActivity{
                             menuAdapter.notifyDataSetChanged();
                         }
                     }
-                    Log.e("Ids", cartItemObj.getString("ProductId")+"_"+(MenuArray.get(position).getProductId()));
+                    Log.e("Ids", cartItemObj.getString("ProductId")+"_"+(tempMenu.get(position).getProductId()));
                 }
                 setCartTotal();
-                setAddOnsTempTotal();
+               // setAddOnsTempTotal();
             } catch (JSONException e) {
+                Log.d("/*abc","dec:"+e.toString());
                 e.printStackTrace();
             }
         });
 
         menuAdapter.showAddOnsListener((position, hasAddOns, AddOnsArray) -> {
-
-            if(!MenuArray.get(position).getProductImg().isEmpty()) {
-                Glide.with(MenuListActivity.this).load(URLServices.MenuImg + MenuArray.get(position).getProductImg()).into(ivMenuImg);
-                //Log.d("/*menu_menu",URLServices.MenuImg + MenuArray.get(position).getProductImg()+"");
+            Log.d("/*abc_menulistactivity","addons add clicked "+position);
+            if(!tempMenu.get(position).getProductImg().isEmpty()) {
+                Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(position).getProductImg()).into(ivMenuImg);
+                //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
             }
-            else if(!MenuArray.get(position).getProductImgDefault().isEmpty()) {
-                Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()).into(ivMenuImg);
-                //Log.d("/*menu_products",URLServices.MenuDefaultImg + MenuArray.get(position).getProductImgDefault()+"");
+            else if(!tempMenu.get(position).getProductImgDefault().isEmpty()) {
+                Glide.with(MenuListActivity.this).load(URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()).into(ivMenuImg);
+                //Log.d("/*menu_products",URLServices.MenuDefaultImg + tempMenu.get(position).getProductImgDefault()+"");
             }
             else Glide.with(MenuListActivity.this).load(R.drawable.mealarts_icon).into(ivMenuImg);
 
-            if(MenuArray.get(position).getVegType().toLowerCase().equals("veg"))
+            if(tempMenu.get(position).getVegType().toLowerCase().equals("veg"))
                 Glide.with(MenuListActivity.this).load(R.drawable.veg)
                         .placeholder(R.drawable.mealarts_loader).into(ivVegType);
             else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-            if(MenuArray.get(position).getOfferPer() > 0)
+            if(tempMenu.get(position).getOfferPer() > 0)
                 tvOfferPer.setVisibility(View.VISIBLE);
             else tvOfferPer.setVisibility(View.GONE);
 
-            tvOfferPer.setText(MenuArray.get(position).getOfferPer()+"%");
-            tvPrepTime.setText(MenuArray.get(position).getMenuPrepTime()+" min");
-            tvMenuOrgPrice.setText("₹ "+MenuArray.get(position).getOriginalPrice());
-            tvMenuPrice.setText("₹ "+MenuArray.get(position).getSellingPrice());
-            tvMenuName.setText(MenuArray.get(position).getProductName().trim());
-            tvDescription.setText(MenuArray.get(position).getMenuDesc());
+            tvOfferPer.setText(tempMenu.get(position).getOfferPer()+"%");
+            tvPrepTime.setText(tempMenu.get(position).getMenuPrepTime()+" min");
+            tvMenuOrgPrice.setText("₹ "+tempMenu.get(position).getOriginalPrice());
+            tvMenuPrice.setText("₹ "+tempMenu.get(position).getSellingPrice());
+            tvMenuName.setText(tempMenu.get(position).getProductName().trim());
+            tvDescription.setText(tempMenu.get(position).getMenuDesc());
 
             if(hasAddOns) {
+//                tvMenuQty.setText(tempMenu.get(position).getQty());
+                addonClicked=true;
                 Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
                 layoutAddOns.setAnimation(slide_up);
                 layoutAddOns.setVisibility(View.VISIBLE);
                 AddOnsMenuAdapter addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, AddOnsArray, "List");
                 rcAddOns.setAdapter(addOnsMenuAdapter);
                 addOnsAdapterListener(addOnsMenuAdapter);
+                try {
+                    setCartTotal();
+                }
+                catch (Exception e){
+                    Log.d("/*abc_menulistactivity","setCartTotal e:"+e.toString());
+                }
             }
         });
     }
 
     public void addOnsAdapterListener(AddOnsMenuAdapter addOnsMenuAdapter){
-
+        Log.d("/*abc_menulistactivity","add ons adapter");
         addOnsMenuAdapter.setListener((position, QtyCount, MenuAddOnsList, tvQty, tvTotalPrice, tvAddCart, productCounter) -> {
             int TotalPrice;
             QtyCount = 0;
             try {
                 cartObj = new JSONObject(sharedPref.getUserCart());
-                JSONArray addOnsArray;
-                if(!cartObj.has(getResources().getString(R.string.AddOnsJsonArray))){
-                    addOnsArray = new JSONArray();
-                    cartObj.put(getResources().getString(R.string.AddOnsJsonArray), addOnsArray);
-                }else
-                    addOnsArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
+                JSONArray cartJsonArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
+//                JSONArray addOnsArray;
+//                if(!cartObj.has(getResources().getString(R.string.AddOnsJsonArray))){
+//                    addOnsArray = new JSONArray();
+//                    cartObj.put(getResources().getString(R.string.AddOnsJsonArray), addOnsArray);
+//                }else
+//                    addOnsArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
+
+                for(int l = 0 ; l < cartJsonArray.length(); l++){
+                    JSONObject addOnsObj = cartJsonArray.getJSONObject(l);
+                    if(addOnsObj.getString("MenuId").equals(MenuAddOnsList.get(position).getString("MenuId"))){
+                        JSONArray menuAddonArray=addOnsObj.getJSONArray("AddOnsJsonArray");
+//                        if(menuAddonArray.length()==0){
+                            menuAddonArray.put(MenuAddOnsList.get(position));
+                            Log.d("/*abc_menulistactivity",""+menuAddonArray.getJSONObject(0));
+//                        }
+//                        else{
+//                            for(int b=0;b<menuAddonArray.length();b++){
+//                                JSONObject menuAddonArrayObj=menuAddonArray.getJSONObject(b);
+//                                Log.d("/*abc_menulistactivity","adon"+menuAddonArrayObj.get("addon_id"));
+//                            }
+//                        }
+
+
+//                        QtyCount = addOnsObj.getInt("Quantity");
+//                        Log.d("/*abc_menulistactivity","inc:"+QtyCount);
+//                        QtyCount++;
+//                        tvQty.setText(String.valueOf(QtyCount));
+////                        TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
+////                        tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
+////                        addOnsObj.put("TotalPackAmt", addOnsObj.getDouble("addon_pack_charge") * QtyCount);
+////                        addOnsObj.put("Quantity", QtyCount);
+////                        addOnsObj.put("QtyPrice", TotalPrice);
+//                        sharedPref.setUserCart(String.valueOf(cartObj));
+//                        Log.e("/*abc_Cart_Inc", sharedPref.getUserCart());
+//                        Log.d("/*abc_Cart", cartJsonArray.toString());
+//
+//                        layoutLoader.setVisibility(View.GONE);
+                    }
+                }
 
                 QtyCount ++;
                 tvQty.setText(String.valueOf(QtyCount));
@@ -1728,105 +1829,188 @@ public class MenuListActivity extends AppCompatActivity{
                 MenuAddOnsList.get(position).put("TotalPackAmt", MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
                 MenuAddOnsList.get(position).put("Quantity", QtyCount);
                 MenuAddOnsList.get(position).put("QtyPrice", TotalPrice);
-                addOnsArray.put(MenuAddOnsList.get(position));
+                //addOnsArray.put(MenuAddOnsList.get(position));
                 tvAddCart.setVisibility(View.GONE);
                 productCounter.setVisibility(View.VISIBLE);
                 sharedPref.setUserCart(String.valueOf(cartObj));
-                Log.e("Cart_Add", sharedPref.getUserCart());
-
+                Log.e("/*abc_Cart_Add", sharedPref.getUserCart());
                 layoutLoader.setVisibility(View.GONE);
-
-                setAddOnsTempTotal();
+                addOnsMenuAdapter.notifyDataSetChanged();
+               //setAddOnsTempTotal();
+                setCartTotal();
             }catch (JSONException e){
-                Log.d("/*menu",""+e.toString());
+                Log.d("/*abc_menulistactivity","add catch:"+e.toString());
                 e.printStackTrace();
             }
         });
 
         addOnsMenuAdapter.setIncListener((position, QtyCount, MenuAddOnsList, tvQty, tvTotalPrice, tvAddCart, productCounter) -> {
+            Log.d("/*abc_menulistactivity","addons inc listener");
             int TotalPrice;
+            for(int a=0;a<MenuAddOnsList.size();a++)
+                Log.d("/*abc_menulistactivity","position: "+position+", "+MenuAddOnsList.get(a).toString());
             try{
                 JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
-                JSONArray addOnsArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
-                for(int l = 0 ; l < addOnsArray.length(); l++){
-                    JSONObject addOnsObj = addOnsArray.getJSONObject(l);
-                    if(addOnsObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
-                        QtyCount = addOnsObj.getInt("Quantity");
-                        QtyCount++;
-                        tvQty.setText(String.valueOf(QtyCount));
-                        TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
-                        tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
-                        addOnsObj.put("TotalPackAmt", addOnsObj.getDouble("addon_pack_charge") * QtyCount);
-                        addOnsObj.put("Quantity", QtyCount);
-                        addOnsObj.put("QtyPrice", TotalPrice);
-                        sharedPref.setUserCart(String.valueOf(cartObj));
-                        Log.e("Cart_Add", sharedPref.getUserCart());
+//                JSONArray addOnsArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
+                JSONArray cartJsonArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
+                for(int l = 0 ; l < cartJsonArray.length(); l++) {
+                    JSONObject addOnsObj = cartJsonArray.getJSONObject(l);
+                    if (addOnsObj.getString("MenuId").equals(MenuAddOnsList.get(position).getString("MenuId"))) {
+//                        QtyCount = MenuAddOnsList.get(position).getInt("Quantity");
+                        JSONArray menuAddonArray = addOnsObj.getJSONArray("AddOnsJsonArray");
+                        for(int c=0;c<menuAddonArray.length();c++){
+                            JSONObject addonObj=menuAddonArray.getJSONObject(c);
+                            if(addonObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
+//                                QtyCount = MenuAddOnsList.get(position).getInt("Quantity");
+                                QtyCount = addonObj.getInt("Quantity");
+                            }
+                        }
 
-                        layoutLoader.setVisibility(View.GONE);
+
+
+                        QtyCount++;
+                        TotalPrice = MenuAddOnsList.get(position).getInt("sell_price") * QtyCount;
+                        tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
+                        tvQty.setText(String.valueOf(QtyCount));
+                        MenuAddOnsList.get(position).put("TotalPackAmt", MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
+                        MenuAddOnsList.get(position).put("Quantity", QtyCount);
+                        MenuAddOnsList.get(position).put("QtyPrice", TotalPrice);
+
+                        for(int c=0;c<menuAddonArray.length();c++){
+                            JSONObject addonObj=menuAddonArray.getJSONObject(c);
+                            if(addonObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
+                                addonObj.put("TotalPackAmt",MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
+                                addonObj.put("Quantity",QtyCount);
+                                addonObj.put("QtyPrice",TotalPrice);
+                            }
+                        }
+
+                        Log.d("/*abc_menulistactivity","inc: TotPrice:"+MenuAddOnsList.get(position).get("QtyPrice"));
+                        Log.d("/*abc_menulistactivity","inc: Qty:"+QtyCount+", totalprice:"+TotalPrice+", totalpackamt:"+(MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount));
+//                        if (menuAddonArray.length() == 0) {
+//                            menuAddonArray.put(MenuAddOnsList.get(position));
+//                            Log.d("/*abc_menulistactivity", "" + menuAddonArray.getJSONObject(0));
+//                        } else {
+//                            for (int b = 0; b < menuAddonArray.length(); b++) {
+//                                JSONObject menuAddonArrayObj = menuAddonArray.getJSONObject(b);
+//                                Log.d("/*abc_menulistactivity", "adon" + menuAddonArrayObj.get("addon_id"));
+//                            }
+//                        }
                     }
                 }
-                setAddOnsTempTotal();
+
+//                QtyCount = addOnsObj.getInt("Quantity");
+
+
+//                        TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
+//                        tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
+//                        addOnsObj.put("TotalPackAmt", addOnsObj.getDouble("addon_pack_charge") * QtyCount);
+//                        addOnsObj.put("Quantity", QtyCount);
+//                        addOnsObj.put("QtyPrice", TotalPrice);
+                        sharedPref.setUserCart(String.valueOf(cartObj));
+                        Log.e("/*abc_Cart_Inc", sharedPref.getUserCart());
+
+                        layoutLoader.setVisibility(View.GONE);
+                addOnsMenuAdapter.notifyDataSetChanged();
+                //setAddOnsTempTotal();
+                setCartTotal();
             }catch (JSONException e){
+                Log.d("/*abc_menulistactivity","inc catch:"+e.toString());
                 e.printStackTrace();
             }
         });
 
         addOnsMenuAdapter.setDecListener((position, QtyCount, MenuAddOnsList, tvQty, tvTotalPrice, tvAddCart, productCounter) -> {
+            Log.d("/*abc_menulistactivity","addons dec listener");
             int TotalPrice;
+            for(int a=0;a<MenuAddOnsList.size();a++)
+                Log.d("/*abc_menulistactivity","position: "+position+", "+MenuAddOnsList.get(a).toString());
             try{
                 JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
-                JSONArray addOnsTempArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
-                for(int i = 0 ; i < addOnsTempArray.length(); i++) {
-                    JSONObject addOnsObj = addOnsTempArray.getJSONObject(i);
-                    if (addOnsObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))) {
-                        QtyCount = addOnsObj.getInt("Quantity");
+//                JSONArray addOnsTempArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
+                JSONArray cartJsonArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
+                for(int i = 0 ; i < cartJsonArray.length(); i++) {
+                    JSONObject addOnsObj = cartJsonArray.getJSONObject(i);
+                    if (addOnsObj.getString("MenuId").equals(MenuAddOnsList.get(position).getString("MenuId"))) {
+
+                        JSONArray menuAddonArray = addOnsObj.getJSONArray("AddOnsJsonArray");
+                        for(int c=0;c<menuAddonArray.length();c++){
+                            JSONObject addonObj=menuAddonArray.getJSONObject(c);
+                            if(addonObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
+                                QtyCount = addonObj.getInt("Quantity");
+                            }
+                        }
+                        Log.d("/*abc_menulistactivity","dec:"+QtyCount);
                         if (QtyCount > 0) {
                             QtyCount--;
                             if(QtyCount > 0){
                                 tvQty.setText(String.valueOf(QtyCount));
-                                TotalPrice = addOnsObj.getInt("sell_price") * QtyCount;
+                                TotalPrice = MenuAddOnsList.get(position).getInt("sell_price") * QtyCount;
                                 tvTotalPrice.setText("₹ "+ TotalPrice +"/-");
-                                addOnsObj.put("TotalPackAmt", addOnsObj.getDouble("addon_pack_charge") * QtyCount);
-                                addOnsObj.put("Quantity", QtyCount);
-                                addOnsObj.put("QtyPrice", TotalPrice);
-                            }else {
+//                                addOnsObj.put("TotalPackAmt", addOnsObj.getDouble("addon_pack_charge") * QtyCount);
+//                                addOnsObj.put("Quantity", QtyCount);
+//                                addOnsObj.put("QtyPrice", TotalPrice);
+                                MenuAddOnsList.get(position).put("TotalPackAmt", MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
+                                MenuAddOnsList.get(position).put("Quantity", QtyCount);
+                                MenuAddOnsList.get(position).put("QtyPrice", TotalPrice);
+                                for(int c=0;c<menuAddonArray.length();c++){
+                                    JSONObject addonObj=menuAddonArray.getJSONObject(c);
+                                    if(addonObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
+                                        addonObj.put("TotalPackAmt",MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount);
+                                        addonObj.put("Quantity",QtyCount);
+                                        addonObj.put("QtyPrice",TotalPrice);
+                                    }
+                                }
+                                Log.d("/*abc_menulistactivity","dec: TotPrice:"+MenuAddOnsList.get(position).get("QtyPrice"));
+                                Log.d("/*abc_menulistactivity","dec: Qty:"+QtyCount+", totalprice:"+TotalPrice+", totalpackamt:"+(MenuAddOnsList.get(position).getDouble("addon_pack_charge") * QtyCount));
+                            }else { // qty becomes zero
                                 tvTotalPrice.setVisibility(View.INVISIBLE);
                                 tvAddCart.setVisibility(View.VISIBLE);
                                 productCounter.setVisibility(View.GONE);
 
-                                final ArrayList<JSONObject> result = new ArrayList<>(addOnsTempArray.length());
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                                    addOnsTempArray.remove(i);
-                                    //customToast.showCustomToast(MenuListActivity.this, "Removed successfully !");
-                                } else {
-                                    for (int n = 0; n < result.size(); n++) {
-                                        if (result.get(n).getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))) {
-                                            result.remove(n);
-                                            //customToast.showCustomToast(MenuListActivity.this, "Removed successfully !");
-                                        }
-                                    }
-                                    for (final JSONObject obj : result) {
-                                        addOnsTempArray.put(obj);
+                                for(int c=0;c<menuAddonArray.length();c++){
+                                    JSONObject addonObj=menuAddonArray.getJSONObject(c);
+                                    if(addonObj.getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))){
+                                        menuAddonArray.remove(c);
                                     }
                                 }
+
+//                                final ArrayList<JSONObject> result = new ArrayList<>(addOnsTempArray.length());
+//                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//                                    addOnsTempArray.remove(i);
+//                                    //customToast.showCustomToast(MenuListActivity.this, "Removed successfully !");
+//                                } else {
+//                                    for (int n = 0; n < result.size(); n++) {
+//                                        if (result.get(n).getString("addon_id").equals(MenuAddOnsList.get(position).getString("addon_id"))) {
+//                                            result.remove(n);
+//                                            //customToast.showCustomToast(MenuListActivity.this, "Removed successfully !");
+//                                        }
+//                                    }
+//                                    for (final JSONObject obj : result) {
+//                                        addOnsTempArray.put(obj);
+//                                    }
+//                                }
                             }
                         }
                         break;
                     }
                 }
                 sharedPref.setUserCart(String.valueOf(cartObj));
-                Log.e("Cart_Add", sharedPref.getUserCart());
+                Log.e("/*abc_Cart_dec", sharedPref.getUserCart());
                 addOnsMenuAdapter.notifyDataSetChanged();
 
                 layoutLoader.setVisibility(View.GONE);
 
-                setAddOnsTempTotal();
+                //setAddOnsTempTotal();
+                setCartTotal();
             }catch (JSONException e){
+                Log.d("/*abc_menulistactivity","dec catch:"+e.toString());
                 e.printStackTrace();
             }
         });
 
         tvContinueAddOns.setOnClickListener(v -> {
+            Log.d("/*abc_menulistactivity","Addons add item clicked");
             try {
                 cartObj = new JSONObject(sharedPref.getUserCart());
                 JSONArray cartJsonArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
@@ -1845,14 +2029,14 @@ public class MenuListActivity extends AppCompatActivity{
                 }
                 //cartObj.put(getResources().getString(R.string.AddOnsJsonArray), new JSONArray());
                 sharedPref.setUserCart(String.valueOf(cartObj));
-                Log.e("Cart_Add", sharedPref.getUserCart());
+                Log.e("/*abc_Cart_Add", sharedPref.getUserCart());
 
                 Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
                 layoutAddOns.setAnimation(slide_down);
                 layoutAddOns.setVisibility(View.GONE);
 
                 setCartTotal();
-                setAddOnsTempTotal();
+               // setAddOnsTempTotal();
             }catch (JSONException e){
                 e.printStackTrace();
             }
@@ -1861,7 +2045,9 @@ public class MenuListActivity extends AppCompatActivity{
     }
 
     public void setCartTotal() throws JSONException {
+       // Log.d("/*abc_menulistactivity","setCartTotal");
         float cartTotal = 0, gstTotal=0, PackingCharge=0;
+        int menuItem=0,addOnItem=0,totalItem=0;
         cartObj = new JSONObject(sharedPref.getUserCart());
         JSONObject cartJSONObj = cartObj.getJSONObject(getResources().getString(R.string.CartJsonObj));
         JSONArray cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
@@ -1876,6 +2062,8 @@ public class MenuListActivity extends AppCompatActivity{
         }
         for(int i = 0 ; i < cartArray.length(); i++){
             JSONObject cartItemObjs = cartArray.getJSONObject(i) ;
+            menuItem++;
+            totalItem+=cartItemObjs.getInt("Quantity");
             cartTotal += Float.parseFloat(cartItemObjs.getString("QtyPrice"));
             PackingCharge += /*(Float.parseFloat(cartItemObjs.getString("Quantity")) * )*/
                     Float.parseFloat(cartItemObjs.getString("p_charge"));
@@ -1891,6 +2079,8 @@ public class MenuListActivity extends AppCompatActivity{
                 if(addOnsArray.length() != 0){
                     for(int j = 0 ; j < addOnsArray.length() ; j++){
                         JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
+                        addOnItem++;
+                        totalItem+=addOnsObj.getInt("Quantity");
                         cartTotal += Float.parseFloat(addOnsObj.getString("QtyPrice"));
                         PackingCharge += Float.parseFloat(addOnsObj.getString("TotalPackAmt"));
                     }
@@ -1902,11 +2092,14 @@ public class MenuListActivity extends AppCompatActivity{
         cartJSONObj.put("totalGST",String.valueOf(gstTotal));
         sharedPref.setUserCart(String.valueOf(cartObj));
         tvAddCartTotal.setText("₹ " + Math.round(cartTotal) +"/-");
+        MenuListActivity.tvMenuTotal.setText(menuItem + " Menus, "+addOnItem+" AddOns, "+totalItem+ " Items   ₹ " + Math.round(cartTotal) + "/-");
     }
 
     public void setAddOnsTempTotal() throws JSONException{
+      //  Log.d("/*abc_menulistactivity","setAddOnsTempTotal");
         int TotalPerMenu = 0;
         int TotalQtyCount = 0;
+        int TotalAddonCount=0;
         cartObj = new JSONObject(sharedPref.getUserCart());
         JSONArray cartJsonArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
         for (int k = 0; k < cartJsonArray.length(); k++) {
@@ -1914,27 +2107,34 @@ public class MenuListActivity extends AppCompatActivity{
             TotalPerMenu = cartItemObj.getInt("QtyPrice");
             TotalQtyCount = Integer.parseInt(cartItemObj.getString("Quantity"));
 
-            if(cartObj.has("AddOnsJsonArray")) {
-                JSONArray addOnArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
-                for (int j = 0; j < addOnArray.length(); j++) {
-                    JSONObject addOnObj = addOnArray.getJSONObject(j);
-                    if(addOnObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
-                        TotalPerMenu += addOnObj.getInt("QtyPrice");
-                        TotalQtyCount += Integer.parseInt(addOnObj.getString("Quantity"));
-                    }
-                }
-            } else if(cartItemObj.has(getResources().getString(R.string.AddOnsJsonArray))
+//            if(cartObj.has("AddOnsJsonArray")) {
+//                Log.d("/*abc_menulistactivity","cart obj has addonsjsonarray");
+//                JSONArray addOnArray = cartObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
+//                for (int j = 0; j < addOnArray.length(); j++) {
+//                    JSONObject addOnObj = addOnArray.getJSONObject(j);
+//                    if(addOnObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
+//                        TotalPerMenu += addOnObj.getInt("QtyPrice");
+////                        TotalQtyCount += Integer.parseInt(addOnObj.getString("Quantity"));
+//                        TotalAddonCount += Integer.parseInt(addOnObj.getString("Quantity"));
+//                    }
+//                }
+//            } else
+                if(cartItemObj.has(getResources().getString(R.string.AddOnsJsonArray))
                     && cartItemObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray)).length() != 0){
+                //Log.d("/*abc_menulistactivity","cartitemobj has addonsjsonarray");
                 JSONArray addOnsArray = cartItemObj.getJSONArray(getResources().getString(R.string.AddOnsJsonArray));
                 for(int j = 0 ; j < addOnsArray.length() ; j++){
                     JSONObject addOnsObj = addOnsArray.getJSONObject(j) ;
                     if(addOnsObj.getString("MenuId").equals(cartItemObj.getString("MenuId"))) {
                         TotalPerMenu += addOnsObj.getInt("QtyPrice");
-                        TotalQtyCount += Integer.parseInt(addOnsObj.getString("Quantity"));
+//                        TotalQtyCount += Integer.parseInt(addOnsObj.getString("Quantity"));
+                        TotalAddonCount += Integer.parseInt(addOnsObj.getString("Quantity"));
                     }
                 }
             }
         }
-        MenuListActivity.tvMenuTotal.setText(TotalQtyCount + " Items " + "₹ " + Math.round(TotalPerMenu) + "/-");
+//        MenuListActivity.tvMenuTotal.setText(TotalQtyCount + " Menu, "+TotalAddonCount+" AddOns, Total" + "₹ " + Math.round(TotalPerMenu) + "/-");
+        MenuListActivity.tvMenuTotal.setText(TotalAddonCount+" AddOns, Total" + "₹ " + Math.round(TotalPerMenu) + "/-");
+       // Log.d("/*abc_menulistactivity","tvmenutotal set");
     }
 }

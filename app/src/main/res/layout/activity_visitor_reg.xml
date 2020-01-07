@@ -25,7 +25,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="0.4"
             android:orientation="vertical"
             android:gravity="center">
 
@@ -34,7 +34,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/welcome_banner"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="20dp"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,7 +48,8 @@
                     android:layout_height="180dp"
                     android:src="@drawable/mealarts_logo"
                     android:scaleType="centerCrop"
-                    android:layout_gravity="end|center"/>
+                    android:layout_gravity="end|center"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
@@ -59,26 +61,16 @@
             android:text="Enjoy Home Made\nDelicious Food."
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.4"
             android:orientation="vertical"
-            android:gravity="center"
+            android:gravity="center_horizontal"
             android:background="@drawable/scrim_bottom">
-
-            <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Please provide your contact number to be our valuable customer and get new offers."
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                android:layout_marginBottom="10dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:gravity="center"/>
 
             <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
                 android:layout_width="match_parent"
@@ -95,7 +87,21 @@
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
                 android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
+                android:paddingBottom="8dp"
+                tools:ignore="HardcodedText" />
+
+            <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please provide your contact number to be our valuable customer and get new offers."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                 android:layout_width="wrap_content"
@@ -111,7 +117,8 @@
                 android:paddingEnd="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

@@ -52,7 +52,6 @@ import com.mealarts.Helpers.CheckExtras;
 import com.mealarts.Helpers.ChefChainedComparator;
 import com.mealarts.Helpers.CustomRatingBar;
 import com.mealarts.Helpers.CustomToast;
-import com.mealarts.Helpers.GlideApp;
 import com.mealarts.Helpers.PermissionChecker;
 import com.mealarts.Helpers.SharedPref;
 import com.mealarts.Helpers.Utils.AddressUtils;
@@ -945,7 +944,7 @@ public class MainActivity extends AppCompatActivity implements
         postData.put("latitude", CurrentLat);
         postData.put("longitude", CurrentLong);
 
-        GlideApp.with(MainActivity.this).asGif().load(R.drawable.mealarts_loader).into(ivLoader); //show loader img
+        Glide.with(MainActivity.this).asGif().load(R.drawable.mealarts_loader).into(ivLoader); //show loader img
         layoutLoader.setVisibility(View.VISIBLE);                                                   //visible loader between service request and response
         tvLoadError.setText("getVendorList()_InnerLoop");
 
@@ -1309,7 +1308,7 @@ public class MainActivity extends AppCompatActivity implements
                 JSONObject jsonObject = new JSONObject(response);
                 String Status = jsonObject.getString("status");
                 String banner = jsonObject.getString("banner");
-                GlideApp.with(MainActivity.this).load(banner).into(ivOffer);
+                Glide.with(MainActivity.this).load(banner).into(ivOffer);
                 if(Status.equals("1")){
                     vpOffers.setVisibility(View.VISIBLE);
                     layoutDefault.setVisibility(View.GONE);

@@ -53,7 +53,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
     private OnMenuItemDecClickListener mDecListener;
     private ShowAddOnsClickListener mShowAddOnsListener;
 
-    public void setListener(OnMenuItemClickListener listener) {
+    public void setAddListener(OnMenuItemClickListener listener) {
         mListener = listener;
     }
     public void setIncListener(OnMenuItemIncClickListener listener) {
@@ -68,11 +68,14 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
 
     public interface OnMenuItemClickListener {
         void onMenuItemClick(int position, int QtyCount, TextView tvQty, LinearLayout layoutAddOnsClick, TextView tvTotalPrice, TextView tvAddCart, LinearLayout productCounter);
-    }public interface OnMenuItemIncClickListener {
+    }
+    public interface OnMenuItemIncClickListener {
         void onItemIncClick(int position, int QtyCount, TextView tvQty, LinearLayout layoutAddOnsClick, TextView tvTotalPrice, TextView tvAddCart, LinearLayout productCounter);
-    }public interface OnMenuItemDecClickListener {
+    }
+    public interface OnMenuItemDecClickListener {
         void onItemDecClick(int position, int QtyCount, TextView tvQty, LinearLayout layoutAddOnsClick, TextView tvTotalPrice, TextView tvAddCart, LinearLayout productCounter);
-    }public interface ShowAddOnsClickListener {
+    }
+    public interface ShowAddOnsClickListener {
         void onShowAddOnsClick(int position, Boolean hasAddOns, ArrayList<JSONObject> AddOnsArray);
     }
 
@@ -127,6 +130,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
             if(cartObj.has(context.getResources().getString(R.string.CartJsonObj))) {
                 JSONObject cartJsonObj = cartObj.getJSONObject(context.getResources().getString(R.string.CartJsonObj));
                 JSONArray cartArray = cartObj.getJSONArray(context.getResources().getString(R.string.CartJsonArray));
+                Log.d("/*abc","cartJsonObj:"+cartJsonObj.toString());
+                Log.d("/*abc","cartArray:"+cartArray.toString());
                 if (cartArray.length() != 0) {
                     for (int i = 0; i < cartArray.length(); i++) {
                         JSONObject cartItemObj = cartArray.getJSONObject(i);
@@ -154,13 +159,21 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
             MenuListActivity.getMenuPosition = position;
             Log.e("PosItem", String.valueOf(MenuListActivity.getMenuPosition));
             QtyCount = 0;
-            mListener.onMenuItemClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            if(mListener!=null) {
+                mListener.onMenuItemClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            }
+            else{
+                Log.d("/*abc","mlistener empty");
+            }
         });
 
         holder.tvIncQty.setOnClickListener(v -> {
             MenuListActivity.getMenuPosition = position;
             Log.e("PosItem", String.valueOf(MenuListActivity.getMenuPosition));
-            mIncListener.onItemIncClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            if(mShowAddOnsListener!=null)
+                mIncListener.onItemIncClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            else
+                Log.d("/*abc","mIncListener empty");
         });
 
         MenuListActivity.tvIncQty.setOnClickListener(v -> {
@@ -182,7 +195,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
         holder.tvDecQty.setOnClickListener(v -> {
             MenuListActivity.getMenuPosition = position;
             Log.e("PosItem", String.valueOf(MenuListActivity.getMenuPosition));
-            mDecListener.onItemDecClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            if(mShowAddOnsListener!=null)
+                mDecListener.onItemDecClick(position, QtyCount, holder.tvQty, holder.layoutAddOnsClick, holder.tvTotalPrice, holder.tvAddCart, holder.productCounter);
+            else
+                Log.d("/*abc","mDecListener empty");
         });
 
         MenuListActivity.tvDecQty.setOnClickListener(v -> {
@@ -202,8 +218,12 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
         });
 
         holder.tvAddOns.setOnClickListener(v -> {
+            Log.d("/*abc_menuadapter","addons clicked");
             MenuListActivity.getMenuPosition = position;
-            mShowAddOnsListener.onShowAddOnsClick(position, MenuArray.get(position).getAddOns(), MenuArray.get(position).getAddOnsList());
+            if(mShowAddOnsListener!=null)
+                mShowAddOnsListener.onShowAddOnsClick(position, MenuArray.get(position).getAddOns(), MenuArray.get(position).getAddOnsList());
+            else
+                Log.d("/*abc","mShowAddOnsListener empty");
         });
     }
 
