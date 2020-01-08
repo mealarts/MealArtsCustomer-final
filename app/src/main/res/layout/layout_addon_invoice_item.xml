@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1.0"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:gravity="start"
+            android:layout_weight="0.05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/ivVegType"
+                android:src="@drawable/veg"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_weight="0.45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddonItem"
+            android:textSize="13sp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Order Item 1"
+            android:gravity="center|start"
+            tools:ignore="HardcodedText" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddonRate"
+            android:textSize="12sp"
+            android:textColor="@color/colorDarkGray"
+            android:text="Rate"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_weight="0.05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/colorDarkGray"
+            android:text=" x "
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddonQty"
+            android:textSize="12sp"
+            android:textColor="@color/colorDarkGray"
+            android:text="0"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddonGST"
+            android:textSize="12sp"
+            android:textColor="@color/colorDarkGray"
+            android:text="0.0"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/tvAddonPrice"
+            android:textSize="12sp"
+            android:textColor="@color/colorDarkGray"
+            android:text="₹ 0"
+            android:gravity="center|end"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

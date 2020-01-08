@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,8 @@
             android:src="@drawable/back_arrow"
             android:padding="8dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -31,7 +31,8 @@
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -56,7 +57,8 @@
                     android:text="order #0"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
-                    android:textAllCaps="true"/>
+                    android:textAllCaps="true"
+                    tools:ignore="HardcodedText" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -69,7 +71,8 @@
                         android:id="@+id/tvOrderStatus"
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
-                        android:text="Order Status"/>
+                        android:text="Order Status"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="1dp"
@@ -85,7 +88,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="0 Item "
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="wrap_content"
@@ -93,7 +97,8 @@
                         android:id="@+id/tvOrderTotal"
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
-                        android:text="₹ 0"/>
+                        android:text="₹ 0"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -104,7 +109,8 @@
                     android:textColor="@color/colorDarkGray"
                     android:textSize="12sp"
                     android:text="Order Date"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                     android:layout_width="match_parent"
@@ -113,7 +119,8 @@
                     android:textColor="@color/colorDarkGray"
                     android:textSize="12sp"
                     android:text="Delivery Date"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -131,7 +138,8 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/location"
-                        android:tint="@color/colorDarkGray"/>
+                        android:tint="@color/colorDarkGray"
+                        tools:ignore="ContentDescription" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -145,7 +153,8 @@
                             android:id="@+id/tvAddressType"
                             android:textSize="16sp"
                             android:text="Address Type"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:textColor="@color/colorPrimaryDark"
+                            tools:ignore="HardcodedText" />
 
                         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
                             android:layout_width="match_parent"
@@ -153,7 +162,8 @@
                             android:id="@+id/tvAddress"
                             android:textSize="14sp"
                             android:text="Delivery Address"
-                            android:textColor="@color/colorDarkGray"/>
+                            android:textColor="@color/colorDarkGray"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -174,7 +184,8 @@
                     android:gravity="start|bottom"
                     android:padding="10dp"
                     android:textSize="13sp"
-                    android:textColor="#fff"/>
+                    android:textColor="#fff"
+                    tools:ignore="HardcodedText" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"/>
@@ -196,7 +207,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="Menu"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_weight="0.1"
@@ -205,7 +217,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="Rate"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_weight="0.05"
@@ -214,7 +227,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text=" x "
-                        android:gravity="center" />
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_weight="0.1"
@@ -224,7 +238,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="Qty"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_weight="0.15"
@@ -234,7 +249,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="GST"
-                        android:gravity="center" />
+                        android:gravity="center"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -244,7 +260,8 @@
                         android:textSize="13sp"
                         android:textColor="@color/colorDarkGray"
                         android:text="Total"
-                        android:gravity="center|end" />
+                        android:gravity="center|end"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
                 <View
@@ -277,7 +294,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Item Total"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -288,7 +306,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -307,7 +326,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="GST Amount"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -318,7 +338,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0 /-"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -337,7 +358,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Delivery Charges"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -348,7 +370,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -367,7 +390,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Packaging Charges"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -378,7 +402,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -397,7 +422,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Voucher Discount"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="0dp"
@@ -408,7 +434,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -436,7 +463,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Paid Via"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:layout_width="0dp"
@@ -446,7 +474,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="Total"
                         android:gravity="center|start"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:layout_width="0dp"
@@ -457,7 +486,8 @@
                         android:textColor="@color/colorDarkGray"
                         android:text="₹ 0"
                         android:gravity="center|end"
-                        android:layout_marginEnd="5dp"/>
+                        android:layout_marginEnd="5dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -479,7 +509,8 @@
                 android:id="@+id/ivLoader"
                 android:background="@drawable/loader_back_circle"
                 android:src="@drawable/mealarts_loader"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 

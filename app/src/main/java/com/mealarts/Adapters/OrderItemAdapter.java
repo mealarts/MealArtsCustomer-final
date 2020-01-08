@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -58,6 +59,9 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
             holder.tvItemGST.setText(holder.df.format(Float.parseFloat(orderItemList.get(position).getGst_price()))+"\n("+orderItemList.get(position).getGST_Perc()+"%)");
 
         holder.tvItemRate.setText(orderItemList.get(position).getSellingPrice());
+
+        AddOnsInvoiceAdapter addOnsInvoiceAdapter = new AddOnsInvoiceAdapter(context,orderItemList.get(position).getAddOnsList());
+        holder.rcOrderAddonItems.setAdapter(addOnsInvoiceAdapter);
     }
 
     @Override
@@ -70,6 +74,7 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
         private ImageView ivVegType;
         private TextView tvOrderItem, tvItemQty, tvItemPrice,tvItemGST,tvItemRate;
         DecimalFormat df;//hgd
+        RecyclerView rcOrderAddonItems;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -82,6 +87,9 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
             tvItemPrice = itemView.findViewById(R.id.tvItemPrice);
             tvItemGST = itemView.findViewById(R.id.tvItemGST);
             tvItemRate = itemView.findViewById(R.id.tvItemRate);
+            rcOrderAddonItems = itemView.findViewById(R.id.rcOrderAddonItems);
+            rcOrderAddonItems.setHasFixedSize(true);
+            rcOrderAddonItems.setLayoutManager(new LinearLayoutManager(context));
         }
     }
 }
