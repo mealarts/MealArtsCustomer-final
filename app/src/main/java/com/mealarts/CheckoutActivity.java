@@ -323,16 +323,27 @@ public class CheckoutActivity extends AppCompatActivity {
                 postData.put("prod_img",ProdImg.substring(0,ProdImg.lastIndexOf(",")));
                 postData.put("vendor_id", VendorId);
                 postData.put("gst_price",gstPrice.substring(0,gstPrice.lastIndexOf(",")));
-                postData.put("addon_id",AddOnsId.substring(0,AddOnsId.lastIndexOf(",")));
-                postData.put("addon_name",AddOnsName.substring(0,AddOnsName.lastIndexOf(",")));
-                postData.put("addon_price",AddOnsPrice.substring(0,AddOnsPrice.lastIndexOf(",")));
-                postData.put("addon_quantity",AddOnsQuantity.substring(0,AddOnsQuantity.lastIndexOf(",")));
-                postData.put("addon_gst_price",AddOnsGstPrice.substring(0,AddOnsGstPrice.lastIndexOf(",")));
-                postData.put("addon_img",AddOnsImg.substring(0,AddOnsImg.lastIndexOf(",")));
+
+                if(AddOnsId.length()>0) {
+                    postData.put("addon_id", AddOnsId.substring(0, AddOnsId.lastIndexOf(",")));
+                    postData.put("addon_name", AddOnsName.substring(0, AddOnsName.lastIndexOf(",")));
+                    postData.put("addon_price", AddOnsPrice.substring(0, AddOnsPrice.lastIndexOf(",")));
+                    postData.put("addon_quantity", AddOnsQuantity.substring(0, AddOnsQuantity.lastIndexOf(",")));
+                    postData.put("addon_gst_price", AddOnsGstPrice.substring(0, AddOnsGstPrice.lastIndexOf(",")));
+                    postData.put("addon_img", AddOnsImg.substring(0, AddOnsImg.lastIndexOf(",")));
+                }
+                else {
+                    postData.put("addon_id", "");
+                    postData.put("addon_name", "");
+                    postData.put("addon_price", "");
+                    postData.put("addon_quantity", "");
+                    postData.put("addon_gst_price", "");
+                    postData.put("addon_img", "");
+                }
 
                 RequestQueue requestQueue = Volley.newRequestQueue(CheckoutActivity.this, sslCertification.getHurlStack());
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, URLServices.CheckoutOrder, response -> {
-                    Log.e("CheckoutResp", response);
+                    Log.e("Checkout", "resp:"+response);
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         String Status = jsonObject.getString("status");
@@ -352,11 +363,11 @@ public class CheckoutActivity extends AppCompatActivity {
                             finish();
                         }
                     } catch (JSONException e) {
+                        Log.e("Checkout", "je:"+e.toString());
                         e.printStackTrace();
                     }
                 }, error -> {
-                    Log.e("Checkout", error.toString()+"_");
-                    Log.e("Checkout", error.getMessage()+"_");
+                    Log.e("Checkout", "ve:"+error.toString());
                     error.printStackTrace();
                 }){
                     @Override
@@ -365,7 +376,7 @@ public class CheckoutActivity extends AppCompatActivity {
                     }
                 };
                 requestQueue.add(stringRequest);
-                Log.e("Checkout", stringRequest.getUrl()+"_"+postData.toString());
+                Log.e("Checkout", "StringRequest url"+stringRequest.getUrl()+"_"+postData.toString());
             });
 
         } catch (JSONException e) {

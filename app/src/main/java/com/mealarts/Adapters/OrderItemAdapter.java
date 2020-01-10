@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -60,8 +61,11 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
 
         holder.tvItemRate.setText(orderItemList.get(position).getSellingPrice());
 
-        AddOnsInvoiceAdapter addOnsInvoiceAdapter = new AddOnsInvoiceAdapter(context,orderItemList.get(position).getAddOnsList());
-        holder.rcOrderAddonItems.setAdapter(addOnsInvoiceAdapter);
+        if(orderItemList.get(position).getAddOns()) {
+            holder.llAddOnTitle.setVisibility(View.VISIBLE);
+            AddOnsInvoiceAdapter addOnsInvoiceAdapter = new AddOnsInvoiceAdapter(context, orderItemList.get(position).getAddOnsList());
+            holder.rcOrderAddonItems.setAdapter(addOnsInvoiceAdapter);
+        }
     }
 
     @Override
@@ -72,9 +76,10 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
     class MyViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView ivVegType;
-        private TextView tvOrderItem, tvItemQty, tvItemPrice,tvItemGST,tvItemRate;
+        private TextView tvOrderItem, tvItemQty, tvItemPrice,tvItemGST,tvItemRate,tvAddOnTitle;
         DecimalFormat df;//hgd
         RecyclerView rcOrderAddonItems;
+        LinearLayout llAddOnTitle;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -87,6 +92,8 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.MyVi
             tvItemPrice = itemView.findViewById(R.id.tvItemPrice);
             tvItemGST = itemView.findViewById(R.id.tvItemGST);
             tvItemRate = itemView.findViewById(R.id.tvItemRate);
+            llAddOnTitle = itemView.findViewById(R.id.llAddOnTitle);
+
             rcOrderAddonItems = itemView.findViewById(R.id.rcOrderAddonItems);
             rcOrderAddonItems.setHasFixedSize(true);
             rcOrderAddonItems.setLayoutManager(new LinearLayoutManager(context));

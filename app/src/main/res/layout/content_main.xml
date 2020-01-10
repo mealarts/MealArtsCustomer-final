@@ -54,7 +54,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:src="@drawable/mealart_slider"
-                                    android:scaleType="centerCrop"/>
+                                    android:scaleType="centerCrop"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
                                     android:layout_width="wrap_content"
@@ -66,7 +67,8 @@
                                     android:textSize="12sp"
                                     android:padding="8dp"
                                     android:layout_margin="20dp"
-                                    android:layout_gravity="center|start"/>
+                                    android:layout_gravity="center|start"
+                                    tools:ignore="HardcodedText" />
 
                             </FrameLayout>
 
@@ -94,7 +96,8 @@
                             android:gravity="center"
                             android:textSize="16sp"
                             android:textColor="@color/colorPrimary"
-                            android:layout_marginTop="10dp"/>
+                            android:layout_marginTop="10dp"
+                            tools:ignore="HardcodedText" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -117,7 +120,8 @@
                                     android:layout_height="50dp"
                                     android:src="@drawable/breakfast"
                                     android:background="@drawable/cat_back_main"
-                                    android:padding="5dp"/>
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -126,7 +130,8 @@
                                     android:gravity="center"
                                     android:text="Breakfast"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="12sp" />
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -143,7 +148,8 @@
                                     android:layout_height="50dp"
                                     android:src="@drawable/lunch"
                                     android:background="@drawable/cat_back_main"
-                                    android:padding="5dp"/>
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -152,7 +158,8 @@
                                     android:textSize="12sp"
                                     android:gravity="center"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:layout_marginTop="5dp"/>
+                                    android:layout_marginTop="5dp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -169,7 +176,8 @@
                                     android:layout_height="50dp"
                                     android:src="@drawable/snacks"
                                     android:background="@drawable/cat_back_main"
-                                    android:padding="5dp"/>
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -178,7 +186,8 @@
                                     android:gravity="center"
                                     android:text="Snacks"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="12sp" />
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -195,7 +204,8 @@
                                     android:layout_height="50dp"
                                     android:src="@drawable/dinner"
                                     android:background="@drawable/cat_back_main"
-                                    android:padding="5dp"/>
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -204,7 +214,8 @@
                                     android:textSize="12sp"
                                     android:gravity="center"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:layout_marginTop="5dp"/>
+                                    android:layout_marginTop="5dp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -219,7 +230,8 @@
                             android:textColor="@color/colorPrimaryDark"
                             android:gravity="center"
                             android:textSize="15sp"
-                            android:padding="10dp"/>
+                            android:padding="10dp"
+                            tools:ignore="HardcodedText" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -241,7 +253,8 @@
                                     android:layout_height="50dp"
                                     android:baselineAligned="false"
                                     android:padding="5dp"
-                                    android:src="@drawable/certified_chef" />
+                                    android:src="@drawable/certified_chef"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -250,7 +263,8 @@
                                     android:gravity="center"
                                     android:text="Certified\nChef"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="12sp" />
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -265,7 +279,8 @@
                                     android:layout_width="70dp"
                                     android:layout_height="50dp"
                                     android:src="@drawable/customize_order"
-                                    android:padding="5dp" />
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -274,7 +289,8 @@
                                     android:textSize="12sp"
                                     android:gravity="center"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:layout_marginTop="5dp" />
+                                    android:layout_marginTop="5dp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -289,7 +305,8 @@
                                     android:layout_width="70dp"
                                     android:layout_height="50dp"
                                     android:padding="5dp"
-                                    android:src="@drawable/homemade_food" />
+                                    android:src="@drawable/homemade_food"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -298,7 +315,8 @@
                                     android:gravity="center"
                                     android:text="Homemade\nFood"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="12sp" />
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -313,7 +331,8 @@
                                     android:layout_width="70dp"
                                     android:layout_height="50dp"
                                     android:src="@drawable/on_time_delivery"
-                                    android:padding="5dp" />
+                                    android:padding="5dp"
+                                    tools:ignore="ContentDescription" />
 
                                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                                     android:layout_width="match_parent"
@@ -322,7 +341,8 @@
                                     android:textSize="12sp"
                                     android:gravity="center"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:layout_marginTop="5dp" />
+                                    android:layout_marginTop="5dp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -333,7 +353,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:src="@drawable/mealarts_offer" />
+                            android:src="@drawable/mealarts_offer"
+                            tools:ignore="ContentDescription" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -349,7 +370,8 @@
                                 android:layout_gravity="center"
                                 android:textSize="15sp"
                                 android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone"/>
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
 
                             <androidx.recyclerview.widget.RecyclerView
                                 android:layout_width="match_parent"
@@ -384,7 +406,8 @@
                     android:textColor="@color/colorWhite"
                     android:padding="5dp"
                     android:textSize="12sp"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="10dp"
+                    tools:ignore="HardcodedText" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -410,7 +433,8 @@
                             android:textColor="@color/colorWhite"
                             android:padding="5dp"
                             android:textSize="10sp"
-                            android:layout_marginStart="10dp"/>
+                            android:layout_marginStart="10dp"
+                            tools:ignore="HardcodedText,SmallSp" />
 
                         <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                             android:layout_width="match_parent"
@@ -420,7 +444,8 @@
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="14sp"
                             android:gravity="center|start"
-                            android:layout_marginStart="10dp"/>
+                            android:layout_marginStart="10dp"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -431,7 +456,8 @@
                         android:text="Delivery boy status info"
                         android:layout_marginStart="10dp"
                         android:textSize="12sp"
-                        android:textColor="@color/colorDarkGray"/>
+                        android:textColor="@color/colorDarkGray"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -461,7 +487,8 @@
                         android:text="Rate your meal from"
                         android:gravity="center"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
 
                     <ImageView
                         android:layout_width="30dp"
@@ -469,7 +496,8 @@
                         android:id="@+id/ivReviewClose"
                         android:src="@drawable/close"
                         android:layout_gravity="end"
-                        android:padding="8dp"/>
+                        android:padding="8dp"
+                        tools:ignore="ContentDescription" />
 
                 </FrameLayout>
 
@@ -481,7 +509,8 @@
                     android:gravity="center"
                     android:textColor="@color/colorPrimaryDark"
                     android:padding="2dp"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
                     android:layout_width="wrap_content"
@@ -491,7 +520,8 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:hint="Give Your Precious Review"
                     android:gravity="center"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomRatingBar
                     android:layout_width="200dp"
@@ -515,7 +545,8 @@
                     android:textColor="@drawable/clickable_textview_white_black"
                     android:textSize="12sp"
                     android:padding="8dp"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -534,7 +565,8 @@
                     android:layout_margin="5dp"
                     android:padding="8dp"
                     android:src="@drawable/toggle_menu"
-                    android:background="@drawable/common_button_back"/>
+                    android:background="@drawable/common_button_back"
+                    tools:ignore="ContentDescription" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -554,7 +586,8 @@
                             android:padding="5dp"
                             android:text="Location"
                             android:textColor="@color/colorWhite"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -568,7 +601,8 @@
                         android:layout_height="20dp"
                         android:src="@drawable/right_now_loc"
                         android:padding="2dp"
-                        android:tint="@color/colorWhite"/>
+                        android:tint="@color/colorWhite"
+                        tools:ignore="ContentDescription" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -653,7 +687,8 @@
             android:background="@color/colorWhite"
             android:textSize="16sp"
             android:text="ffff"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
 
 
     </LinearLayout>
@@ -679,7 +714,8 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/timeout_alert"/>
+                android:src="@drawable/timeout_alert"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="match_parent"
@@ -689,7 +725,8 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:text="Sorry for Inconvenience !!\nDue to some Changes in Chef's Menu, We have to clear your cart !!"
                 android:gravity="center"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                 android:layout_width="60dp"
@@ -699,7 +736,8 @@
                 android:textColor="@drawable/clickable_textview_white_black"
                 android:background="@drawable/signin_button_back"
                 android:padding="5dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -726,7 +764,8 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/home_marker"/>
+                android:src="@drawable/home_marker"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="match_parent"
@@ -736,7 +775,8 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:text="Your location is changed.\nWould you like to continue with your\nlast cart Items ? "
                 android:gravity="center"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -754,7 +794,8 @@
                     android:background="@drawable/signin_button_back"
                     android:padding="8dp"
                     android:gravity="center"
-                    android:layout_marginEnd="10dp"/>
+                    android:layout_marginEnd="10dp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                     android:layout_width="wrap_content"
@@ -764,7 +805,8 @@
                     android:textColor="@drawable/clickable_textview_white_black"
                     android:background="@drawable/signin_button_back"
                     android:padding="8dp"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -786,7 +828,8 @@
             android:layout_height="match_parent"
             android:alpha="0.5"
             android:scaleType="centerCrop"
-            android:src="@drawable/splash_bg"/>
+            android:src="@drawable/splash_bg"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -799,14 +842,16 @@
                 android:layout_height="180dp"
                 android:src="@drawable/mealarts_logo"
                 android:scaleType="centerCrop"
-                android:layout_marginTop="100dp"/>
+                android:layout_marginTop="100dp"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:layout_width="250dp"
                 android:layout_height="70dp"
                 android:src="@drawable/thank_you"
                 android:scaleType="centerCrop"
-                android:layout_marginTop="100dp"/>
+                android:layout_marginTop="100dp"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="match_parent"
@@ -816,7 +861,8 @@
                 android:textSize="30sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -826,7 +872,8 @@
             android:id="@+id/ivCardCancel"
             android:src="@drawable/cancel_black"
             android:layout_gravity="end|top"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            tools:ignore="ContentDescription" />
 
     </androidx.cardview.widget.CardView>
 
@@ -846,7 +893,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:background="@drawable/messagebox"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="100dp">
 
@@ -871,7 +918,8 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 android:text="Click here to set your delivery location."
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="@color/colorPrimaryDark"
+                tools:ignore="HardcodedText" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
                 android:id="@+id/tvCurrentLocation"

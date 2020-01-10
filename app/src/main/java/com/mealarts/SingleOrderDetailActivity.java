@@ -136,6 +136,10 @@ public class SingleOrderDetailActivity extends AppCompatActivity {
                     menuUtils.setGst_price(menuObj.getString("gst_price"));
                     menuUtils.setGST_Perc(menuObj.getString("gst_percent"));
                     JSONArray jaAddons=menuObj.getJSONArray("addon");
+                    if(jaAddons.length()>0)
+                        menuUtils.setAddOns(true);
+                    else
+                        menuUtils.setAddOns(false);
                     ArrayList<JSONObject> alAddon=new ArrayList<>();
                     for(int j=0;j<jaAddons.length();j++){
                         JSONObject joAddon=jaAddons.getJSONObject(j);

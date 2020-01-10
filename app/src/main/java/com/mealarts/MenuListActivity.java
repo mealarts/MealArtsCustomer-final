@@ -901,6 +901,7 @@ public class MenuListActivity extends AppCompatActivity{
 
                 //getMenu(CategoryID, CurrentLat, CurrentLong);
                 categoryAdapter.setListener((position, tvCategory) -> {
+//                    Log.d("/*categoryadapter","category clicked");
                     SimpleDateFormat inputParserSelect = new SimpleDateFormat("HH:mm", Locale.getDefault());
                     Calendar nowSelected = Calendar.getInstance();
                     int hourSelect = nowSelected.get(Calendar.HOUR_OF_DAY);
@@ -1022,6 +1023,7 @@ public class MenuListActivity extends AppCompatActivity{
                             //PackingCharge = vendorJsonObj.getString("pack_charge");
                             DeliveryCharge = vendorJsonObj.getString("delivery_charges");
                             DistanceKM = vendorJsonObj.getString("distance_km");
+                            Log.d("/*distance","dst:"+DistanceKM);
                             String Rate = vendorJsonObj.getString("rating");
                             VendorLat = vendorJsonObj.getString("lattitude");
                             VendorLong = vendorJsonObj.getString("longitude");
@@ -1169,7 +1171,7 @@ public class MenuListActivity extends AppCompatActivity{
                         if(cartObj.has(getResources().getString(R.string.CartJsonArray)))
                             cartArray = cartObj.getJSONArray(getResources().getString(R.string.CartJsonArray));
                         tvLoadError.setText("SetVendor_Selected");
-                        if(!VendorID.equals("")) { //redirected here from home by selecting vendor
+                        if(!VendorID.equals("")) { //redirected here from home by selecting category
                             for(int i = 0 ; i < VendorArray.size() ; i++){
                                 if(VendorArray.get(i).getVendorId().equals(VendorID)) {
                                     VendorArray.get(i).setSelected(true);
@@ -1179,8 +1181,8 @@ public class MenuListActivity extends AppCompatActivity{
                                     //rcVendor.smoothScrollToPosition(i);
                                     rcVendor.scrollToPosition(i);
                                     vendorAdapter.notifyDataSetChanged();
-                                    MenuArray = VendorArray.get(i).getMenuArray();// get menu of selected vendor
-                                    Log.d("/*menuarray","menuarray updated(redirected here from home by selecting vendor)");
+                                    MenuArray = VendorArray.get(i).getMenuArray();// get menu of vendor from selected category
+                                    Log.d("/*menuarray","menuarray updated(redirected here from home by selecting category)");
                                     if(VendorArray.get(i).getMenuArray().size() == 0) {
                                         layoutNoItems.setVisibility(View.VISIBLE);
                                     }else {
@@ -1189,6 +1191,11 @@ public class MenuListActivity extends AppCompatActivity{
 
                                     //set switch for veg and filter veg menu
 //                                    switchVegType.setChecked(true);
+                                    tvVegSelect.setTextColor(Color.BLACK);
+                                    tvNonVegSelect.setTextColor(Color.BLACK);
+                                    tvVegSelect.setBackgroundResource(0);
+                                    tvNonVegSelect.setBackgroundResource(0);
+                                    tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
                                     tempMenu.clear();
 //                                    tvVegSwitch.setText("Veg");
 //                                    ivVegSwitch.setImageResource(R.drawable.veg);

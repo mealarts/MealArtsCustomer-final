@@ -35,7 +35,7 @@ public class AddOnsInvoiceAdapter extends RecyclerView.Adapter<AddOnsInvoiceAdap
         @NonNull
         @Override
         public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(context).inflate(R.layout.layout_order_item, parent, false);
+            View view = LayoutInflater.from(context).inflate(R.layout.layout_addon_invoice_item, parent, false);
             return new MyViewHolder(view);
         }
 
@@ -44,25 +44,24 @@ public class AddOnsInvoiceAdapter extends RecyclerView.Adapter<AddOnsInvoiceAdap
         public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
             try{
-                if(orderItemList.get(position).getString("veg_type").equals("veg"))
+
+                if(orderItemList.get(position).getString("addon_veg_type").equals("veg"))
                     Glide.with(context).load(R.drawable.veg).into(holder.ivVegType);
-                else if(orderItemList.get(position).getString("veg_type").equals("nonveg"))
+                else if(orderItemList.get(position).getString("addon_veg_type").equals("nonveg"))
                     Glide.with(context).load(R.drawable.nonveg).into(holder.ivVegType);
                 else Glide.with(context).load(R.drawable.veg).into(holder.ivVegType);
 
                 holder.tvAddonItem.setText(orderItemList.get(position).getString("addon_name"));
-                holder.tvAddonQty.setText(orderItemList.get(position).getString(""));
+                holder.tvAddonQty.setText(orderItemList.get(position).getString("addon_quantity"));
 
-                float ItemPrice = Float.parseFloat(orderItemList.get(position).getString(""))
-                        * Float.parseFloat(orderItemList.get(position).getString("sell_price"));
-                holder.tvAddonPrice.setText("₹ "+Math.round(ItemPrice));
+                holder.tvAddonPrice.setText("₹ "+orderItemList.get(position).getString("adon_total"));
                 //hgd
-                if(orderItemList.get(position).getString("addon_gst_perc").equals("0"))
-                    holder.tvAddonGST.setText("-");
-                else;
-                    //holder.tvAddonGST.setText(holder.df.format(Float.parseFloat(orderItemList.get(position).getGst_price()))+"\n("+orderItemList.get(position).getGST_Perc()+"%)");
+//                if(orderItemList.get(position).getString("addon_gst_perc").equals("0"))
+//                    holder.tvAddonGST.setText("-");
+//                else;
+//                    //holder.tvAddonGST.setText(holder.df.format(Float.parseFloat(orderItemList.get(position).getGst_price()))+"\n("+orderItemList.get(position).getGST_Perc()+"%)");
 
-                holder.tvAddonRate.setText(orderItemList.get(position).getString("sell_price"));
+                holder.tvAddonRate.setText(orderItemList.get(position).getString("addon_price"));
             }
             catch (JSONException je){
                 Log.d("/*addoninvoice","je:"+je.toString());
@@ -87,11 +86,11 @@ public class AddOnsInvoiceAdapter extends RecyclerView.Adapter<AddOnsInvoiceAdap
                 df = new DecimalFormat("0.00");//hgd
 
                 ivVegType = itemView.findViewById(R.id.ivVegType);
-                tvAddonItem = itemView.findViewById(R.id.tvOrderItem);
-                tvAddonQty = itemView.findViewById(R.id.tvItemQty);
-                tvAddonPrice = itemView.findViewById(R.id.tvItemPrice);
-                tvAddonGST = itemView.findViewById(R.id.tvItemGST);
-                tvAddonRate = itemView.findViewById(R.id.tvItemRate);
+                tvAddonItem = itemView.findViewById(R.id.tvAddonItem);
+                tvAddonQty = itemView.findViewById(R.id.tvAddonQty);
+                tvAddonPrice = itemView.findViewById(R.id.tvAddonPrice);
+                tvAddonGST = itemView.findViewById(R.id.tvAddonGST);
+                tvAddonRate = itemView.findViewById(R.id.tvAddonRate);
             }
         }
     }

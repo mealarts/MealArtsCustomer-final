@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:layout_margin="2dp"
+    android:background="@drawable/invoice_item_back"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,7 +11,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:weightSum="1.0">
 
         <LinearLayout
@@ -21,7 +23,8 @@
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:id="@+id/ivVegType"
-                android:src="@drawable/veg"/>
+                android:src="@drawable/veg"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
@@ -90,15 +93,39 @@
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llAddOnTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:layout_weight="0.05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="(Addons)"
+            android:textSize="10sp"
+            android:textColor="@color/colorDarkGray"
+            android:gravity="start"
+            android:layout_weight="0.45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rcOrderAddonItems" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorGrayFade" />
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/colorGrayFade" />-->
 
 </LinearLayout>

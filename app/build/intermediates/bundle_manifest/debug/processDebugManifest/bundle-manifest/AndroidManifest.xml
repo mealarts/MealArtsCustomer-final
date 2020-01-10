@@ -245,14 +245,13 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="true" />
-        <!-- Autocomplete -->
+
         <activity
             android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
             android:exported="false"
-            android:hardwareAccelerated="true"
             android:label="@string/places_autocomplete_label"
-            android:theme="@style/PlacesAutocompleteThemeOverlay"
-            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+            android:theme="@style/PlacesAutocompleteOverlay"
+            android:windowSoftInputMode="adjustResize" >
         </activity>
 
         <meta-data
@@ -410,6 +409,11 @@
             android:authorities="com.mealarts.crashlyticsinitprovider"
             android:exported="false"
             android:initOrder="90" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.mealarts.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
