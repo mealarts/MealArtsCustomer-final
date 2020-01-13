@@ -1195,6 +1195,7 @@ public class MenuListActivity extends AppCompatActivity{
                                     tvNonVegSelect.setTextColor(Color.BLACK);
                                     tvVegSelect.setBackgroundResource(0);
                                     tvNonVegSelect.setBackgroundResource(0);
+                                    ivVegSwitch.setVisibility(View.INVISIBLE);
                                     tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
                                     tempMenu.clear();
 //                                    tvVegSwitch.setText("Veg");
@@ -1343,6 +1344,7 @@ public class MenuListActivity extends AppCompatActivity{
                             tvNonVegSelect.setTextColor(Color.BLACK);
                             tvVegSelect.setBackgroundResource(0);
                             tvNonVegSelect.setBackgroundResource(0);
+                            ivVegSwitch.setVisibility(View.INVISIBLE);
                             tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
                             tempMenu.clear();
 //                            tvVegSwitch.setText("Veg");
