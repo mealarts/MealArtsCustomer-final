@@ -60,9 +60,9 @@ public class ManageAddressActivity extends AppCompatActivity {
         tvAddNewAddress.setOnClickListener(v -> {
             Intent intent = new Intent(ManageAddressActivity.this, DeliveryAddressActivity.class);
             intent.putExtra("fromWhere", "ManageAddress");                             //to check redirection of activity.
-            intent.putExtra("Action", "edit");                                         //to check redirection of activity.
+            intent.putExtra("Action", "insert");                                         //to check redirection of activity.
             startActivity(intent);
-            finish();
+            //finish();
         });
     }
 

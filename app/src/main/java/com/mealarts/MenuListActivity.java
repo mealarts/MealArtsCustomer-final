@@ -2,6 +2,7 @@ package com.mealarts;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -220,12 +221,12 @@ public class MenuListActivity extends AppCompatActivity{
         tempMenu=new ArrayList<>();
 
         tvVegSelect.setOnClickListener(v -> {
-                tvVegSelect.setTextColor(Color.WHITE);
-                tvNonVegSelect.setTextColor(Color.BLACK);
+                tvVegSelect.setTextColor(Color.parseColor("#00aa00"));
+                tvNonVegSelect.setTextColor(Color.GRAY);
+                tvAllSelect.setTextColor(Color.GRAY);
                 tvAllSelect.setBackgroundResource(0);
                 tvNonVegSelect.setBackgroundResource(0);
-                tvVegSelect.setBackgroundResource(R.drawable.veg_type_back);
-                tvVegSelect.setTextColor(Color.WHITE);
+                tvVegSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
                 tempMenu.clear();
                 ivVegSwitch.setVisibility(View.VISIBLE);
                 ivVegSwitch.setImageResource(R.drawable.veg);
@@ -243,11 +244,12 @@ public class MenuListActivity extends AppCompatActivity{
         });
 
         tvNonVegSelect.setOnClickListener(v -> {
-            tvNonVegSelect.setTextColor(Color.WHITE);
-            tvVegSelect.setTextColor(Color.BLACK);
+            tvNonVegSelect.setTextColor(Color.parseColor("#E00000"));
+            tvVegSelect.setTextColor(Color.GRAY);
+            tvAllSelect.setTextColor(Color.GRAY);
             tvAllSelect.setBackgroundResource(0);
             tvVegSelect.setBackgroundResource(0);
-            tvNonVegSelect.setBackgroundResource(R.drawable.nonveg_type_back);
+            tvNonVegSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
             tempMenu.clear();
             ivVegSwitch.setVisibility(View.VISIBLE);
             ivVegSwitch.setImageResource(R.drawable.nonveg);
@@ -263,8 +265,9 @@ public class MenuListActivity extends AppCompatActivity{
         });
 
         tvAllSelect.setOnClickListener(v -> {
-            tvVegSelect.setTextColor(Color.BLACK);
-            tvNonVegSelect.setTextColor(Color.BLACK);
+            tvVegSelect.setTextColor(Color.GRAY);
+            tvNonVegSelect.setTextColor(Color.GRAY);
+            tvAllSelect.setTextColor(Color.DKGRAY);
             tvVegSelect.setBackgroundResource(0);
             tvNonVegSelect.setBackgroundResource(0);
             tvAllSelect.setBackgroundResource(R.drawable.veg_nonveg_all_back);
@@ -1191,8 +1194,9 @@ public class MenuListActivity extends AppCompatActivity{
 
                                     //set switch for veg and filter veg menu
 //                                    switchVegType.setChecked(true);
-                                    tvVegSelect.setTextColor(Color.BLACK);
-                                    tvNonVegSelect.setTextColor(Color.BLACK);
+                                    tvVegSelect.setTextColor(Color.GRAY);
+                                    tvNonVegSelect.setTextColor(Color.GRAY);
+                                    tvAllSelect.setTextColor(Color.DKGRAY);
                                     tvVegSelect.setBackgroundResource(0);
                                     tvNonVegSelect.setBackgroundResource(0);
                                     ivVegSwitch.setVisibility(View.INVISIBLE);
@@ -1325,7 +1329,7 @@ public class MenuListActivity extends AppCompatActivity{
                             VendorID = VendorArray.get(position).getVendorId();
                             VendorLat = VendorArray.get(position).getVendorLat();
                             VendorLong = VendorArray.get(position).getVendorLong();
-                            cardVendor.setCardBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                            cardVendor.setCardBackgroundColor(ContextCompat.getColor(MenuListActivity.this,R.color.colorPrimary));
                             vendorAdapter.notifyDataSetChanged();
 
                             //set menu of selected vendor
@@ -1340,8 +1344,9 @@ public class MenuListActivity extends AppCompatActivity{
 
                             //set switch for veg and filter veg menu
 //                            switchVegType.setChecked(true);
-                            tvVegSelect.setTextColor(Color.BLACK);
-                            tvNonVegSelect.setTextColor(Color.BLACK);
+                            tvVegSelect.setTextColor(Color.GRAY);
+                            tvNonVegSelect.setTextColor(Color.GRAY);
+                            tvAllSelect.setTextColor(Color.DKGRAY);
                             tvVegSelect.setBackgroundResource(0);
                             tvNonVegSelect.setBackgroundResource(0);
                             ivVegSwitch.setVisibility(View.INVISIBLE);

@@ -82,15 +82,11 @@ public class AddressItemAdapter extends RecyclerView.Adapter<AddressItemAdapter.
             context.startActivity(intent);
         });
 
-        holder.ivDeleteAddress.setOnClickListener(v -> {
-            new AlertDialog.Builder(context)
-                    .setMessage("Are You Sure to Delete Address ?")
-                    .setPositiveButton("Yes", (paramDialogInterface, paramInt) ->
-                            deleteLocation(position, "delete", AddressList.get(position).getAddressId()))
-                    .setNegativeButton("No", (dialog, which) -> {
-                        dialog.dismiss();
-                    }).show();
-        });
+        holder.ivDeleteAddress.setOnClickListener(v -> new AlertDialog.Builder(context)
+                .setMessage("Are You Sure to Delete Address ?")
+                .setPositiveButton("Yes", (paramDialogInterface, paramInt) ->
+                        deleteLocation(position, "delete", AddressList.get(position).getAddressId()))
+                .setNegativeButton("No", (dialog, which) -> dialog.dismiss()).show());
     }
 
     @Override
@@ -114,7 +110,7 @@ public class AddressItemAdapter extends RecyclerView.Adapter<AddressItemAdapter.
         }
     }
 
-    public void deleteLocation(int position, String Action, String AddressId){
+    private void deleteLocation(int position, String Action, String AddressId){
 
         Map<String, String> postData = new HashMap<>();
         postData.put("action", Action);
@@ -133,12 +129,11 @@ public class AddressItemAdapter extends RecyclerView.Adapter<AddressItemAdapter.
                     AddressList.remove(position);
                     notifyDataSetChanged();
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
+            } catch (JSONException je) {
+                je.printStackTrace();
+                Log.e("DeleteAddress", "je:"+je.toString());
             }
-        }, error -> {
-
-        }){
+        }, error -> Log.e("DeleteAddress", "ve:"+error.toString())){
             @Override
             protected Map<String, String> getParams() {
                 return postData;

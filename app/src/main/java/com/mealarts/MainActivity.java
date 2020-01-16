@@ -1093,7 +1093,7 @@ public class MainActivity extends AppCompatActivity implements
                     layoutRateCurrentOrder.setVisibility(View.VISIBLE);
                     Log.d("/*order_status","orderstatus: delivered "+OrderStatus);
                 }
-                else if(OrderStatus.equalsIgnoreCase("cancel")){
+                else if(OrderStatus.equalsIgnoreCase("cancel") || OrderStatus.equalsIgnoreCase("Cancel Payment")){
                     Log.d("/*order_status","orderstatus:"+OrderStatus);
                     //hide the bottom order status bar
                     layoutCurrentOrder.setVisibility(View.GONE);

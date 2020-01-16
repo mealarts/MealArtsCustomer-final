@@ -31,7 +31,8 @@
                     android:padding="5dp"
                     android:layout_marginStart="10dp"
                     android:visibility="gone"
-                    android:layout_gravity="center|start"/>
+                    android:layout_gravity="center|start"
+                    tools:ignore="ContentDescription" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
                     android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                     android:textColor="@color/colorWhite"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
 
             </FrameLayout>
 
@@ -75,7 +77,8 @@
                                 android:textSize="20sp"
                                 android:text="User Profile"
                                 android:gravity="center|start"
-                                android:textColor="@color/colorPrimaryDark"/>
+                                android:textColor="@color/colorPrimaryDark"
+                                tools:ignore="HardcodedText" />
 
                             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                                 android:layout_width="0dp"
@@ -86,7 +89,8 @@
                                 android:textSize="12sp"
                                 android:textColor="@color/colorPrimary"
                                 android:gravity="center"
-                                android:background="@drawable/common_button_back"/>
+                                android:background="@drawable/common_button_back"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
@@ -114,7 +118,8 @@
                         android:background="@drawable/common_button_back"
                         android:drawableEnd="@drawable/arrow_right"
                         android:drawableTint="@color/colorPrimary"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
 
                     <!--<TextView
                         android:layout_width="match_parent"
@@ -136,7 +141,8 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:background="@drawable/common_button_back"
                         android:drawableEnd="@drawable/arrow_right"
-                        android:drawableTint="@color/colorPrimary"/>
+                        android:drawableTint="@color/colorPrimary"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -161,7 +167,8 @@
                                 android:background="@color/colorGrayFade"
                                 android:text="View Orders"
                                 android:textSize="14sp"
-                                android:textColor="@color/colorPrimaryDark"/>
+                                android:textColor="@color/colorPrimaryDark"
+                                tools:ignore="HardcodedText" />
 
                             <androidx.recyclerview.widget.RecyclerView
                                 android:layout_width="match_parent"
@@ -176,7 +183,8 @@
                                 android:text="View More"
                                 android:padding="5dp"
                                 android:gravity="end|center"
-                                android:visibility="gone"/>
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
@@ -194,7 +202,8 @@
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/no_order1"
                                 android:scaleType="fitCenter"
-                                android:layout_gravity="center"/>
+                                android:layout_gravity="center"
+                                tools:ignore="ContentDescription" />
 
                             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                                 android:layout_width="match_parent"
@@ -205,7 +214,8 @@
                                 android:padding="10dp"
                                 android:gravity="center"
                                 android:textAllCaps="true"
-                                android:layout_gravity="center"/>
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
 
                             <com.mealarts.Helpers.CustomWidget.CustomTextView_Light
                                 android:layout_width="match_parent"
@@ -215,7 +225,8 @@
                                 android:textSize="18sp"
                                 android:padding="10dp"
                                 android:gravity="center"
-                                android:layout_gravity="center"/>
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
 
                             <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
                                 android:layout_width="130dp"
@@ -227,7 +238,8 @@
                                 android:textSize="15sp"
                                 android:padding="8dp"
                                 android:layout_margin="20dp"
-                                android:layout_gravity="center"/>
+                                android:layout_gravity="center"
+                                tools:ignore="HardcodedText" />
 
                         </LinearLayout>
 
@@ -249,7 +261,8 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:background="@drawable/common_button_back"
                         android:drawableEnd="@drawable/logout"
-                        android:drawableTint="@color/colorPrimary"/>
+                        android:drawableTint="@color/colorPrimary"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -301,7 +314,8 @@
                     android:text="Edit Account"
                     android:textSize="20sp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -319,7 +333,8 @@
                         android:padding="5dp"
                         android:gravity="center|start"
                         android:textAlignment="textStart"
-                        android:lastBaselineToBottomHeight="20dp"/>
+                        android:lastBaselineToBottomHeight="20dp"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -338,7 +353,8 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:padding="5dp"
                         android:gravity="center|start"
-                        android:textAlignment="textStart"/>
+                        android:textAlignment="textStart"
+                        tools:ignore="HardcodedText" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -357,7 +373,8 @@
                             android:padding="5dp"
                             android:gravity="center|start"
                             android:textAlignment="textStart"
-                            android:layout_marginStart="10dp"/>
+                            android:layout_marginStart="10dp"
+                            tools:ignore="HardcodedText" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -379,7 +396,8 @@
                         android:padding="5dp"
                         android:gravity="center|start"
                         android:textAlignment="textStart"
-                        android:lastBaselineToBottomHeight="20dp"/>
+                        android:lastBaselineToBottomHeight="20dp"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -391,7 +409,8 @@
                     android:text="update"
                     android:background="@drawable/signin_button_back"
                     android:textColor="@drawable/clickable_textview_white_red"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -411,7 +430,8 @@
                 android:id="@+id/ivLoader"
                 android:background="@drawable/loader_back_circle"
                 android:src="@drawable/mealarts_loader"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 

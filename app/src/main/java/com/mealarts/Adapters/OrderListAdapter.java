@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,9 +28,7 @@ import com.mealarts.AsyncTask.URLServices;
 import com.mealarts.Helpers.CustomRatingBar;
 import com.mealarts.Helpers.SharedPref;
 import com.mealarts.Helpers.Utils.OrderUtils;
-import com.mealarts.MainActivity;
 import com.mealarts.MapsActivity;
-import com.mealarts.MenuListActivity;
 import com.mealarts.ProfileActivity;
 import com.mealarts.R;
 import com.mealarts.SingleOrderDetailActivity;
@@ -123,7 +122,7 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.MyVi
 
         holder.btnSubmitReview.setOnClickListener(v -> {
             ProfileActivity.layoutLoader.setVisibility(View.VISIBLE);
-            submitReview(String.valueOf(holder.layoutOrderRating.getScore()), holder.edtOrderReview.getText().toString().trim(),
+            submitReview(String.valueOf(holder.layoutOrderRating.getRating()), holder.edtOrderReview.getText().toString().trim(),
                     orderList.get(position).getOrderId(), orderList.get(position).getVendorId(), holder);
         });
     }
@@ -139,7 +138,8 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.MyVi
         private TextView tvChef, tvChefLocation, tvOrderTotal, tvOrderItems, tvOrderDate,
                 tvCurrentVendor, tvOrderId;
         private EditText edtOrderReview;
-        private CustomRatingBar layoutOrderRating;
+//        private CustomRatingBar layoutOrderRating;
+        private RatingBar layoutOrderRating;
         private Button btnReview, btnCancelOrder, btnTrackOrder, btnSubmitReview;
         private ImageView ivReviewClose;
 
@@ -163,7 +163,6 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.MyVi
             edtOrderReview = itemView.findViewById(R.id.edtOrderReview);
             layoutOrderRating = itemView.findViewById(R.id.layoutOrderRating);
             ivReviewClose = itemView.findViewById(R.id.ivReviewClose);
-
         }
     }
 

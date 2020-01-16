@@ -21,7 +21,8 @@
             android:src="@drawable/back_arrow"
             android:padding="8dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -31,7 +32,8 @@
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -295,7 +297,8 @@
                                     android:textAllCaps="true"
                                     android:gravity="center|start"
                                     android:textColor="@color/colorPrimaryDark"
-                                    android:padding="10dp"/>
+                                    android:padding="10dp"
+                                    tools:ignore="HardcodedText" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -317,7 +320,7 @@
                                         android:layout_gravity="center"
                                         android:textSize="13sp"
                                         android:textColor="@color/colorPrimaryDark"
-                                        tools:ignore="TooDeepLayout" />
+                                        tools:ignore="HardcodedText,TooDeepLayout" />
 
                                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                                         android:layout_width="wrap_content"
@@ -327,7 +330,8 @@
                                         android:textSize="10sp"
                                         android:textAllCaps="true"
                                         android:gravity="center|start"
-                                        android:textColor="@color/colorDarkGray" />
+                                        android:textColor="@color/colorDarkGray"
+                                        tools:ignore="HardcodedText,SmallSp" />
 
                                 </LinearLayout>
 
@@ -338,7 +342,8 @@
                                     android:src="@drawable/cancel_black"
                                     android:layout_marginEnd="10dp"
                                     android:padding="5dp"
-                                    android:layout_gravity="center"/>
+                                    android:layout_gravity="center"
+                                    tools:ignore="ContentDescription" />
 
                             </LinearLayout>
 
@@ -365,7 +370,8 @@
                                     android:inputType="textMultiLine"
                                     android:textSize="14sp"
                                     android:hint="Any Special Message for our Chef ?"
-                                    android:lastBaselineToBottomHeight="10dp" />
+                                    android:lastBaselineToBottomHeight="10dp"
+                                    tools:ignore="HardcodedText" />
 
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -386,7 +392,8 @@
                 android:textColor="@drawable/clickable_textview_white_red"
                 android:textSize="15sp"
                 android:layout_gravity="bottom"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -416,7 +423,8 @@
                 android:id="@+id/ivLoader"
                 android:background="@drawable/loader_back_circle"
                 android:src="@drawable/mealarts_loader"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 

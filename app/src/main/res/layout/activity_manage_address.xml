@@ -21,7 +21,8 @@
             android:src="@drawable/back_arrow"
             android:padding="8dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -31,7 +32,8 @@
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -45,20 +47,22 @@
         android:textSize="14sp"
         android:textColor="@color/colorPrimary"
         android:background="@drawable/spinner_back"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp"
+        tools:ignore="HardcodedText" />
 
     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="saved addresses"
         android:textAllCaps="true"
-        android:paddingTop="30dp"
+        android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:paddingStart="30dp"
         android:paddingEnd="10dp"
         android:textSize="11sp"
         android:letterSpacing="0.2"
-        android:background="@color/colorGrayFade"/>
+        android:background="@color/colorGrayFade"
+        tools:ignore="HardcodedText,SmallSp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

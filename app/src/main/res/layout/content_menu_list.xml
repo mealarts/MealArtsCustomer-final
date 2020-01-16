@@ -172,6 +172,7 @@
                         android:id="@+id/rcVendor"/>
 
                     <TextView
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@color/colorGrayFade"/>
@@ -196,21 +197,23 @@
                             android:checked="true" />
 
                         <TextView
-                            android:elevation="5dp"
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-                            android:text="All"
                             android:background="@drawable/veg_nonveg_all_back"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="All"
                             android:textColor="#000"
                             android:id="@+id/tvAllSelect"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            tools:ignore="HardcodedText"
-                            tools:targetApi="lollipop" />
+                            tools:ignore="HardcodedText" />
 
                         <TextView
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
                             android:text="Veg"
                             android:textColor="#000"
                             android:id="@+id/tvVegSelect"
@@ -219,8 +222,10 @@
                             tools:ignore="HardcodedText"/>
 
                         <TextView
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
                             android:text="NonVeg"
                             android:textColor="#000"
                             android:id="@+id/tvNonVegSelect"
@@ -240,6 +245,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@color/colorGrayFade"/>

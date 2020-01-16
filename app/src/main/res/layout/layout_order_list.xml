@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -28,7 +29,8 @@
                 android:id="@+id/tvChef"
                 android:text="Chef Name"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                 android:layout_width="0dp"
@@ -38,7 +40,8 @@
                 android:text="#0"
                 android:gravity="end"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -50,7 +53,8 @@
             android:textColor="@color/colorDarkGray"
             android:textSize="14sp"
             android:paddingStart="5dp"
-            android:paddingEnd="5dp"/>
+            android:paddingEnd="5dp"
+            tools:ignore="HardcodedText" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
             android:layout_width="wrap_content"
@@ -62,7 +66,8 @@
             android:textSize="14sp"
             android:padding="5dp"
             android:drawableEnd="@drawable/arrow_right"
-            android:drawableTint="@color/colorDarkGray"/>
+            android:drawableTint="@color/colorDarkGray"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -87,7 +92,8 @@
                     android:inputType="textMultiLine"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="14sp"
-                    android:text="Order Items x Qty" />
+                    android:text="Order Items x Qty"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                     android:layout_width="match_parent"
@@ -96,7 +102,8 @@
                     android:textColor="@color/colorDarkGray"
                     android:textSize="12sp"
                     android:text="Order Date"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    tools:ignore="HardcodedText" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -112,7 +119,8 @@
                         android:paddingEnd="30dp"
                         android:textColor="@drawable/clickable_textview_red_fade"
                         android:background="@drawable/review_button_back"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
                         android:layout_width="wrap_content"
@@ -125,7 +133,8 @@
                         android:textColor="@drawable/clickable_textview_red_fade"
                         android:background="@drawable/review_button_back"
                         android:layout_marginTop="10dp"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
                         android:layout_width="wrap_content"
@@ -138,7 +147,8 @@
                         android:textColor="@drawable/clickable_textview_red_fade"
                         android:background="@drawable/review_button_back"
                         android:layout_marginTop="10dp"
-                        android:visibility="gone"/>
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
 
                 </FrameLayout>
 
@@ -174,7 +184,8 @@
                             android:text="Rate your meal from "
                             android:gravity="center"
                             android:textColor="@color/colorPrimaryDark"
-                            android:textSize="12sp"/>
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText" />
 
                         <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                             android:layout_width="wrap_content"
@@ -184,7 +195,8 @@
                             android:gravity="center"
                             android:textColor="@color/colorPrimaryDark"
                             android:padding="2dp"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -194,21 +206,30 @@
                         android:id="@+id/ivReviewClose"
                         android:src="@drawable/close"
                         android:layout_gravity="end"
-                        android:padding="8dp"/>
+                        android:padding="8dp"
+                        tools:ignore="ContentDescription" />
 
                 </FrameLayout>
 
-                <com.mealarts.Helpers.CustomRatingBar
-                    android:layout_width="200dp"
-                    android:layout_height="30dp"
-                    app:maxStars="5"
-                    app:starOff="@drawable/empty_star"
-                    app:starHalf="@drawable/half_star"
-                    app:starOn="@drawable/filled_star"
-                    app:stars="0"
+                <RatingBar
                     android:id="@+id/layoutOrderRating"
-                    app:halfStars="true"
-                    app:onlyForDisplay="false"/>
+                    android:progressTint="@color/colorPrimary"
+                    android:max="5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+<!--                <com.mealarts.Helpers.CustomRatingBar-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    app:maxStars="5"-->
+<!--                    app:starOff="@drawable/empty_star"-->
+<!--                    app:starHalf="@drawable/half_star"-->
+<!--                    app:starOn="@drawable/filled_star"-->
+<!--                    app:stars="0"-->
+<!--                    android:id="@+id/layoutOrderRating"-->
+<!--                    app:halfStars="true"-->
+<!--                    app:onlyForDisplay="false"/>-->
 
                 <com.mealarts.Helpers.CustomWidget.CustomEditText_Regular
                     android:layout_width="wrap_content"
@@ -218,7 +239,8 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:hint="Give Your Precious Review"
                     android:gravity="center"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomButton_Bold
                     android:layout_width="wrap_content"
@@ -229,7 +251,8 @@
                     android:textColor="@drawable/clickable_textview_white_black"
                     android:textSize="12sp"
                     android:padding="8dp"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 

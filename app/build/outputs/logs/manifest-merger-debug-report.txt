@@ -1,10 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3d7cbf3171ff0a33f0663bec71523693\places-2.1.0\AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5e3f41c0bd1123116fbf3010859d5aa2\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -86,16 +85,16 @@ MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\Lenovo
 MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\739e8cd04702e836dee6f361c035b142\beta-1.2.10\AndroidManifest.xml:2:1-13:12
 MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b6791cdb86afc59a8fb23903b72c5e2a\jetified-answers-1.4.7\AndroidManifest.xml:2:1-13:12
 MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\28fab2ec0710e7b95b002fec6ae013fb\fabric-1.4.8\AndroidManifest.xml:22:1-33:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
-INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 	package
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:5:5-27
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:4:5-51
@@ -103,7 +102,7 @@ INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-201:12
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 		INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -208,7 +207,7 @@ ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\sr
 	android:name
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:24:22-66
 application
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:26:5-199:19
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:26:5-200:19
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.libraries.places:places:2.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3d7cbf3171ff0a33f0663bec71523693\places-2.1.0\AndroidManifest.xml:13:5-21:19
@@ -302,7 +301,7 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\Lenovo\.gradle\caches\
 	android:hardwareAccelerated
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:31:9-44
 	tools:ignore
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:36:9-48
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:36:9-60
 	android:roundIcon
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:32:9-54
 	android:largeHeap
@@ -316,306 +315,304 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\Lenovo\.gradle\caches\
 	android:usesCleartextTraffic
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:35:9-44
 activity#com.mealarts.AddressListActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:9-39:58
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:38:9-40:58
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:39:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:37:19-54
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:38:19-54
 activity#com.mealarts.ManageAddressActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:40:9-43:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:41:9-44:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:43:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:43:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:41:13-50
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:42:13-50
 activity#com.mealarts.VisitorRegActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:44:9-47:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:47:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:47:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:45:13-47
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:46:13-47
 activity#com.mealarts.WelcomeActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:48:9-51:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:49:9-52:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:51:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:51:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:52:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:49:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:50:13-44
 activity#com.mealarts.CheckoutDetailsActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:52:9-55:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:53:9-56:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:55:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:55:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:53:13-52
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:54:13-52
 activity#com.mealarts.VoucherListActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:56:9-59:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:57:9-60:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:58:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:59:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:59:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:60:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:57:13-48
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:58:13-48
 uses-library#org.apache.http.legacy
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:61:9-63:40
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:62:9-64:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7e512f50ef8f12801f965cdc6b18334\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:62:13-50
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:63:13-50
 activity#com.mealarts.ChefDetailActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:65:9-68:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:66:9-69:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:67:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:68:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:68:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:69:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:66:13-47
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:67:13-47
 activity#com.mealarts.SingleOrderDetailActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:69:9-72:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:70:9-73:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:71:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:72:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:72:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:73:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:70:13-54
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:71:13-54
 activity#com.mealarts.PayTMPaymentActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:73:9-76:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:74:9-77:59
 	android:screenOrientation
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:76:13-49
+	android:theme
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:77:13-56
+	android:name
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:75:13-49
-	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:76:13-56
-	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:74:13-49
 activity#com.mealarts.PolicyTermsActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:77:9-80:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:78:9-81:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:79:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:80:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:80:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:81:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:78:13-48
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:79:13-48
 activity#com.mealarts.ContactUsActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:81:9-84:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:82:9-85:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:83:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:84:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:84:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:85:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:82:13-46
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:83:13-46
 activity#com.mealarts.AllChefActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:85:9-88:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:86:9-89:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:87:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:88:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:88:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:89:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:86:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:87:13-44
 activity#com.mealarts.AboutUsActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:89:9-92:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:90:9-93:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:91:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:92:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:92:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:93:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:90:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:91:13-44
 activity#com.mealarts.MainActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:93:9-102:20
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:94:9-103:20
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:95:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:96:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:96:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:97:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:94:13-41
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:95:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:97:13-101:29
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:13-102:29
 action#android.intent.action.MAIN
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:17-69
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:99:17-69
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:98:25-66
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:99:25-66
 category#android.intent.category.DEFAULT
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:17-76
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:101:17-76
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:100:27-73
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:101:27-73
 activity#com.mealarts.CheckoutActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:103:9-106:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:104:9-107:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:106:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:106:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:107:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:104:13-45
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:105:13-45
 activity#com.mealarts.PasswordActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:107:9-110:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:108:9-111:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:109:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:110:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:110:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:111:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:108:13-45
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:109:13-45
 activity#com.mealarts.DeliveryAddressActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:111:9-114:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:112:9-115:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:113:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:114:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:114:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:115:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:112:13-52
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:113:13-52
 activity#com.mealarts.AddToCartActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:115:9-118:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:116:9-119:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:117:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:118:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:118:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:119:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:116:13-46
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:117:13-46
 activity#com.mealarts.ProfileActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:119:9-122:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:120:9-123:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:121:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:122:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:122:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:123:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:120:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:121:13-44
 activity#com.mealarts.OTPActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:123:9-126:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:124:9-127:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:125:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:126:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:126:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:127:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:124:13-40
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:125:13-40
 activity#com.mealarts.RegistrationActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:127:9-130:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:128:9-131:59
 	android:screenOrientation
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:130:13-49
+	android:theme
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:131:13-56
+	android:name
 		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:129:13-49
-	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:130:13-56
-	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:128:13-49
 activity#com.mealarts.LogInActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:131:9-134:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:132:9-135:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:133:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:134:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:134:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:135:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:132:13-42
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:133:13-42
 activity#com.mealarts.MenuListActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:135:9-138:59
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:136:9-139:59
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:137:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:138:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:138:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:139:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:136:13-45
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:137:13-45
 activity#com.mealarts.SplashActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:139:9-148:20
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:140:9-149:20
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:141:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:142:13-49
 	android:theme
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:142:13-56
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:143:13-56
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:140:13-43
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:141:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:143:13-147:29
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:144:13-148:29
 category#android.intent.category.LAUNCHER
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:17-77
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:147:17-77
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:146:27-74
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:147:27-74
 activity#com.mealarts.MapsActivity
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:149:9-155:55
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:150:9-156:55
 	android:screenOrientation
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:154:13-49
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:155:13-49
 	android:launchMode
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:152:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:153:13-44
 	android:supportsPictureInPicture
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:155:13-52
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:156:13-52
 	android:resizeableActivity
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:153:13-46
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:154:13-46
 	android:configChanges
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:151:13-91
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:152:13-91
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:150:13-41
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:151:13-41
 meta-data#com.onesignal.NotificationOpened.DEFAULT
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:157:9-159:39
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:158:9-160:39
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:159:13-36
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:160:13-36
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:158:13-68
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:159:13-68
 meta-data#com.google.android.geo.API_KEY
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:168:9-170:55
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:169:9-171:55
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:170:13-52
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:171:13-52
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:169:13-58
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:170:13-58
 meta-data#com.google.android.gms.version
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:171:9-173:69
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:172:9-174:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\8d6763d283a37c2154f46a764dbd870e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\8d6763d283a37c2154f46a764dbd870e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:173:13-66
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:174:13-66
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:172:13-58
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:173:13-58
 meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:174:9-177:35
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:175:9-178:35
 REJECTED from [com.github.bumptech.glide:okhttp3-integration:4.10.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\78f38d4982afaee784fb9603bd667015\okhttp3-integration-4.10.0\AndroidManifest.xml:11:9-13:43
 	tools:node
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:177:13-32
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:13-32
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:176:13-40
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:177:13-40
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:175:13-84
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:176:13-84
 receiver#com.mealarts.Helpers.SmsReceiver
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:9-182:20
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:179:9-183:20
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:178:19-54
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:179:19-54
 intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:179:13-181:29
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:13-182:29
 action#android.provider.Telephony.SMS_RECEIVED
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:17-82
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:181:17-82
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:180:25-79
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:181:25-79
 service#com.mealarts.Helpers.OneSignal.NotificationExtender
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:184:9-191:19
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:185:9-192:19
 	android:exported
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:186:13-37
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:187:13-37
 	android:permission
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:187:13-69
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:188:13-69
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:185:13-67
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:186:13-67
 intent-filter#action:name:com.onesignal.NotificationExtender
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:188:13-190:29
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:13-191:29
 action#com.onesignal.NotificationExtender
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:17-77
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:190:17-77
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:189:25-74
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:190:25-74
 meta-data#io.fabric.ApiKey
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:193:9-195:72
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:194:9-196:72
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:195:13-69
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:196:13-69
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:194:13-44
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:195:13-44
 meta-data#firebase_crashlytics_collection_enabled
-ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:196:9-198:36
+ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:197:9-199:36
 	android:value
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:198:13-33
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:199:13-33
 	android:name
-		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:197:13-67
+		ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:198:13-67
 uses-sdk
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.libraries.places:places:2.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3d7cbf3171ff0a33f0663bec71523693\places-2.1.0\AndroidManifest.xml:7:5-44

@@ -832,7 +832,7 @@ public class DeliveryAddressActivity extends AppCompatActivity implements OnMapR
 
             RequestQueue requestQueue = Volley.newRequestQueue(DeliveryAddressActivity.this, sslCertification.getHurlStack());
             StringRequest stringRequest = new StringRequest(Request.Method.POST, URLServices.AddNewAddress, response -> {
-                Log.e("AddNewAddress", response);
+                Log.e("AddNewAddress", "resp:"+response);
                 try {
                     JSONObject addressObj = new JSONObject(response);
                     String Status = addressObj.getString("status");
@@ -857,11 +857,12 @@ public class DeliveryAddressActivity extends AppCompatActivity implements OnMapR
                         Log.e("Cart", sharedPref.getUserCart());
                         onBackPressed();
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                } catch (JSONException je) {
+                    je.printStackTrace();
+                    Log.e("AddNewAddress", "je:"+je.toString());
                 }
             }, error -> {
-
+                Log.e("AddNewAddress", "ve:"+error.toString());
             }){
                 @Override
                 protected Map<String, String> getParams() {
