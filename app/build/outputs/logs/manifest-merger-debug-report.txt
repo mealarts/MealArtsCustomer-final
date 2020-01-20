@@ -4,6 +4,7 @@ ADDED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\sr
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml:2:1-202:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3d7cbf3171ff0a33f0663bec71523693\places-2.1.0\AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5e3f41c0bd1123116fbf3010859d5aa2\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -613,6 +614,8 @@ uses-sdk
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
 INJECTED from E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\src\main\AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dde0b9cad47c6a1155c0477c7f712745\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\473dac770f0aef7d6ac771ad59268ddf\material-1.2.0-alpha03\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.libraries.places:places:2.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3d7cbf3171ff0a33f0663bec71523693\places-2.1.0\AndroidManifest.xml:7:5-44

@@ -1576,7 +1576,8 @@ public class MenuListActivity extends AppCompatActivity{
 
                             if(tempMenu.get(menuPosition).getOfferPer() > 0)
                                 tvOfferPer.setVisibility(View.VISIBLE);
-                            else tvOfferPer.setVisibility(View.GONE);
+                            else
+                                tvOfferPer.setVisibility(View.GONE);
 
                             tvOfferPer.setText(tempMenu.get(menuPosition).getOfferPer()+"%");
                             tvPrepTime.setText(tempMenu.get(menuPosition).getMenuPrepTime()+" min");

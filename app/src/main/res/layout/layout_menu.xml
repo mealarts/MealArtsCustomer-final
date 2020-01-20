@@ -210,7 +210,8 @@
                     android:gravity="center|start"
                     android:layout_gravity="start"
                     android:paddingEnd="15dp"
-                    android:paddingStart="15dp"/>
+                    android:paddingStart="15dp"
+                    tools:ignore="HardcodedText" />
 
                 <View
                     android:layout_width="0dp"

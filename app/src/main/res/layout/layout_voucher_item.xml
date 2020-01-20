@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -31,12 +32,14 @@
                 android:paddingStart="45dp"
                 android:background="@color/colorGrayFade"
                 android:textColor="@color/colorPrimaryDark"
-                android:layout_margin="2dp" />
+                android:layout_margin="2dp"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="49dp"
-                android:src="@drawable/voucher_ribbon"/>
+                android:src="@drawable/voucher_ribbon"
+                tools:ignore="ContentDescription" />
 
         </androidx.cardview.widget.CardView>
 
@@ -53,7 +56,8 @@
             android:text="Apply"
             android:textColor="@drawable/clickable_textview_red_fade"
             android:background="@color/colorTrans"
-            android:layout_gravity=""/>
+            android:layout_gravity=""
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
@@ -71,7 +75,8 @@
             android:textColor="@color/colorPrimaryDark"
             android:textSize="14sp"
             android:text="asdf"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -90,7 +95,8 @@
             android:textSize="13sp"
             android:text="12/12/12"
             android:paddingBottom="8dp"
-            android:paddingTop="8dp"/>
+            android:paddingTop="8dp"
+            tools:ignore="HardcodedText" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
             android:layout_width="match_parent"
@@ -104,7 +110,8 @@
             android:textAllCaps="true"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -116,7 +123,8 @@
             android:textSize="14sp"
             android:text="12/12/12"
             android:paddingBottom="8dp"
-            android:paddingTop="5dp"/>
+            android:paddingTop="5dp"
+            tools:ignore="HardcodedText" />
 
 
     </LinearLayout>

@@ -107,6 +107,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder>{
             holder.tvOfferPer.setVisibility(View.VISIBLE);
         else holder.tvOfferPer.setVisibility(View.GONE);
         holder.tvOfferPer.setText(MenuArray.get(position).getOfferPer()+"%");
+        //Log.d("/*menu_adapter","offerperc:"+MenuArray.get(position).getOfferPer());
+        if(MenuArray.get(position).getOfferPer()==0){
+            holder.tvMenuOrgPrice.setVisibility(View.GONE);
+        }
         holder.tvPrepTime.setText(MenuArray.get(position).getMenuPrepTime()+" min");
         holder.tvMenuOrgPrice.setText("₹ "+MenuArray.get(position).getOriginalPrice());
         holder.tvMenuPrice.setText("₹ "+MenuArray.get(position).getSellingPrice());

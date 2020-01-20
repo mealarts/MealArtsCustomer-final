@@ -36,7 +36,8 @@
                 android:id="@+id/tvUser"
                 android:text="UserName"
                 android:textColor="@color/colorWhite"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                tools:ignore="HardcodedText" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="match_parent"
@@ -44,7 +45,8 @@
                 android:id="@+id/tvContact"
                 android:text="Contact"
                 android:textColor="@color/colorWhite"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

@@ -279,7 +279,8 @@
                                 android:gravity="center|start"
                                 android:drawableEnd="@drawable/arrow_right"
                                 android:drawableTint="@color/colorDarkGray"
-                                android:layout_gravity="bottom|center"/>
+                                android:layout_gravity="bottom|center"
+                                tools:ignore="HardcodedText" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -393,6 +394,8 @@
                 android:textSize="15sp"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
