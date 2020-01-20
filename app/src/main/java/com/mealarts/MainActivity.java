@@ -1310,8 +1310,8 @@ public class MainActivity extends AppCompatActivity implements
                 String banner = jsonObject.getString("banner");
                 Glide.with(MainActivity.this).load(banner).into(ivOffer);
                 if(Status.equals("1")){
-                    vpOffers.setVisibility(View.VISIBLE);
-                    layoutDefault.setVisibility(View.GONE);
+                    vpOffers.setVisibility(View.VISIBLE); // make viewpager visible
+                    layoutDefault.setVisibility(View.GONE);  //make default banner invisible
                     JSONArray voucherArray = jsonObject.getJSONArray("offerlist");
                     voucherList = new ArrayList<>();
                     for(int i = 0 ; i < voucherArray.length() ; i++){
@@ -1334,8 +1334,8 @@ public class MainActivity extends AppCompatActivity implements
                     vpOffers.setAutoScrollDurationFactor(15);                                       // auto scroll slide after 15f
                     vpOffers.startAutoScroll();
                 }else {
-                    vpOffers.setVisibility(View.GONE);
-                    layoutDefault.setVisibility(View.VISIBLE);
+                    vpOffers.setVisibility(View.GONE);  //make viewpager invisible
+                    layoutDefault.setVisibility(View.VISIBLE);  //make default banner visible
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

@@ -380,7 +380,7 @@
         android:paddingTop="?attr/actionBarSize"
         android:layout_gravity="bottom"
         android:background="@color/colorBlackFade"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

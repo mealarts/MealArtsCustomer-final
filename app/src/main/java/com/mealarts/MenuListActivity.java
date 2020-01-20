@@ -1470,9 +1470,14 @@ public class MenuListActivity extends AppCompatActivity{
                         else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                                 .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-                        if(tempMenu.get(menuPosition).getOfferPer() > 0)
+                        if(tempMenu.get(menuPosition).getOfferPer() > 0) {
                             tvOfferPer.setVisibility(View.VISIBLE);
-                        else tvOfferPer.setVisibility(View.GONE);
+                            tvMenuOrgPrice.setVisibility(View.VISIBLE);
+                        }
+                        else {
+                            tvOfferPer.setVisibility(View.GONE);
+                            tvMenuOrgPrice.setVisibility(View.GONE);
+                        }
 
                         tvOfferPer.setText(tempMenu.get(menuPosition).getOfferPer()+"%");
                         tvPrepTime.setText(tempMenu.get(menuPosition).getMenuPrepTime()+" min");
@@ -1557,7 +1562,7 @@ public class MenuListActivity extends AppCompatActivity{
                             AddOnsList = tempMenu.get(menuPosition).getAddOnsList();
                             addOnsAdapterListener(addOnsMenuAdapter);
 
-                            Log.d("/*abc_menulistactivity","addons add clicked "+menuPosition);
+                            Log.d("/*abc_menulistactivity","(setAddListener)addons add clicked "+menuPosition);
                             if(!tempMenu.get(menuPosition).getProductImg().isEmpty()) {
                                 Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(menuPosition).getProductImg()).into(ivMenuImg);
                                 //Log.d("/*menu_menu",URLServices.MenuImg + tempMenu.get(position).getProductImg()+"");
@@ -1574,10 +1579,14 @@ public class MenuListActivity extends AppCompatActivity{
                             else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-                            if(tempMenu.get(menuPosition).getOfferPer() > 0)
+                            if(tempMenu.get(menuPosition).getOfferPer() > 0) {
                                 tvOfferPer.setVisibility(View.VISIBLE);
-                            else
+                                tvMenuOrgPrice.setVisibility(View.VISIBLE);
+                            }
+                            else {
                                 tvOfferPer.setVisibility(View.GONE);
+                                tvMenuOrgPrice.setVisibility(View.GONE);
+                            }
 
                             tvOfferPer.setText(tempMenu.get(menuPosition).getOfferPer()+"%");
                             tvPrepTime.setText(tempMenu.get(menuPosition).getMenuPrepTime()+" min");
@@ -1865,7 +1874,7 @@ public class MenuListActivity extends AppCompatActivity{
         });
 
         menuAdapter.showAddOnsListener((position, hasAddOns, AddOnsArray) -> {
-            Log.d("/*abc_menulistactivity","addons add clicked "+position);
+            Log.d("/*abc_menulistactivity","(showaddonslistener)addons add clicked "+position);
             int qty=0;
             if(!tempMenu.get(position).getProductImg().isEmpty()) {
                 Glide.with(MenuListActivity.this).load(URLServices.MenuImg + tempMenu.get(position).getProductImg()).into(ivMenuImg);
@@ -1883,9 +1892,14 @@ public class MenuListActivity extends AppCompatActivity{
             else Glide.with(MenuListActivity.this).load(R.drawable.nonveg)
                     .placeholder(R.drawable.mealarts_loader).into(ivVegType);
 
-            if(tempMenu.get(position).getOfferPer() > 0)
+            if(tempMenu.get(position).getOfferPer() > 0) {
                 tvOfferPer.setVisibility(View.VISIBLE);
-            else tvOfferPer.setVisibility(View.GONE);
+                tvMenuOrgPrice.setVisibility(View.VISIBLE);
+            }
+            else {
+                tvOfferPer.setVisibility(View.GONE);
+                tvMenuOrgPrice.setVisibility(View.GONE);
+            }
 
             try{
                 JSONObject cartObj = new JSONObject(sharedPref.getUserCart());
@@ -1894,11 +1908,12 @@ public class MenuListActivity extends AppCompatActivity{
                     JSONObject cartItemObj = cartArray.getJSONObject(i);
                     if(cartItemObj.getString("ProductName").trim().equals(tempMenu.get(position).getProductName().trim())){
                         qty=cartItemObj.getInt("Quantity");
-                        Log.d("/*abc_menulistactivity","je:"+qty);
+                        Log.d("/*abc_menulistactivity","Quantity:"+qty);
                         tvMenuQty.setText(""+qty);
 //                        tvMenuTotalPrice.setText("test");
                         tvMenuTotalPrice.setVisibility(View.VISIBLE);
                         tvMenuTotalPrice.setText(""+(qty*Integer.parseInt(tempMenu.get(position).getSellingPrice())));
+                        AddOnsArray=tempMenu.get(position).getAddOnsList();
                     }
                 }
             }
@@ -1913,7 +1928,8 @@ public class MenuListActivity extends AppCompatActivity{
             tvDescription.setText(tempMenu.get(position).getMenuDesc());
 
 
-            if(hasAddOns) {
+//            if(hasAddOns) {
+            if(tempMenu.get(position).getAddOns()) {
 
                 addonClicked=true;
                 Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
@@ -1933,7 +1949,7 @@ public class MenuListActivity extends AppCompatActivity{
     }
 
     public void addOnsAdapterListener(AddOnsMenuAdapter addOnsMenuAdapter){
-        Log.d("/*abc_menulistactivity","add ons adapter");
+        Log.d("/*abc_menulistactivity","(addOnsAdapterListener)add ons adapter");
         addOnsMenuAdapter.setListener((position, QtyCount, MenuAddOnsList, tvQty, tvTotalPrice, tvAddCart, productCounter) -> {
             int TotalPrice;
             QtyCount = 0;
