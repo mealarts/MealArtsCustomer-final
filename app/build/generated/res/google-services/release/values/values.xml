@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1097332750437-24gf03u02ha4v2vu3ochhrpvtloiohif.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mealarts-99ca4.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1097332750437</string>
+    <string name="google_api_key" translatable="false">AIzaSyDbarLhZk5ASWbntxbDgxb-5Ee6EKUXhQA</string>
+    <string name="google_app_id" translatable="false">1:1097332750437:android:c9aacfc7327fe129</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDbarLhZk5ASWbntxbDgxb-5Ee6EKUXhQA</string>
+    <string name="google_storage_bucket" translatable="false">mealarts-99ca4.appspot.com</string>
+    <string name="project_id" translatable="false">mealarts-99ca4</string>
+</resources>
