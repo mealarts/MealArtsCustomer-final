@@ -244,6 +244,10 @@ public class MainActivity extends AppCompatActivity implements
             e.printStackTrace();
         }
 
+        ivOffer.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, MenuListActivity.class));
+        });
+
         tvCurrentAddress.setOnClickListener(v -> {                                                  // Redirect to Delivery Address Screen (Above "Location->" Layout)
             if(sharedPref.getUserId().equals("")){
                 startActivity(new Intent(MainActivity.this, LogInActivity.class));
@@ -333,6 +337,7 @@ public class MainActivity extends AppCompatActivity implements
 //----------------------------------Order Now Slider Button----------------------------------//
         btnOrderNow = findViewById(R.id.btnOrderNow);
         btnOrderNow.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MenuListActivity.class)));
+        layoutDefault.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MenuListActivity.class)));
 
 //----------------------------------Current Single Order----------------------------------//
         btnOrderNow = findViewById(R.id.btnOrderNow);
@@ -1325,7 +1330,7 @@ public class MainActivity extends AppCompatActivity implements
                         voucherUtils.setVoucherToDate(voucherObj.getString("to_date"));
                         voucherUtils.setVoucherMinValue(voucherObj.getInt("min_order_amount"));
                         voucherUtils.setDiscountUpTo(voucherObj.getInt("max_discount_amount"));
-                        voucherUtils.setVoucherImg(voucherObj.getString("image"));
+                        voucherUtils.setVoucherImg(URLServices.PromoOfferImg+voucherObj.getString("image"));
                         voucherList.add(voucherUtils);
                     }
                     Collections.sort(voucherList, (lhs, rhs) -> rhs.getDiscountValue() - lhs.getDiscountValue()); // sort by discount value
@@ -1334,8 +1339,25 @@ public class MainActivity extends AppCompatActivity implements
                     vpOffers.setAutoScrollDurationFactor(15);                                       // auto scroll slide after 15f
                     vpOffers.startAutoScroll();
                 }else {
-                    vpOffers.setVisibility(View.GONE);  //make viewpager invisible
-                    layoutDefault.setVisibility(View.VISIBLE);  //make default banner visible
+//                    vpOffers.setVisibility(View.GONE);  //make viewpager invisible
+//                    layoutDefault.setVisibility(View.VISIBLE);  //make default banner visible
+                    vpOffers.setVisibility(View.VISIBLE); // make viewpager visible
+                    layoutDefault.setVisibility(View.GONE);  //make default banner invisible
+
+                    JSONArray voucherArray = jsonObject.getJSONArray("slider_list");
+                    voucherList = new ArrayList<>();
+                    for(int i = 0 ; i < voucherArray.length() ; i++){
+                        JSONObject voucherObj = voucherArray.getJSONObject(i);
+                        VoucherUtils voucherUtils = new VoucherUtils();                             // Voucher Util getter setter class
+                        voucherUtils.setVoucherId(Integer.parseInt(voucherObj.getString("s_id")));
+                        voucherUtils.setVoucherImg("https://www.mealarts.com/admin/assets/uploads/slider/"+voucherObj.getString("s_img"));
+                        voucherList.add(voucherUtils);
+                    }
+//                    Collections.sort(voucherList, (lhs, rhs) -> rhs.getDiscountValue() - lhs.getDiscountValue()); // sort by discount value
+                    SliderAdapter sliderAdapter = new SliderAdapter(MainActivity.this, voucherList);
+                    vpOffers.setAdapter(sliderAdapter);
+                    vpOffers.setAutoScrollDurationFactor(15);                                       // auto scroll slide after 15f
+                    vpOffers.startAutoScroll();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

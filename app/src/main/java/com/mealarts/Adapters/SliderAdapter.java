@@ -2,6 +2,7 @@ package com.mealarts.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,9 @@ public class SliderAdapter extends PagerAdapter {
             try {
                 ImageView ivSlider = view.findViewById(R.id.slider);
                 Button btnOrderNow = view.findViewById(R.id.btnOrderNow);
-                Glide.with(context).load(URLServices.PromoOfferImg + sliderImageList.get(position).getVoucherImg())
+//                Glide.with(context).load(URLServices.PromoOfferImg + sliderImageList.get(position).getVoucherImg())
+//                        .error(R.drawable.mealarts_icon).into(ivSlider);
+                Glide.with(context).load(sliderImageList.get(position).getVoucherImg())
                         .error(R.drawable.mealarts_icon).into(ivSlider);
                 ViewPager vp = (ViewPager) container;
                 vp.addView(view, 0);
@@ -62,6 +65,8 @@ public class SliderAdapter extends PagerAdapter {
                 btnOrderNow.setOnClickListener(v -> {
                     context.startActivity(new Intent(context, MenuListActivity.class));
                 });
+
+                ivSlider.setOnClickListener(v -> context.startActivity(new Intent(context, MenuListActivity.class)));
             } catch (Exception E) {
                 E.printStackTrace();
             }return view;
