@@ -1,0 +1,4 @@
+# Referenced at E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:74
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\HGD\MealArtsCustomer-master(7jan19)\MealArtsCustomer-master\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:74
+-keep class androidx.multidex.MultiDexApplication { <init>(); }
