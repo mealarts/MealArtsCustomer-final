@@ -8,6 +8,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -39,8 +41,8 @@ import java.util.Map;
 public class SingleOrderDetailActivity extends AppCompatActivity {
 
     TextView tvOrderId, tvOrderStatus, tvTotalItem, tvOrderTotal, tvOrderDate, tvDeliveryDate, tvAddressType, tvAddress,
-            tvItemTotal, tvDeliveryCharge, tvPackingCharge, tvVoucherDisc, tvPaidType, tvGrandTotal,tvGstAmount;
-    LinearLayout layoutLoader;
+            tvItemTotal, tvDeliveryCharge, tvPackingCharge, tvVoucherDisc, tvPaidType, tvGrandTotal,tvGstAmount,tvYouSaved;
+    LinearLayout layoutLoader,llYouSaved;
     RecyclerView rcOrderItems;
     ImageView ivBack, ivLoader;
     SSLCertification sslCertification = new SSLCertification(SingleOrderDetailActivity.this);
@@ -58,6 +60,9 @@ public class SingleOrderDetailActivity extends AppCompatActivity {
         sharedPref = new SharedPref(SingleOrderDetailActivity.this);
 
         connection = new CheckExtras(SingleOrderDetailActivity.this);
+
+        llYouSaved=findViewById(R.id.llYouSaved);
+        Animation anim= AnimationUtils.loadAnimation(this,R.anim.zoom_you_saved);
 
         ivBack = findViewById(R.id.ivBack);
         ivBack.setOnClickListener(v -> onBackPressed());
@@ -82,6 +87,8 @@ public class SingleOrderDetailActivity extends AppCompatActivity {
         tvPaidType = findViewById(R.id.tvPaidType);
         tvGrandTotal = findViewById(R.id.tvGrandTotal);
         tvGstAmount = findViewById(R.id.tvGstAmount);
+        tvYouSaved = findViewById(R.id.tvYouSaved);
+        llYouSaved.startAnimation(anim);
 
         rcOrderItems = findViewById(R.id.rcOrderItems);
         rcOrderItems.setHasFixedSize(true);
@@ -118,6 +125,8 @@ public class SingleOrderDetailActivity extends AppCompatActivity {
                 tvVoucherDisc.setText("- ₹ "+orderObj.getString("voucher_discount")+" /-");
                 tvGrandTotal.setText("₹ "+orderObj.getString("grand_total")+" /-");
                 tvPaidType.setText("Paid Via "+orderObj.getString("payment_type"));
+                tvYouSaved.setText(" ₹ "+orderObj.getString("you_saved")+" /-");
+
                 if(orderObj.getString("total_gst").isEmpty())
                     tvGstAmount.setText("₹ 0 /-");
                 else

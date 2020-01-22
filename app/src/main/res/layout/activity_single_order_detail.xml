@@ -491,6 +491,27 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/llYouSaved"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:text="You saved :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                    <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
+                        android:id="@+id/tvYouSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </ScrollView>

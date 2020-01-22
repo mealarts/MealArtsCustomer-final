@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +21,8 @@
             android:src="@drawable/back_arrow"
             android:padding="10dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -32,7 +32,8 @@
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -72,7 +73,8 @@
                             android:hint="Name"
                             android:textColor="@color/colorPrimary"
                             android:textSize="18sp"
-                            android:padding="8dp"/>
+                            android:padding="8dp"
+                            tools:ignore="HardcodedText" />
 
                         <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                             android:layout_width="wrap_content"
@@ -83,7 +85,8 @@
                             android:background="@drawable/spinner_back"
                             android:textSize="14sp"
                             android:padding="8dp"
-                            android:layout_marginEnd="10dp"/>
+                            android:layout_marginEnd="10dp"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -94,7 +97,8 @@
                         android:hint="Full Address"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="14sp"
-                        android:padding="8dp"/>
+                        android:padding="8dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="wrap_content"
@@ -104,7 +108,8 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="14sp"
                         android:padding="8dp"
-                        android:layout_marginEnd="10dp"/>
+                        android:layout_marginEnd="10dp"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                         android:layout_width="match_parent"
@@ -113,7 +118,8 @@
                         android:hint="Mobile Number"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="14sp"
-                        android:padding="8dp"/>
+                        android:padding="8dp"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -131,7 +137,8 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp"
                         android:layout_margin="5dp"
-                        android:layout_gravity="center|start"/>
+                        android:layout_gravity="center|start"
+                        tools:ignore="HardcodedText" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:layout_width="wrap_content"
@@ -170,7 +177,8 @@
                 android:id="@+id/ivLoader"
                 android:background="@drawable/loader_back_circle"
                 android:src="@drawable/mealarts_loader"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -185,6 +193,9 @@
         android:textSize="16sp"
         android:background="@drawable/signin_button_back"
         android:textColor="@drawable/clickable_textview_white_red"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
