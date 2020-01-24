@@ -22,7 +22,8 @@
             android:src="@drawable/back_arrow"
             android:padding="10dp"
             android:layout_marginStart="10dp"
-            android:layout_gravity="center|start"/>
+            android:layout_gravity="center|start"
+            tools:ignore="ContentDescription" />
 
         <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
             android:layout_width="match_parent"
@@ -32,7 +33,8 @@
             android:textColor="@color/colorWhite"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -50,7 +52,8 @@
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="0dp"
+            tools:ignore="HardcodedText" /><!--topmargin 10 -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +66,8 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|top"
                 android:src="@drawable/location"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                tools:ignore="ContentDescription" />
             
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="0dp"
@@ -78,7 +82,8 @@
                 \nAbove Puneri Sweet,
                 \nSai Sanskruti Complex,
                 \nBaif Road,
-                \nWagholi, Pune - 412207"/>
+                \nWagholi, Pune - 412207"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -94,7 +99,8 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|top"
                 android:src="@drawable/email"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="0dp"
@@ -105,7 +111,8 @@
                 android:layout_marginStart="10dp"
                 android:textSize="15sp"
                 android:autoLink="email"
-                android:text="info@mealarts.com"/>
+                android:text="info@mealarts.com"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -115,14 +122,15 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center|top"
                 android:src="@drawable/call"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="0dp"
@@ -133,7 +141,8 @@
                 android:layout_marginStart="10dp"
                 android:textSize="14sp"
                 android:autoLink="phone"
-                android:text="+91 9767522132"/>
+                android:text="+91 8999961951"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -145,7 +154,8 @@
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:layout_width="match_parent"

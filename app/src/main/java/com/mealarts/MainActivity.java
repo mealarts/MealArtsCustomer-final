@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
-import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,8 +20,6 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.Option;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import android.os.Handler;
 import android.provider.Settings;
@@ -40,7 +37,6 @@ import android.view.MenuItem;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.maps.model.LatLng;
-import com.mealarts.Adapters.AddressListItemAdapter;
 import com.mealarts.Adapters.BottomMenuAdapter;
 import com.mealarts.Adapters.DrawerAdapter;
 import com.mealarts.Adapters.SliderAdapter;
@@ -54,7 +50,6 @@ import com.mealarts.Helpers.CustomRatingBar;
 import com.mealarts.Helpers.CustomToast;
 import com.mealarts.Helpers.PermissionChecker;
 import com.mealarts.Helpers.SharedPref;
-import com.mealarts.Helpers.Utils.AddressUtils;
 import com.mealarts.Helpers.Utils.BottomMenuUtils;
 import com.mealarts.Helpers.Utils.CategoryUtils;
 import com.mealarts.Helpers.Utils.VendorUtils;
@@ -82,7 +77,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -496,7 +490,7 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onRestart() {
         super.onRestart();
-
+        Log.d("/*mainAct_restart","in onrestart");
         //sharedPref = new SharedPref(MainActivity.this);
         connection = new CheckExtras(MainActivity.this);                                    //check connection and location when activity restarts.
 
@@ -649,6 +643,7 @@ public class MainActivity extends AppCompatActivity implements
                                             cartObj, locationObj, listAddresses, 0, subLocality,
                                             pincode, locality, area);
                                 }else {
+                                    Log.d("/*23jan_checkdist","checkdistance_cart is empty");
                                     checkDistance(0.2f, cartObj, locationObj, listAddresses,
                                             0, subLocality);                                     // if cart Json has no length then check distance between previously set location and current location
                                 }
@@ -801,7 +796,7 @@ public class MainActivity extends AppCompatActivity implements
                 float CurrentDistance = Float.parseFloat(distanceObj.getString("text")
                         .substring(0,distanceObj.getString("text").length()-3));
                 Log.e("CurrentDistance", CurrentDistance+"_");
-
+                Log.d("/*23jan_checkdist","checkdistance_in post execute of download task");
                 checkDistance(CurrentDistance, cartObj, locationObj, listAddresses, i, subLocality);                                                   // if cart Json has no length then check distance between previously set location and current location
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -812,16 +807,21 @@ public class MainActivity extends AppCompatActivity implements
     private void checkDistance(float CurrentDistance, JSONObject cartObj, JSONObject locationObj,
                                List<Address> listAddresses, int i, String subLocality) {
 
+        Log.d("/*23jan_checkdist","checkdistance");
+
         try {
             //locationObj = cartObj.getJSONObject(getResources().getString(R.string.LocationJson));
             if (FromSplash && CurrentDistance > 6.0) {                                              //if current distance between 2 locations is more then 6 or not
+                Log.e("Cart_m5","from splash n crntDist>6");
                 if (!locationObj.has("Location"))                                             //check if location object is available within Location Json Obj or not
                     locationObj.put("Location", listAddresses.get(i).getAddressLine(0)); // if not then put it with location
 
                 if(locationObj.has("FullAddress")){
+                    Log.e("Cart_m5","location obj has full address");
                     tvCurrentAddress.setText(locationObj.getString("FullAddress"));           //set new address to current address view
                     tvCurrentLocation.setText(locationObj.getString("FullAddress"));          //set new location to popup of location guide view
                 }else {
+                    Log.e("Cart_m5","locationobj doesn't has fulladdress");
                     tvCurrentAddress.setText(locationObj.getString("Location"));              //set new address to current address view
                     tvCurrentLocation.setText(locationObj.getString("Location"));             //set new location to popup of location guide view
                 }
@@ -830,23 +830,30 @@ public class MainActivity extends AppCompatActivity implements
                 CurrentLat = locationObj.getString("Latitude");                              //set current lat from location json obj
                 CurrentLong = locationObj.getString("Longitude");                            //set current long from location json obj
             } else {                                                                                //if current distance between 2 locations is less then 6
+                Log.e("Cart_m5","not (from splash and crntDist>6)");
                 if (FromSplash && CurrentDistance > 0.1) {                                          //if current distance between 2 locations is less then 0.1
-                    cartObj.put(getResources().getString(R.string.LocationJson), new JSONObject());                                  //replace old with new location json obj
+                    Log.e("Cart_m5","fromsplash and cdist>0.1");
+                    //if(!locationObj.has("FullAddress"))
+                        cartObj.put(getResources().getString(R.string.LocationJson), new JSONObject());                                  //replace old with new location json obj
                     sharedPref.setUserCart(cartObj.toString());                                     //save to shared pref
                     cartObj = new JSONObject(sharedPref.getUserCart());                             //get latest User Cart object from shared pref
                     locationObj = cartObj.getJSONObject(getResources().getString(R.string.LocationJson));                            //get Location Json Obj from User Cart Obj
                 }else {
+                    Log.e("Cart_m5","not (from splash and cdist>0.1)");
                     CurrentLat = locationObj.getString("Latitude");                          //continue with old latitude and longitude from location obj
                     CurrentLong = locationObj.getString("Longitude");
                 }
 
                 if(locationObj.has("FullAddress")){
+                    Log.e("Cart_m5","locationobj has fulladd");
                     tvCurrentAddress.setText(locationObj.getString("FullAddress"));           //set new address to current address view
                     tvCurrentLocation.setText(locationObj.getString("FullAddress"));
                 } else if (locationObj.has("Location")) {
+                    Log.e("Cart_m5","locationobj has location");
                     tvCurrentAddress.setText(locationObj.getString("Location"));              //set new address to current address view
                     tvCurrentLocation.setText(locationObj.getString("Location"));             //set new location to popup of location guide view
                 } else {
+                    Log.e("Cart_m5","no fulladdress and location");
                     locationObj.put("Location", listAddresses.get(i).getAddressLine(0)); //
                     tvCurrentAddress.setText(listAddresses.get(i).getAddressLine(0));
                     tvCurrentLocation.setText(listAddresses.get(i).getAddressLine(0));

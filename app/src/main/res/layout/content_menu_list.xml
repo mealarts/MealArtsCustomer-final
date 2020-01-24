@@ -377,18 +377,21 @@
         android:layout_height="match_parent"
         android:id="@+id/layoutAddOns"
         android:orientation="vertical"
-        android:paddingTop="?attr/actionBarSize"
         android:layout_gravity="bottom"
+        android:gravity="bottom"
         android:background="@color/colorBlackFade"
         android:visibility="visible">
 
         <androidx.cardview.widget.CardView
+            android:background="#eee"
+            android:id="@+id/addonCard"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
             app:cardBackgroundColor="@color/colorWhite">
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -662,12 +665,12 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
                     android:id="@+id/rcAddOns"
                     android:background="@color/colorWhite"/>
 
                 <LinearLayout
+                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:orientation="horizontal"
@@ -676,7 +679,8 @@
                     android:layout_marginEnd="15dp"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:background="@drawable/signin_button_back">
+                    android:background="@drawable/signin_button_back"
+                    android:focusable="true">
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:layout_width="0dp"

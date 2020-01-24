@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -26,7 +27,8 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:background="@color/colorTrans"
-                android:src="@drawable/account_select" />
+                android:src="@drawable/account_select"
+                tools:ignore="ContentDescription" />
 
         </androidx.cardview.widget.CardView>
 
@@ -52,7 +54,8 @@
                     android:gravity="center|start"
                     android:text="Vendor Name"
                     android:textSize="15sp"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:ignore="HardcodedText" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -69,13 +72,15 @@
                         android:textSize="13sp"
                         android:background="@drawable/rating_badge_0"
                         android:textColor="@color/colorWhite"
-                        android:layout_gravity="center|end"/>
+                        android:layout_gravity="center|end"
+                        tools:ignore="HardcodedText" />
 
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="30dp"
                         android:id="@+id/ivNewVendor"
-                        android:src="@drawable/new_vendor1"/>
+                        android:src="@drawable/new_vendor1"
+                        tools:ignore="ContentDescription" />
 
                 </FrameLayout>
 
@@ -89,7 +94,8 @@
                 android:text="Category"
                 android:textSize="14sp"
                 android:padding="2dp"
-                android:textColor="@color/colorDarkGray"/>
+                android:textColor="@color/colorDarkGray"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -104,7 +110,8 @@
                 android:text="Speciality"
                 android:textSize="13sp"
                 android:padding="2dp"
-                android:textColor="@color/colorDarkGray"/>
+                android:textColor="@color/colorDarkGray"
+                tools:ignore="HardcodedText" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                 android:layout_width="match_parent"
@@ -114,7 +121,8 @@
                 android:text="Cuisines"
                 android:textSize="13sp"
                 android:padding="2dp"
-                android:textColor="@color/colorDarkGray"/>
+                android:textColor="@color/colorDarkGray"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

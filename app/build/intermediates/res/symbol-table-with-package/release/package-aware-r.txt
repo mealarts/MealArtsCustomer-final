@@ -37,6 +37,7 @@ anim slide_up
 anim slide_up_1000
 anim slide_up_300
 anim zoom_in
+anim zoom_you_saved
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -2481,6 +2482,7 @@ id linear1
 id listMode
 id list_item
 id llAddOnTitle
+id llYouSaved
 id ll_nb_login
 id map
 id masked
@@ -2846,6 +2848,7 @@ id tvVoucherDesc
 id tvVoucherDisc
 id tvVoucherMsg
 id tvVoucherTitle
+id tvYouSaved
 id tv_radio_label
 id tview1
 id unchecked

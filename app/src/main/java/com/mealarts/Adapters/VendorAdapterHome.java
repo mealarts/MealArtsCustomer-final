@@ -1,5 +1,6 @@
 package com.mealarts.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -18,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.mealarts.AsyncTask.URLServices;
 import com.mealarts.Helpers.GlideApp;
 import com.mealarts.Helpers.Utils.VendorUtils;
+import com.mealarts.MainActivity;
 import com.mealarts.MenuListActivity;
 import com.mealarts.R;
 
@@ -80,6 +82,7 @@ public class VendorAdapterHome extends RecyclerView.Adapter<VendorAdapterHome.My
             intent.putExtra("FromWhere", true);
             intent.putExtra("VendorId", VendorArray.get(position).getVendorId());
             context.startActivity(intent);
+            ((Activity)context).finish();
         });
     }
 

@@ -2,6 +2,7 @@ package com.mealarts;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -131,15 +132,17 @@ public class MenuListActivity extends AppCompatActivity{
     PermissionChecker permissionChecker;
     CustomToast customToast = new CustomToast();
 
+    CardView addonCard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_list);
 
         FromWhere = getIntent().getBooleanExtra("FromWhere", false);
-        if(FromWhere)
+        if(FromWhere) {
             VendorID = getIntent().getStringExtra("VendorId");
-
+        }
         addonClicked=false;
 
         sharedPref = new SharedPref(MenuListActivity.this);
@@ -175,6 +178,7 @@ public class MenuListActivity extends AppCompatActivity{
         layoutCartTotal = findViewById(R.id.layoutCartTotal);
         tvAddCartTotal = findViewById(R.id.tvAddCartTotal);
         btnViewCart = findViewById(R.id.btnViewCart);
+        addonCard = findViewById(R.id.addonCard);
 
         //----------------------------AddOns--------------------------------//
         switchVegType = findViewById(R.id.switchVegType);
@@ -334,6 +338,7 @@ public class MenuListActivity extends AppCompatActivity{
             }
             Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
             layoutAddOns.setAnimation(slide_down);
+//            addonCard.setAnimation(slide_down);
             layoutAddOns.setVisibility(View.GONE);
         });
 
@@ -455,6 +460,7 @@ public class MenuListActivity extends AppCompatActivity{
         if(addonClicked){
             Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
             layoutAddOns.setAnimation(slide_down);
+//            addonCard.setAnimation(slide_down);
             layoutAddOns.setVisibility(View.GONE);
             addonClicked=false;
         }else if(isTaskRoot()){
@@ -1555,7 +1561,8 @@ public class MenuListActivity extends AppCompatActivity{
 
                         if(tempMenu.get(menuPosition).getAddOns()) {
                             Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
-                            layoutAddOnsClick.setAnimation(slide_up);
+//                            layoutAddOnsClick.setAnimation(slide_up);
+                            addonCard.setAnimation(slide_up);
                             layoutAddOnsClick.setVisibility(View.VISIBLE);
                             addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(menuPosition).getAddOnsList(), "List");
                             rcAddOns.setAdapter(addOnsMenuAdapter);
@@ -1599,7 +1606,8 @@ public class MenuListActivity extends AppCompatActivity{
 //                tvMenuQty.setText(tempMenu.get(position).getQty());
                                 addonClicked=true;
                                 Animation slide_up_1s = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_1000);
-                                layoutAddOns.setAnimation(slide_up_1s);
+//                                layoutAddOns.setAnimation(slide_up_1s);
+                            addonCard.setAnimation(slide_up_1s);
                                 layoutAddOns.setVisibility(View.VISIBLE);
                                 AddOnsMenuAdapter addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, tempMenu.get(menuPosition).getAddOnsList(), "List");
                                 rcAddOns.setAdapter(addOnsMenuAdapter);
@@ -1853,6 +1861,7 @@ public class MenuListActivity extends AppCompatActivity{
                                 if(tempMenu.get(position).getAddOns() && layoutAddOns.getVisibility() == View.VISIBLE) {
                                     Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
                                     layoutAddOns.setAnimation(slide_down);
+//                                    addonCard.setAnimation(slide_down);
                                     layoutAddOns.setVisibility(View.GONE);
                                 }
                             }
@@ -1933,7 +1942,8 @@ public class MenuListActivity extends AppCompatActivity{
 
                 addonClicked=true;
                 Animation slide_up = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_up_300);
-                layoutAddOns.setAnimation(slide_up);
+//                layoutAddOns.setAnimation(slide_up);
+                addonCard.setAnimation(slide_up);
                 layoutAddOns.setVisibility(View.VISIBLE);
                 AddOnsMenuAdapter addOnsMenuAdapter = new AddOnsMenuAdapter(MenuListActivity.this, AddOnsArray, "List");
                 rcAddOns.setAdapter(addOnsMenuAdapter);
@@ -2208,6 +2218,7 @@ public class MenuListActivity extends AppCompatActivity{
 
                 Animation slide_down = AnimationUtils.loadAnimation(MenuListActivity.this, R.anim.slide_down_300);
                 layoutAddOns.setAnimation(slide_down);
+//                addonCard.setAnimation(slide_down);
                 layoutAddOns.setVisibility(View.GONE);
 
                 setCartTotal();
