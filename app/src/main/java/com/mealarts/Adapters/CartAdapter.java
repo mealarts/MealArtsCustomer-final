@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -61,6 +62,21 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
         holder.tvAddCart.setVisibility(View.GONE);
         holder.tvMenuOrgPrice.setVisibility(View.GONE);
         holder.tvPrepTime.setVisibility(View.GONE);
+
+        if(cartArrayList.get(position).getVegType().toLowerCase().equals("veg")) {
+            Glide.with(context).load(R.drawable.veg)
+                    .placeholder(R.drawable.mealarts_loader).into(holder.ivVegType);
+            holder.tvAddCart.setTextColor(Color.parseColor("#00aa00"));
+            holder.tvAddCart.setBackgroundResource(R.drawable.add_cart_veg);
+            holder.productCounter.setBackgroundResource(R.drawable.add_cart_back_veg);
+        }
+        else {
+            Glide.with(context).load(R.drawable.nonveg)
+                    .placeholder(R.drawable.mealarts_loader).into(holder.ivVegType);
+            holder.tvAddCart.setTextColor(Color.parseColor("#E00000"));
+            holder.tvAddCart.setBackgroundResource(R.drawable.add_cart);
+            holder.productCounter.setBackgroundResource(R.drawable.add_cart_back);
+        }
 
         if(!cartArrayList.get(position).getProductImg().isEmpty()) {
             Glide.with(context).load(URLServices.MenuImg + cartArrayList.get(position).getProductImg()).into(holder.ivMenuImg);

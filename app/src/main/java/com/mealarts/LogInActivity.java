@@ -48,6 +48,7 @@ public class LogInActivity extends AppCompatActivity {
     PermissionChecker permissionChecker;
     OSPermissionSubscriptionState status;
     CustomToast customToast = new CustomToast();
+    String fromWhere="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,7 @@ public class LogInActivity extends AppCompatActivity {
 //        Log.e("Token", status.getSubscriptionStatus().getUserId());
 
         FromCart = getIntent().getBooleanExtra("FromCart", false);
+        fromWhere=getIntent().getStringExtra("fromWhere");
 
         sharedPrefs = new SharedPref(LogInActivity.this);
         connection = new CheckExtras(LogInActivity.this);
@@ -177,12 +179,21 @@ public class LogInActivity extends AppCompatActivity {
                     }
                     sharedPrefs.setUserCart(cartObj.toString());
                     customToast.showCustomToast(LogInActivity.this, "Login Successfully");
+                    Log.d("/*lia","fwhe"+fromWhere);
                     if (FromCart) {
                         Intent intent = new Intent(LogInActivity.this, CheckoutDetailsActivity.class);
                         intent.putExtra("fromWhere", "Cart");
                         startActivity(intent);
                         finish();
-                    } else {
+                    }
+                    else if(fromWhere!=null){
+                        if(fromWhere.equals("Menu")){
+                            Intent intent = new Intent(LogInActivity.this, AddressListActivity.class);
+                            intent.putExtra("fromWhere", "Menu");
+                            startActivity(intent);
+                        }
+                    }
+                    else {
                         onBackPressed();
                         finish();
                     }

@@ -1,4 +1,4 @@
-#Fri Jan 24 12:04:23 IST 2020
+#Wed Jan 29 20:20:34 IST 2020
 base.0=E\:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex

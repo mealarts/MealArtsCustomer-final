@@ -380,7 +380,7 @@
         android:layout_gravity="bottom"
         android:gravity="bottom"
         android:background="@color/colorBlackFade"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <androidx.cardview.widget.CardView
             android:background="#eee"

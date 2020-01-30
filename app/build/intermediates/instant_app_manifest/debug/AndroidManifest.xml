@@ -3,7 +3,7 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.mealarts"
     android:targetSandboxVersion="2"
-    android:versionCode="11"
+    android:versionCode="9"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -312,6 +312,7 @@
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.crash.component.FirebaseCrashRegistrar"

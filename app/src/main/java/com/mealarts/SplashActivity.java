@@ -3,8 +3,11 @@ package com.mealarts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -13,6 +16,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -40,8 +45,9 @@ public class SplashActivity extends AppCompatActivity {
 
     SharedPref sharedPref;
     ImageView ivLogo;
-    LinearLayout layoutOffline;
-    TextView tvOfflineMessage;
+    LinearLayout layoutOffline,llUpdate;
+    TextView tvOfflineMessage,tvUpdateDescription;
+    Button btnExit,btnUpdate;
     SSLCertification sslCertification = new SSLCertification(SplashActivity.this);
     private boolean gps_enabled = false, network_enabled = false;
 
@@ -51,10 +57,28 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         Fabric.with(this, new Crashlytics());
 
-// Start animating the image
+        // Start animating the image
         ivLogo = findViewById(R.id.ivLogo);
         layoutOffline = findViewById(R.id.layoutOffline);
+        llUpdate = findViewById(R.id.llUpdate);
         tvOfflineMessage = findViewById(R.id.tvOfflineMessage);
+        tvUpdateDescription = findViewById(R.id.tvUpdateDescription);
+
+        btnExit=findViewById(R.id.btnExit);
+        btnUpdate=findViewById(R.id.btnUpdate);
+
+        btnExit.setOnClickListener(v -> finish());
+
+        btnUpdate.setOnClickListener(v -> {
+            try {
+                sharedPref.logoutApp();
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.mealarts")));
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.gradeone.shop.findbest")));
+            } catch (android.content.ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.mealarts")));
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gradeone.shop.findbest")));
+            }
+        });
     }
 
     public void checkOffline(){ //Check App Status if On or Off
@@ -66,12 +90,13 @@ public class SplashActivity extends AppCompatActivity {
                 JSONObject offlineObj = jsonObject.getJSONObject("Offline Status");
                 String offlineStatus = offlineObj.getString("offline");
                 String appDescription = offlineObj.getString("app description");
+                String updateDescription = offlineObj.getString("update_description");
                 String serverVersion = offlineObj.getString("version");
                 String appVersion=Integer.toString(BuildConfig.VERSION_CODE);
 
                 if(offlineStatus.equals("no")){
                     if(Double.parseDouble(serverVersion)>Double.parseDouble(appVersion)) {
-                        alertShow("Update", "Please update new version of MealArts");
+                        alertShow("Update", "Please update new version of MealArts",updateDescription);
                     }else {
                         TimerTask timerTask = new TimerTask() {
                             @Override
@@ -109,24 +134,33 @@ public class SplashActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-    private void alertShow(String strTitle, String strMsg) { //Alert to show if update(New Version) is available.
-        AlertDialog.Builder adb=new AlertDialog.Builder(SplashActivity.this);
-        adb.setCancelable(false);
-        adb.setMessage(strMsg);
-        adb.setNegativeButton("Exit", (dialog, which) -> finish());
-        if(strTitle.equals("Update")) {
-            adb.setTitle("New Update is available");
-            adb.setPositiveButton("Update", (dialog, which) -> {
-                try {
-                    sharedPref.logoutApp();
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.mealarts")));
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.gradeone.shop.findbest")));
-                } catch (android.content.ActivityNotFoundException anfe) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.mealarts")));
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gradeone.shop.findbest")));
-                }
-            });
-        }adb.show();
+    @SuppressLint("SetTextI18n")
+    private void alertShow(String strTitle, String strMsg, String updateDesc) { //Alert to show if update(New Version) is available.
+//        AlertDialog.Builder adb=new AlertDialog.Builder(SplashActivity.this);
+        llUpdate.setVisibility(View.VISIBLE);
+        ivLogo.setVisibility(View.GONE);
+        tvUpdateDescription.setText(updateDesc+"\n\n"+strMsg);
+//        LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        adb.addContentView(dialog,params);
+//        adb.setCancelable(false);
+
+//        adb.setMessage(strMsg);
+//        adb.setNegativeButton("Exit", (dialog, which) -> finish());
+//        if(strTitle.equals("Update")) {
+           //adb.setTitle("New Update is available");
+//            adb.setMessage(strMsg+"\n"+updateDesc);
+//            adb.setPositiveButton("Update", (dialog, which) -> {
+//                try {
+//                    sharedPref.logoutApp();
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.mealarts")));
+////                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.gradeone.shop.findbest")));
+//                } catch (android.content.ActivityNotFoundException anfe) {
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.mealarts")));
+////                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gradeone.shop.findbest")));
+//                }
+//            });
+//        }
+//        adb.show();
     }
 
     @Override

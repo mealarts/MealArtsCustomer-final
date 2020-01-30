@@ -65,7 +65,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\design_fab_hide_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\design_fab_hide_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_offer.png.flat",
@@ -73,7 +73,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_call.png.flat",
@@ -85,7 +85,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_inactive_track_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_inactive_track_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_inactive_track_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_remove_red_eye_black_18dp.png.flat",
@@ -93,31 +93,31 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_layout_tab_text.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_timeout_alert.gif.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\timeout_alert.gif"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_main.png.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\search_main.png"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_dialog.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_header_dialog.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_main.png.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\search_main.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_filled_icon_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_filled_icon_tint.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_dialog.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_header_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_home_select.png.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\home_select.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_filled_icon_tint.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_filled_icon_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_checked_circle.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_mtrl_checked_circle.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_mtrl_checked_circle.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -156,32 +156,32 @@
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\signup_bg.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_cancel_black.png.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\cancel_black.png"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_grid.png.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\icon_grid.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_cancel_black.png.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\cancel_black.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_choice_chip_background_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_choice_chip_background_color.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_text_color.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_navigation_item_text_color.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_text_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_navigation_item_text_color.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_choice_chip_background_color.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_choice_chip_background_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -205,7 +205,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_bottom_navigation_item.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_my_cart.png.flat",
@@ -217,15 +217,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_edit_black_24dp.xml"
-    },
-    {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_edit_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_select_area.png.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\select_area.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
@@ -248,12 +248,12 @@
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_toggle_menu.png.flat",
@@ -273,7 +273,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_bottom_nav_item_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logout.png.flat",
@@ -293,23 +293,23 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_text_input_date.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_text_input_date.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_text_input_date.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_bg_color_selector.xml"
-    },
-    {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_reflow_chipgroup.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_reflow_chipgroup.xml"
-    },
-    {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_layout_snackbar_include.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_bg_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_circle.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_mtrl_chip_checked_circle.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_mtrl_chip_checked_circle.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_reflow_chipgroup.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_reflow_chipgroup.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
@@ -324,12 +324,12 @@
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_offer_tag.png.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\offer_tag.png"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_impl_search_bar.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\3d7cbf3171ff0a33f0663bec71523693\\places-2.1.0\\res\\layout\\places_autocomplete_impl_search_bar.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_offer_tag.png.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\offer_tag.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_powered_by_google_dark.png.flat",
@@ -341,7 +341,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_end_icon.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_text_input_end_icon.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_text_input_end_icon.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
@@ -349,7 +349,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_day.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_day.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_day.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_back.xml.flat",
@@ -360,12 +360,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\44d66c12e0a4cf67afa666826994811b\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_gravity_top_start.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\xml\\standalone_badge_gravity_top_start.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_gravity_top_start.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\xml\\standalone_badge_gravity_top_start.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
@@ -416,16 +416,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_mtrl_bottom_sheet_slide_out.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim-v21\\mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_mtrl_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim-v21\\mtrl_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_calendar_selected_range.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_calendar_selected_range.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_calendar_selected_range.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
@@ -441,23 +441,23 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_fast_out_slow_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator\\mtrl_fast_out_slow_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator\\mtrl_fast_out_slow_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_menu_card.png.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\menu_card.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide1.xml.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\layout\\welcome_slide1.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_work.png.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\work.png"
     },
     {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide1.xml.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\layout\\welcome_slide1.xml"
+    },
+    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_without_line_height.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\text_view_without_line_height.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\text_view_without_line_height.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
@@ -488,12 +488,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_arrow_drop_up.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_ic_arrow_drop_up.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_menu.xml.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\layout\\layout_menu.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_arrow_drop_up.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_ic_arrow_drop_up.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_menu_unavailable.gif.flat",
@@ -537,7 +537,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_state_list_animator.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_extended_fab_state_list_animator.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_extended_fab_state_list_animator.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_checked_icon_null_animation.xml.flat",
@@ -557,11 +557,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_mtrl_picker_header_dialog.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout-land\\mtrl_picker_header_dialog.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout-land\\mtrl_picker_header_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_select_dialog_item.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_select_dialog_item.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_select_dialog_item.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -573,7 +573,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_logout.xml.flat",
@@ -581,19 +581,19 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_ic_visibility.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_ic_visibility.xml"
-    },
-    {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_ic_visibility.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_toggle.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_header_toggle.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_header_toggle.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -601,19 +601,19 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_chip_background_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_chip_background_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\84c6c80ebbdf132830818f17e4d81b94\\media-1.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_terms.jpg.flat",
-        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\terms.jpg"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_search_grey600_24.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\3d7cbf3171ff0a33f0663bec71523693\\places-2.1.0\\res\\drawable-xxxhdpi-v4\\quantum_ic_search_grey600_24.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_terms.jpg.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\terms.jpg"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_bottom_menu.xml.flat",
@@ -624,12 +624,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\3d7cbf3171ff0a33f0663bec71523693\\places-2.1.0\\res\\layout\\places_autocomplete_main_overlay.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_text_btn_bg_color_selector.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_custom_background.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_toolbar_custom_background.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_custom_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_toolbar_custom_background.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_bg_color_selector.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_text_btn_bg_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_contact_us.xml.flat",
@@ -642,6 +642,10 @@
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_download.png.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\download.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -657,7 +661,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_surface_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_chip_surface_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_chip_surface_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_slideshow.xml.flat",
@@ -665,7 +669,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_change_size_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_extended_fab_change_size_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_extended_fab_change_size_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -684,12 +688,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_test_custom_background.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\test_custom_background.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_test_custom_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\test_custom_background.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -709,11 +713,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_horizontal.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_horizontal.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_horizontal.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_design_box_stroke_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\design_box_stroke_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\design_box_stroke_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -729,15 +733,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_month_navigation.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_month_navigation.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_month_navigation.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_extended_fab_show_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_extended_fab_show_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_gravity_bottom_end.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\xml\\standalone_badge_gravity_bottom_end.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\xml\\standalone_badge_gravity_bottom_end.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cat_click_back.xml.flat",
@@ -748,16 +752,16 @@
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\mealarts_loader.gif"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_fullscreen.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_header_fullscreen.xml"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
         "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_fullscreen.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_header_fullscreen.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
@@ -768,12 +772,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_tabs_default_indicator.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\44d66c12e0a4cf67afa666826994811b\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_tabs_default_indicator.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -829,7 +833,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_inactive_tick_marks_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_inactive_tick_marks_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_inactive_tick_marks_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
@@ -869,7 +873,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -881,7 +885,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_right_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_keyboard_arrow_right_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_keyboard_arrow_right_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_paytm_payment.xml.flat",
@@ -905,7 +909,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_bottom_nav_colored_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_bottom_nav_colored_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_marker.png.flat",
@@ -961,7 +965,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_filled_stroke_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_filled_stroke_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_filled_stroke_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_brown_disabled.9.png.flat",
@@ -985,7 +989,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_cancel.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_ic_cancel.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_ic_cancel.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\raw_consumer_onesignal_keep.xml.flat",
@@ -998,6 +1002,10 @@
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_cart_veg.xml.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable\\add_cart_veg.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1013,7 +1021,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_design_error.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\design_error.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\design_error.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
@@ -1029,7 +1037,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_filled_background_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_filled_background_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_filled_background_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1053,7 +1061,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_tabs_icon_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_tabs_icon_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_menu_list.png.flat",
@@ -1118,6 +1126,10 @@
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_icon_text_color_selector.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_fab_icon_text_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_single_chef_detail.xml.flat",
@@ -1229,7 +1241,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_item_separator.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_rounded_back.xml.flat",
@@ -1237,7 +1249,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_month.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_month.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_month.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_payment.png.flat",
@@ -1245,7 +1257,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_days_of_week.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_days_of_week.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_days_of_week.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1281,7 +1293,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_chip_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_chip_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
@@ -1301,11 +1313,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_surface_emphasis_high_type.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_surface_emphasis_high_type.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_surface_emphasis_high_type.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_active_tick_marks_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_active_tick_marks_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_active_tick_marks_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkbox_checked_to_unchecked_mtrl_animation.xml.flat",
@@ -1357,11 +1369,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_ic_visibility_off.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_ic_visibility_off.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_ic_visibility_off.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_choice_chip_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_choice_chip_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_choice_chip_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loader_back_circle.xml.flat",
@@ -1369,7 +1381,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_thumb_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_thumb_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_thumb_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
@@ -1397,7 +1409,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_months.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_months.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_months.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
@@ -1405,7 +1417,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_style.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\text_view_with_line_height_from_style.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\text_view_with_line_height_from_style.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_quantum_ic_arrow_back_grey600_24.png.flat",
@@ -1421,7 +1433,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_indicator_text_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_indicator_text_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_indicator_text_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -1457,11 +1469,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_menu_item_action_area.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_start_icon.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_text_input_start_icon.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_text_input_start_icon.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1489,7 +1501,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_outlined_icon_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_outlined_icon_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_outlined_icon_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
@@ -1501,7 +1513,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_item_header.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_breakfast.png.flat",
@@ -1549,7 +1561,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_mtrl_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim-v21\\mtrl_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim-v21\\mtrl_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
@@ -1605,11 +1617,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_checkbox_themeable_attribute_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\checkbox_themeable_attribute_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\checkbox_themeable_attribute_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_tabs_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
@@ -1649,7 +1661,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_surface.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_toolbar_surface.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_toolbar_surface.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -1669,7 +1681,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
@@ -1689,7 +1701,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_design_icon_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\design_icon_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\design_icon_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
@@ -1705,7 +1717,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_chip_text_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_chip_text_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
@@ -1717,7 +1729,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_layout_snackbar.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_layout_snackbar.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_visitor_reg.xml.flat",
@@ -1725,7 +1737,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_actions.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_actions.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_actions.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nonveg_type_back.xml.flat",
@@ -1769,7 +1781,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_title_text.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_header_title_text.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_header_title_text.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dboy_north.png.flat",
@@ -1797,7 +1809,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_background_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_navigation_item_background_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_navigation_item_background_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1861,7 +1873,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_calendar_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_calendar_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_calendar_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
@@ -1869,7 +1881,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1905,7 +1917,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dialog_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_dialog_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_dialog_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_chef_rating.png.flat",
@@ -1921,7 +1933,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_selection_text.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_header_selection_text.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_header_selection_text.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact_us.png.flat",
@@ -1941,7 +1953,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\design_snackbar_out.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\design_snackbar_out.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1965,7 +1977,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_active_track_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_active_track_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_active_track_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_hiw_meal.jpg.flat",
@@ -1996,12 +2008,8 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4b395d965f8a7240c8d55c47d710a1e2\\jetified-OneSignal-3.12.4\\res\\drawable-xxhdpi-v4\\ic_os_notification_fallback_white_24dp.png"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_extended_fab_bg_color_selector.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_gravity_bottom_start.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\xml\\standalone_badge_gravity_bottom_start.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\xml\\standalone_badge_gravity_bottom_start.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -2021,11 +2029,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_design_checkbox.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_design_checkbox.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_design_checkbox.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_menu.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
@@ -2049,7 +2057,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog_actions.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_dialog_actions.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_dialog_actions.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -2061,7 +2069,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_text_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_text_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2085,11 +2093,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_fab_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_fab_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_emphasis_medium.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_primary_emphasis_medium.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_primary_emphasis_medium.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -2105,11 +2113,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_mtrl_calendar_month.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout-v26\\mtrl_calendar_month.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout-v26\\mtrl_calendar_month.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_splash_dialog.xml.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\layout\\splash_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_arrow_back_grey600_24.png.flat",
@@ -2117,7 +2129,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_work_add.png.flat",
@@ -2149,11 +2161,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dropdown_arrow.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_dropdown_arrow.xml"
-    },
-    {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_extended_fab_text_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_dropdown_arrow.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
@@ -2205,7 +2213,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_bottom_navigation_item_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
@@ -2221,7 +2229,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_popupmenu_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_popupmenu_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_popupmenu_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_address_list.xml.flat",
@@ -2253,7 +2261,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\design_fab_show_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_single_order_detail.xml.flat",
@@ -2269,7 +2277,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_background_disabled.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_background_disabled.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_background_disabled.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2289,7 +2297,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\navigation_empty_icon.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -2297,11 +2305,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_emphasis_high_type.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_primary_emphasis_high_type.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_primary_emphasis_high_type.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_chip_close_icon_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_chip_close_icon_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
@@ -2309,7 +2317,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_text_btn_text_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_text_btn_text_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_activity.xml.flat",
@@ -2333,7 +2341,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_fullscreen.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_fullscreen.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_fullscreen.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -2361,7 +2369,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact.png.flat",
@@ -2369,7 +2377,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -2385,7 +2393,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_fast_out_linear_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator\\mtrl_fast_out_linear_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator\\mtrl_fast_out_linear_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
@@ -2393,7 +2401,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_layout_snackbar_include.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_cart_back_veg.xml.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable\\add_cart_back_veg.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
@@ -2401,7 +2413,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_item.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
@@ -2469,7 +2481,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_icon_tint.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_navigation_item_icon_tint.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_navigation_item_icon_tint.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -2509,7 +2521,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_layout_tab_icon.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2533,7 +2545,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_error.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_error.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_error.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rating_badge_0.xml.flat",
@@ -2557,15 +2569,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_bottom_sheet_dialog.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_subheader.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_item_subheader.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_card_view_foreground.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_card_view_foreground.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_card_view_foreground.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_checkbox.xml.flat",
@@ -2625,7 +2637,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_day_of_week.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_day_of_week.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_day_of_week.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
@@ -2689,7 +2701,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_powered_by_google_light.png.flat",
@@ -2705,7 +2717,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_dialog.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_dialog.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name.png.flat",
@@ -2713,7 +2725,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\design_navigation_menu_item.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -2757,11 +2769,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_error.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_ic_error.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_ic_error.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -2809,7 +2821,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_fab_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_fab_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -2817,7 +2829,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_background_emphasis_medium.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_background_emphasis_medium.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_background_emphasis_medium.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_refresh.png.flat",
@@ -2841,7 +2853,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_offset.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\xml\\standalone_badge_offset.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\xml\\standalone_badge_offset.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -2861,7 +2873,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_extended_fab_hide_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_extended_fab_hide_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_arrow_right.png.flat",
@@ -2909,7 +2921,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_arrow_up_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_menu_arrow_up_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_menu_arrow_up_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2933,7 +2945,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_card_lowers_interpolator.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\mtrl_card_lowers_interpolator.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\mtrl_card_lowers_interpolator.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -2989,7 +3001,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_snackbar_background.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_snackbar_background.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
@@ -2997,7 +3009,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_on_primary_text_btn_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_on_primary_text_btn_text_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_on_primary_text_btn_text_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_signin.xml.flat",
@@ -3005,7 +3017,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_card_view_ripple.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_card_view_ripple.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_card_view_ripple.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mealart_slider.png.flat",
@@ -3013,7 +3025,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_disabled.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_primary_disabled.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_primary_disabled.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_log_out.png.flat",
@@ -3029,7 +3041,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\xml\\standalone_badge.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\xml\\standalone_badge.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -3041,7 +3053,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_stroke_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_stroke_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
@@ -3053,7 +3065,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_test_mtrl_calendar_day_selected.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\test_mtrl_calendar_day_selected.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\test_mtrl_calendar_day_selected.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_other.png.flat",
@@ -3061,7 +3073,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_choice_chip_text_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_choice_chip_text_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_choice_chip_text_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
@@ -3085,7 +3097,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_year.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_year.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_year.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_splash_bg1.jpg.flat",
@@ -3105,7 +3117,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_surface_emphasis_medium.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_surface_emphasis_medium.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_surface_emphasis_medium.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_signin.png.flat",
@@ -3121,7 +3133,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\design_snackbar_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_address_listitem.xml.flat",
@@ -3201,11 +3213,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_calendar_item_stroke_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_calendar_item_stroke_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_calendar_item_stroke_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_select_dialog_multichoice.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_select_dialog_multichoice.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_select_dialog_multichoice.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -3237,11 +3249,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_btn_text_btn_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_btn_text_btn_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_password_eye.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\design_password_eye.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_check_path_merged_animation.xml.flat",
@@ -3273,7 +3285,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_select_dialog_singlechoice.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_select_dialog_singlechoice.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_select_dialog_singlechoice.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -3289,11 +3301,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_clear_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_clear_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_clear_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -3309,7 +3321,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_popupmenu_overlay_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_popupmenu_overlay_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_popupmenu_overlay_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_policy_terms.xml.flat",
@@ -3341,7 +3353,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator\\mtrl_linear.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator\\mtrl_linear.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -3349,7 +3361,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\mtrl_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\mtrl_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -3413,23 +3425,23 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_month_labeled.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_month_labeled.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_month_labeled.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_state_list_anim.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_btn_state_list_anim.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avd_show_password.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\avd_show_password.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\avd_show_password.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_left_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_keyboard_arrow_left_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_keyboard_arrow_left_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_dialog.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_dialog.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -3477,11 +3489,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_arrow_drop_down.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_ic_arrow_drop_down.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_ic_arrow_drop_down.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_arrow_down_black_24dp.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_menu_arrow_down_black_24dp.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_menu_arrow_down_black_24dp.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_check.png.flat",
@@ -3501,7 +3513,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
@@ -3529,7 +3541,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear_out_slow_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator\\mtrl_linear_out_slow_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator\\mtrl_linear_out_slow_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -3549,7 +3561,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_surface_disabled.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_surface_disabled.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_surface_disabled.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
@@ -3565,7 +3577,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_text_input_date_range.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_picker_text_input_date_range.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_picker_text_input_date_range.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -3589,7 +3601,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_test_mtrl_calendar_day.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\test_mtrl_calendar_day.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\test_mtrl_calendar_day.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_cart_list.xml.flat",
@@ -3621,11 +3633,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avd_hide_password.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\avd_hide_password.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\avd_hide_password.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -3641,11 +3653,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_elevation.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_toolbar_elevation.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_toolbar_elevation.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog_title.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_alert_dialog_title.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_alert_dialog_title.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_thank_you.png.flat",
@@ -3697,7 +3709,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_popupmenu_background_dark.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\mtrl_popupmenu_background_dark.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\mtrl_popupmenu_background_dark.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_autocomplete_item_prediction.xml.flat",
@@ -3709,7 +3721,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector_colored.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -3729,7 +3741,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_halo_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_slider_halo_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_slider_halo_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
@@ -3753,7 +3765,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_bottom_nav_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_bottom_nav_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -3766,6 +3778,10 @@
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\84c6c80ebbdf132830818f17e4d81b94\\media-1.0.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_download_logo.jpg.flat",
+        "source": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\src\\main\\res\\drawable-hdpi\\download_logo.jpg"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -3793,11 +3809,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_appearance.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\text_view_with_line_height_from_appearance.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\text_view_with_line_height_from_appearance.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\mtrl_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\mtrl_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkbox_unchecked_mtrl.xml.flat",
@@ -3841,15 +3857,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_fab_transformation_sheet_collapse_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_outlined_stroke_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_outlined_stroke_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_outlined_stroke_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_check.png.flat",
@@ -3892,12 +3908,8 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\5e3f41c0bd1123116fbf3010859d5aa2\\appcompat-1.1.0\\res\\interpolator\\btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
     },
     {
-        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_extended_fab_ripple_color.xml"
-    },
-    {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_fab_show_motion_spec.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_fab_show_motion_spec.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -3929,7 +3941,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable\\ic_mtrl_chip_checked_black.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_unpack_food.png.flat",
@@ -3937,7 +3949,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_background_emphasis_high_type.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\material_on_background_emphasis_high_type.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\material_on_background_emphasis_high_type.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_log_in.xml.flat",
@@ -3945,7 +3957,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_bg_color_selector.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_fab_bg_color_selector.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
@@ -3973,11 +3989,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_mtrl_popupmenu_background_dark.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\drawable-v23\\mtrl_popupmenu_background_dark.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\drawable-v23\\mtrl_popupmenu_background_dark.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_card_state_list_anim.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_card_state_list_anim.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_card_state_list_anim.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
@@ -3993,11 +4009,11 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_colored_ripple_color.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\color\\mtrl_tabs_colored_ripple_color.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\color\\mtrl_tabs_colored_ripple_color.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_theme_line_height.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\text_view_with_theme_line_height.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\text_view_with_theme_line_height.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -4053,7 +4069,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -4089,7 +4105,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_chip_state_list_anim.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator\\mtrl_chip_state_list_anim.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator\\mtrl_chip_state_list_anim.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -4097,15 +4113,15 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21_design_appbar_state_list_animator.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_layout.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\text_view_with_line_height_from_layout.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\text_view_with_line_height_from_layout.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_layout_snackbar.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_layout_snackbar.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dboy_south.png.flat",
@@ -4113,7 +4129,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_vertical.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\mtrl_calendar_vertical.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\mtrl_calendar_vertical.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail.png.flat",
@@ -4121,7 +4137,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_action_chip.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_action_chip.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_action_chip.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cart.png.flat",
@@ -4133,7 +4149,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\layout\\test_toolbar.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\layout\\test_toolbar.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_name.png.flat",
@@ -4149,7 +4165,7 @@
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_linear_out_slow_in.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\473dac770f0aef7d6ac771ad59268ddf\\material-1.2.0-alpha03\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\4d2cb9db141dc69a2dc2d3b36db71b18\\material-1.2.0-alpha04\\res\\interpolator-v21\\mtrl_linear_out_slow_in.xml"
     },
     {
         "merged": "E:\\HGD\\MealArtsCustomer-master(7jan19)\\MealArtsCustomer-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",

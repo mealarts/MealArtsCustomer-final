@@ -2,6 +2,7 @@ package com.mealarts.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Build;
 import android.util.Log;
@@ -54,6 +55,22 @@ public class AddOnsCartAdapter extends RecyclerView.Adapter<AddOnsCartAdapter.My
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tvAddCart.setVisibility(View.GONE);
         try {
+            Log.d("/*28Jan",CartAddOnsList.get(position).toString());
+
+            if(CartAddOnsList.get(position).getString("veg_type").equals("veg")) {
+                Glide.with(context).load(R.drawable.veg)
+                        .placeholder(R.drawable.mealarts_loader).into(holder.ivVegType);
+                holder.tvAddCart.setTextColor(Color.parseColor("#00aa00"));
+                holder.tvAddCart.setBackgroundResource(R.drawable.add_cart_veg);
+                holder.productCounter.setBackgroundResource(R.drawable.add_cart_back_veg);
+            }
+            else {
+                Glide.with(context).load(R.drawable.nonveg)
+                        .placeholder(R.drawable.mealarts_loader).into(holder.ivVegType);
+                holder.tvAddCart.setTextColor(Color.parseColor("#E00000"));
+                holder.tvAddCart.setBackgroundResource(R.drawable.add_cart);
+                holder.productCounter.setBackgroundResource(R.drawable.add_cart_back);
+            }
             if(!CartAddOnsList.get(position).getString("image").isEmpty()) {
                 Glide.with(context).load(URLServices.AddOnImg
                         + CartAddOnsList.get(position).getString("image")).into(holder.ivAddOnImg);

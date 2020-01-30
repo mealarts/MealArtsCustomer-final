@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:background="@drawable/splash_bg"
     tools:context=".SplashActivity">
 
     <ImageView
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ivLogo"
-        android:src="@drawable/mealarts_logo"/>
+        android:src="@drawable/mealarts_logo"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutOffline"
@@ -31,8 +34,105 @@
             android:background="@color/colorGrayFade"
             android:text="Offline"
             android:gravity="center"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/llUpdate"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="#2000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            app:cardCornerRadius="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/download"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="#000"
+                        android:layout_weight="9"
+                        android:text="New Update is available"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvUpdateDescription"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnExit"
+                        android:text="Exit"
+                        android:textSize="15sp"
+                        android:background="@drawable/signin_button_back"
+                        android:textColor="@drawable/clickable_textview_white_red"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        android:text="Update"
+                        android:textSize="15sp"
+                        android:background="@drawable/signin_button_back"
+                        android:textColor="@drawable/clickable_textview_white_red"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

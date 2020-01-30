@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -28,7 +27,8 @@
                 android:scaleType="fitXY"
                 android:layout_marginStart="10dp"
                 android:layout_gravity="end"
-                android:src="@drawable/mealarts_loader"/>
+                android:src="@drawable/mealarts_loader"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                 android:layout_width="35dp"
@@ -43,7 +43,8 @@
                 android:textColor="@color/colorWhite"
                 android:textSize="9sp"
                 android:layout_gravity="start|top"
-                android:background="@drawable/offer_tag"/>
+                android:background="@drawable/offer_tag"
+                tools:ignore="HardcodedText,SmallSp" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                 android:layout_width="70dp"
@@ -54,7 +55,8 @@
                 android:tooltipText="Preparation Time"
                 android:textSize="10sp"
                 android:layout_gravity="bottom|end"
-                android:background="@color/colorBlackFade"/>
+                android:background="@color/colorBlackFade"
+                tools:ignore="SmallSp,UnusedAttribute" />
 
         </FrameLayout>
 
@@ -78,13 +80,15 @@
                     android:text="Menu Name"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp"
-                    android:gravity="center|start"/>
+                    android:gravity="center|start"
+                    tools:ignore="HardcodedText" />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/ivVegType"
-                    android:src="@drawable/veg"/>
+                    android:src="@drawable/veg"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
@@ -114,7 +118,8 @@
                     android:textColor="@color/colorGray"
                     android:textSize="12sp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="10dp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                     android:id="@+id/tvMenuPrice"
@@ -124,7 +129,8 @@
                     android:gravity="center|start"
                     android:text="price"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="13sp" />
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
                     android:id="@+id/tvAddCart"
@@ -161,7 +167,8 @@
                         android:gravity="center"
                         android:text="-"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
 
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
@@ -174,7 +181,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="9dp" />
+                        android:textSize="9dp"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:id="@+id/tvIncQty"
@@ -186,7 +194,8 @@
                         android:gravity="center"
                         android:text="+"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -229,7 +238,8 @@
                     android:gravity="center|end"
                     android:layout_gravity="end"
                     android:paddingEnd="15dp"
-                    android:paddingStart="15dp"/>
+                    android:paddingStart="15dp"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 

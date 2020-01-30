@@ -1,6 +1,5 @@
 package com.mealarts.Helpers;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +7,7 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.provider.Settings;
+import android.util.Log;
 
 
 public class CheckExtras {
@@ -30,10 +30,13 @@ public class CheckExtras {
                         context.startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS)));
         AlertDialog alert = dialog.create();
         alert.setCancelable(false);
-        if(activeNetwork == null ||
-                !activeNetwork.isConnectedOrConnecting()){
+        if(activeNetwork == null || !activeNetwork.isConnectedOrConnecting()){
+            Log.d("/*checkextra","no network");
             alert.show();
-        }else alert.dismiss();
+        }else {
+            alert.dismiss();
+            Log.d("/*checkextra","network available");
+        }
     }
 
     private void isLocationEnable(Context context){

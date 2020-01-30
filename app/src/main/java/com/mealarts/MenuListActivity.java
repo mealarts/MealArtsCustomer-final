@@ -1,8 +1,10 @@
 package com.mealarts;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -10,17 +12,23 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.StateListDrawable;
+import android.location.Address;
+import android.location.Geocoder;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -41,6 +49,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.gson.JsonObject;
 import com.mealarts.Adapters.AddOnsMenuAdapter;
 import com.mealarts.Adapters.BottomMenuAdapter;
@@ -65,6 +74,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -74,6 +84,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
@@ -131,8 +142,40 @@ public class MenuListActivity extends AppCompatActivity{
     JSONObject cartObj;
     PermissionChecker permissionChecker;
     CustomToast customToast = new CustomToast();
-
+    FusedLocationProviderClient fusedLocationProviderClient;
     CardView addonCard;
+
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 1;
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,@NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        // If request is cancelled, the result arrays are empty.
+        if (requestCode == MY_PERMISSIONS_REQUEST_LOCATION) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED
+                    && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
+                layoutLoader.setVisibility(View.VISIBLE);
+                tvLoadError.setText("getLastLocation()_1");
+                //getLastLocation();                                                                  //get current location if permission allowed by user
+            }else{
+                boolean showRationale = ActivityCompat.shouldShowRequestPermissionRationale(
+                        this,Manifest.permission.ACCESS_FINE_LOCATION );
+                if (! showRationale) {                                                              //show rational if user decline permission with "never ask"
+                    new AlertDialog.Builder(MenuListActivity.this)
+                            .setMessage("Are You Sure to Not Allow Us This Permissions ? Because We " +
+                                    "Will Not Be Able To Show You Chef From Your Area Without Permissions.")
+                            .setPositiveButton("Allow", (paramDialogInterface, paramInt) ->
+                                    startActivity(new Intent().setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                                            .setData(Uri.fromParts("package", getPackageName(),
+                                                    null)))).setCancelable(false).show();
+                } else {
+                    permissionChecker = new PermissionChecker(MenuListActivity.this);           //check permissions are allowed by user or not
+                }
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,6 +187,7 @@ public class MenuListActivity extends AppCompatActivity{
             VendorID = getIntent().getStringExtra("VendorId");
         }
         addonClicked=false;
+
 
         sharedPref = new SharedPref(MenuListActivity.this);
         connection = new CheckExtras(MenuListActivity.this);
@@ -537,8 +581,94 @@ public class MenuListActivity extends AppCompatActivity{
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("/*menu_restart","onrestart");
+        connection = new CheckExtras(MenuListActivity.this);
+        permissionChecker = new PermissionChecker(MenuListActivity.this);           //check permissions are allowed by user or not
+        getLastLocation();
+    }
+
+    public void getLastLocation(){
+        fusedLocationProviderClient = new FusedLocationProviderClient(MenuListActivity.this);
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(location -> {
+            //locationCount++;
+            //Log.e("_GoogleApiClient", mGoogleApiClient == null ? "true" : "false");
+            if (location != null) {
+                Log.e("GoogleApiClient", "Connected");
+                //getServerTime();
+                CurrentLat = String.valueOf(location.getLatitude());                                //get current latitude
+                CurrentLong = String.valueOf(location.getLongitude());                              //get current longitude
+                Log.e("CurrentLat_CurrentLong", CurrentLat + "_" + CurrentLong);
+
+                if (ActivityCompat.checkSelfPermission(MenuListActivity.this,
+                        Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                        ActivityCompat.checkSelfPermission(MenuListActivity.this,
+                                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    permissionChecker = new PermissionChecker(MenuListActivity.this);
+                    // TODO: Consider calling
+                    // ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    // public void onRequestPermissionsResult(int requestCode, String[]permissions,
+                    // int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
+                Geocoder geocoder = new Geocoder(MenuListActivity.this, Locale.getDefault());
+                try {
+                    List<Address> listAddresses = geocoder.getFromLocation(location.getLatitude(),
+                            location.getLongitude(), 1);
+                    if (listAddresses != null && listAddresses.size() > 0) {
+                        String subLocality = listAddresses.get(0).getSubLocality();
+                        String pincode = listAddresses.get(0).getPostalCode();
+                        String locality = listAddresses.get(0).getLocality();
+                        String area = listAddresses.get(0).getSubLocality();
+                        Log.e("Address", listAddresses.get(0).getAddressLine(0)+"_");
+                        try {
+                            JSONObject cartObj = new JSONObject(sharedPref.getUserCart());          //get User Cart Json From Shared Pref
+                            JSONObject locationObj = cartObj.getJSONObject(MenuListActivity.this.getResources().getString(R.string.LocationJson));         //get Location Object from USer Cart Json
+                            JSONObject cartJsonObj = cartObj.getJSONObject(MenuListActivity.this.getResources().getString(R.string.CartJsonObj));          //get Cart Json Object from User Cart JSON
+
+                            if (!cartObj.has(MenuListActivity.this.getResources().getString(R.string.CartJsonObj))) {
+                                cartObj.put(MenuListActivity.this.getResources().getString(R.string.CartJsonObj), new JSONObject());                       //check if object is available or not
+                            }
+//                            else {
+//                                getServerTime();                                                    //Call Server Time service to get current timing from server.
+//                            }
+
+                            if (!cartObj.has(MenuListActivity.this.getResources().getString(R.string.CartJsonArray))) {
+                                cartObj.put(MenuListActivity.this.getResources().getString(R.string.CartJsonArray), new JSONArray());                      //check Cart Json Array is available or not
+                            }
+
+                            if (locationObj.has("Latitude") && locationObj.has("Longitude")) { // check if latlng is already available or not
+                               Log.d("/*getLoc_menu","locationObj has lat and lan");
+                            } else {                                                                // check if latlng is not available
+                                locationObj.put("Latitude", CurrentLat);                      //set new values to Location Object
+                                locationObj.put("Longitude", CurrentLong);
+                                locationObj.put("Landmark", subLocality);
+                                locationObj.put("Location", listAddresses.get(0).getAddressLine(0));
+                                tvCurrentAddress.setText(listAddresses.get(0).getAddressLine(0));
+                                sharedPref.setUserCart(cartObj.toString());
+                                Log.e("getLoc_menu", sharedPref.getUserCart());
+
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+    @Override
     protected void onResume() {
         super.onResume();
+
         sharedPref.setPos(1);
         setBottomMenu();
         layoutAddOns.setVisibility(View.GONE);
@@ -552,8 +682,11 @@ public class MenuListActivity extends AppCompatActivity{
                 tvContact.setText(cartObj.getJSONObject(getResources().getString(R.string.UserJSON)).getString("Mobile"));
             }
             if(!cartObj.has(getResources().getString(R.string.LocationJson))) {
+                Log.d("/*menu_onresume","no locationjson");
                 cartObj.put(getResources().getString(R.string.LocationJson), new JSONObject());
+
             }else {
+                Log.d("/*menu_onresume","locationjson available");
                 JSONObject locationJsonObj = cartObj.getJSONObject(getResources().getString(R.string.LocationJson));
                 CurrentLat = cartObj.getJSONObject(getResources().getString(R.string.LocationJson)).getString("Latitude");
                 CurrentLong = cartObj.getJSONObject(getResources().getString(R.string.LocationJson)).getString("Longitude");
@@ -1415,6 +1548,7 @@ public class MenuListActivity extends AppCompatActivity{
 
         menuAdapter.setAddListener((menuPosition, QtyCount, tvQty, layoutAddOnsClick, tvTotalPrice, tvAddCart, productCounter) -> {
             try {
+                Intent intent;
                 cartObj = new JSONObject(sharedPref.getUserCart());
                 Log.d("/*abc_add_clicked","cartObj:"+cartObj.toString());
 //                for(int i=0;i<tempMenu.size();i++)
@@ -1422,8 +1556,12 @@ public class MenuListActivity extends AppCompatActivity{
                 JSONObject locationJson = cartObj.getJSONObject(getResources().getString(R.string.LocationJson)); //get location json of user location details
                 if(!locationJson.has("FlatHouseNo") || (locationJson.has("FlatHouseNo")
                         && locationJson.getString("FlatHouseNo").isEmpty())){
-                    Log.d("/*menu","address empty");
-                    Intent intent = new Intent(MenuListActivity.this, AddressListActivity.class);
+                    Log.d("/*menu","address empty "+sharedPref.getUserId());
+                    if(sharedPref.getUserId().equals("") || sharedPref.getUserId().isEmpty())
+                        intent = new Intent(MenuListActivity.this, LogInActivity.class);
+                    else
+                        intent = new Intent(MenuListActivity.this, AddressListActivity.class);
+
                     intent.putExtra("fromWhere", "Menu");
                     startActivity(intent);
                     finish();

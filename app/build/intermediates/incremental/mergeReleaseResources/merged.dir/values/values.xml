@@ -54,8 +54,8 @@
         <enum name="invisible" value="1"/>
     </attr>
     <attr format="boolean" name="ensureMinTouchTargetSize"/>
-    <attr name="extendedFloatingActionButtonStyle"/>
-    <attr name="floatingActionButtonStyle"/>
+    <attr format="reference" name="extendedFloatingActionButtonStyle"/>
+    <attr format="reference" name="floatingActionButtonStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="reference" name="hideMotionSpec"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -1072,11 +1072,11 @@
     <dimen name="mtrl_textinput_outline_box_expanded_padding">16dp</dimen>
     <dimen name="mtrl_textinput_start_icon_margin_end">4dp</dimen>
     <dimen name="mtrl_toolbar_default_height">56dp</dimen>
-    <dimen name="mtrl_tooltip_arrowSize">18dp</dimen>
+    <dimen name="mtrl_tooltip_arrowSize">14dp</dimen>
     <dimen name="mtrl_tooltip_cornerSize">4dp</dimen>
-    <dimen name="mtrl_tooltip_minHeight">36dp</dimen>
-    <dimen name="mtrl_tooltip_minWidth">36dp</dimen>
-    <dimen name="mtrl_tooltip_padding">8dp</dimen>
+    <dimen name="mtrl_tooltip_minHeight">32dp</dimen>
+    <dimen name="mtrl_tooltip_minWidth">32dp</dimen>
+    <dimen name="mtrl_tooltip_padding">12dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="notification_action_icon_size">32dp</dimen>
@@ -1187,6 +1187,7 @@
     <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <item name="row_index_key" type="id"/>
     <item name="save_non_transition_alpha" type="id"/>
     <item name="save_overlay_view" type="id"/>
     <item name="snackbar_action" type="id"/>
@@ -1284,7 +1285,7 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">59876fad-e437-4b64-96c5-de2febd7ed4e</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">c27b72a7-8761-4a9c-afb7-c3ee9f75777d</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -4745,13 +4746,13 @@
     <item name="android:stateListAnimator" ns2:ignore="NewApi">
       @animator/mtrl_extended_fab_state_list_animator
     </item>
-    <item name="android:textColor">@color/mtrl_extended_fab_text_color_selector</item>
-    <item name="backgroundTint">@color/mtrl_extended_fab_bg_color_selector</item>
+    <item name="android:textColor">@color/mtrl_fab_icon_text_color_selector</item>
+    <item name="backgroundTint">@color/mtrl_fab_bg_color_selector</item>
     <item name="elevation">@dimen/mtrl_extended_fab_elevation</item>
     <item name="iconPadding">@dimen/mtrl_extended_fab_icon_text_spacing</item>
     <item name="iconSize">@dimen/mtrl_extended_fab_icon_size</item>
-    <item name="iconTint">@color/mtrl_extended_fab_text_color_selector</item>
-    <item name="rippleColor">@color/mtrl_extended_fab_ripple_color</item>
+    <item name="iconTint">@color/mtrl_fab_icon_text_color_selector</item>
+    <item name="rippleColor">@color/mtrl_fab_ripple_color</item>
     <item name="shapeAppearanceOverlay">
       @style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloatingActionButton
     </item>
@@ -4772,8 +4773,8 @@
     <item name="enforceMaterialTheme">true</item>
     <item name="ensureMinTouchTargetSize">true</item>
     <item name="elevation">@dimen/mtrl_fab_elevation</item>
-    <item name="backgroundTint">?attr/colorSecondary</item>
-    <item name="tint">?attr/colorOnSecondary</item>
+    <item name="backgroundTint">@color/mtrl_fab_bg_color_selector</item>
+    <item name="tint">@color/mtrl_fab_icon_text_color_selector</item>
     <item name="hoveredFocusedTranslationZ">@dimen/mtrl_fab_translation_z_hovered_focused</item>
     <item name="pressedTranslationZ">@dimen/mtrl_fab_translation_z_pressed</item>
     <item name="rippleColor">@color/mtrl_fab_ripple_color</item>
@@ -5981,6 +5982,9 @@
     <attr format="boolean" name="behavior_skipCollapsed"/>
     <!-- Whether height of expanded sheet wraps content or not -->
     <attr format="boolean" name="behavior_fitToContents"/>
+    <!-- Whether this bottom sheet is draggable. If not, the app will have to supply different
+         means to expand and collapse the sheet -->
+    <attr format="boolean" name="behavior_draggable"/>
     <!-- The ratio to be used to set the height of half-expanded state in proportion to parent, when
          fitToContents is false. Defaults to true half, 0.5, if not explicitly set. Ratio must be a
          float value between 0 and 1 and produce a half-expanded state height larger than the
@@ -6477,6 +6481,8 @@
     <attr format="boolean" name="behavior_autoShrink"/>
   </declare-styleable>
     <declare-styleable name="FloatingActionButton">
+    <!-- Whether the FloatingActionButton is enabled -->
+    <attr name="android:enabled"/>
     <!-- Background for the FloatingActionButton -->
     <attr name="backgroundTint"/>
     <attr name="backgroundTintMode"/>
@@ -7336,12 +7342,19 @@
     <attr name="android:valueFrom"/>
     <attr name="android:valueTo"/>
     <attr name="android:stepSize"/>
-    <!-- Determines if Slider should increase its default height to include space for the label. -->
-    <attr format="boolean" name="floatingLabel"/>
     <!-- The color of the slider's halo. -->
     <attr format="color" name="haloColor"/>
     <!-- The radius of the halo. -->
     <attr format="dimension" name="haloRadius"/>
+    <!-- Determines if Slider should increase its default height to include space for the label. -->
+    <attr name="labelBehavior">
+      <!-- Mode that draws the label floating above the bounds of this view. -->
+      <enum name="floating" value="0"/>
+      <!-- Mode that draws the label within the bounds of the view. -->
+      <enum name="withinBounds" value="1"/>
+      <!-- Mode that prevents the label from being drawn -->
+      <enum name="gone" value="2"/>
+    </attr>
     <!-- The style used for the label TooltipDrawable. -->
     <attr format="reference" name="labelStyle"/>
     <!-- The color of the slider's thumb. -->
@@ -7565,6 +7578,7 @@
     <attr name="tabGravity">
       <enum name="fill" value="0"/>
       <enum name="center" value="1"/>
+      <enum name="start" value="2"/>
     </attr>
     <!-- Whether to display tab labels horizontally inline with icons, or underneath icons. -->
     <attr format="boolean" name="tabInlineLabel"/>

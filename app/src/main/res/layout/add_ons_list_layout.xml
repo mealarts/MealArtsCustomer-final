@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -21,7 +22,8 @@
             android:id="@+id/ivAddOnImg"
             android:scaleType="fitCenter"
             android:layout_gravity="end"
-            android:src="@drawable/mealarts_loader"/>
+            android:src="@drawable/mealarts_loader"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,13 +45,15 @@
                     android:text="Menu Name"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp"
-                    android:gravity="center|start"/>
+                    android:gravity="center|start"
+                    tools:ignore="HardcodedText" />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:id="@+id/ivVegType"
-                    android:src="@drawable/veg"/>
+                    android:src="@drawable/veg"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
@@ -79,7 +83,8 @@
                     android:gravity="center|start"
                     android:text="price"
                     android:textColor="@color/colorGray"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Regular
                     android:id="@+id/tvAddOnPrice"
@@ -89,7 +94,8 @@
                     android:gravity="center|start"
                     android:text="price"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="13sp" />
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
 
                 <com.mealarts.Helpers.CustomWidget.CustomTextView_Black
                     android:id="@+id/tvAddCart"
@@ -103,7 +109,8 @@
                     android:textStyle="bold"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
 
                 <LinearLayout
                     android:id="@+id/productCounter"
@@ -125,7 +132,8 @@
                         android:gravity="center"
                         android:text="-"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
 
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
@@ -138,7 +146,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="9dp" />
+                        android:textSize="9dp"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                     <com.mealarts.Helpers.CustomWidget.CustomTextView_Bold
                         android:id="@+id/tvIncQty"
@@ -150,7 +159,8 @@
                         android:gravity="center"
                         android:text="+"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
@@ -167,7 +177,8 @@
                 android:layout_gravity="end"
                 android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

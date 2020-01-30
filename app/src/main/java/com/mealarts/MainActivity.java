@@ -75,8 +75,10 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -118,7 +120,8 @@ public class MainActivity extends AppCompatActivity implements
             layoutRateCurrentOrder, layoutCartAlert, layoutLocationAlert;
     Button btnOrderNow, btnSubmitReview;
     EditText edtOrderReview;
-    CustomRatingBar layoutOrderRating;
+//    CustomRatingBar layoutOrderRating;
+    private RatingBar layoutOrderRating;
     public static DrawerLayout drawer;
     DrawerAdapter drawerAdapter;
     CardView cardThanks;
@@ -351,7 +354,7 @@ public class MainActivity extends AppCompatActivity implements
             getSingleOrder(sharedPref.getCurrentOrderId());                                         //call single order detail service using user id stored in shared pref after login
             Log.d("/*order_status","353 not 0 cid:"+sharedPref.getCurrentOrderId());
         }else {
-            layoutCurrentOrder.setVisibility(View.GONE);                                          //if current order id is 0 then hide current order layout
+            layoutCurrentOrder.setVisibility(View.GONE);                                            //if current order id is 0 then hide current order layout
             Log.d("/*order_status","356 0 cid:"+sharedPref.getCurrentOrderId());
         }
 
@@ -493,6 +496,7 @@ public class MainActivity extends AppCompatActivity implements
         Log.d("/*mainAct_restart","in onrestart");
         //sharedPref = new SharedPref(MainActivity.this);
         connection = new CheckExtras(MainActivity.this);                                    //check connection and location when activity restarts.
+        permissionChecker = new PermissionChecker(MainActivity.this);
 
         sharedPref.setPos(0);                                                                       //set selected bottom menu position to 0 for home activity.
         //locationCount = 0;
@@ -513,11 +517,11 @@ public class MainActivity extends AppCompatActivity implements
         if(!sharedPref.getCurrentOrderId().equals("0")){                                            //check current order id , if it is not 0
             layoutCurrentOrder.setVisibility(View.VISIBLE);                                         //then show current order layout
             getSingleOrder(sharedPref.getCurrentOrderId());                                         //call single order detail service using user id stored in shared pref after login
-            Log.d("/*order_status","517 not 0 cid:"+sharedPref.getCurrentOrderId());
+            Log.d("/*mainAct_restart","517 not 0 cid:"+sharedPref.getCurrentOrderId());
         }
         else {
             layoutCurrentOrder.setVisibility(View.GONE);                                          //if current order id is 0 then hide current order layout
-            Log.d("/*order_status","521 0 cid:"+sharedPref.getCurrentOrderId());
+            Log.d("/*mainAct_restart","521 0 cid:"+sharedPref.getCurrentOrderId());
         }
         drawerAdapter = new DrawerAdapter(MainActivity.this);                               //set drawer adapter
         rcDrawerMenu.setAdapter(drawerAdapter);                                                     //ser drawer adapter to recycler view
@@ -530,7 +534,7 @@ public class MainActivity extends AppCompatActivity implements
                 tvContact.setText(cartObj.getJSONObject(getResources().getString(R.string.UserJSON)).getString("Mobile")); //contact to set it to drawer
             }
             sharedPref.setUserCart(cartObj.toString());                                             //set Cart Json to shared pref
-            Log.e("Cart_m2", sharedPref.getUserCart());
+            Log.e("/*mainAct_restart_Cart", sharedPref.getUserCart());
             /*if((CurrentLat != null && CurrentLong != null) && (!CurrentLat.isEmpty() && !CurrentLong.isEmpty()))
                 getVendorList(CurrentLat, CurrentLong);*/
 
@@ -1062,6 +1066,7 @@ public class MainActivity extends AppCompatActivity implements
                 String OrderStatus = orderObj.getString("order_status");
                 String vendorId = orderObj.getString("vendor_id");
                 String vendorName = orderObj.getString("vender_name");
+                String reviewStatus=orderObj.getString("review_status");
 
                 tvCurrentVendor.setText(vendorName);
                 if (CustomerOtp.equals("0"))
@@ -1101,9 +1106,14 @@ public class MainActivity extends AppCompatActivity implements
                     tvDeliveryBoyStatus.setVisibility(View.GONE);
 
                 if(OrderStatus.contains("Delivered")) {
+                    Log.d("/*order_status","review status "+reviewStatus);
                     layoutCurrentOrder.setVisibility(View.GONE);
-                    layoutRateCurrentOrder.setVisibility(View.VISIBLE);
-                    Log.d("/*order_status","orderstatus: delivered "+OrderStatus);
+                    if(!reviewStatus.equals("submited")){
+                        layoutRateCurrentOrder.setVisibility(View.VISIBLE);
+                        Log.d("/*order_status","orderstatus: delivered & review not submitted: "+OrderStatus);
+                    }
+                    else
+                        Log.d("/*order_status","orderstatus: delivered & review submitted: "+OrderStatus);
                 }
                 else if(OrderStatus.equalsIgnoreCase("cancel") || OrderStatus.equalsIgnoreCase("Cancel Payment")){
                     Log.d("/*order_status","orderstatus:"+OrderStatus);
@@ -1118,7 +1128,7 @@ public class MainActivity extends AppCompatActivity implements
                 btnSubmitReview.setOnClickListener(v -> {
                     layoutLoader.setVisibility(View.VISIBLE);                                       //show loader
                     tvLoadError.setText("submitReview()");
-                    submitReview(String.valueOf(layoutOrderRating.getScore()),                      //Service call for review
+                    submitReview(String.valueOf(layoutOrderRating.getRating()),                      //Service call for review
                             edtOrderReview.getText().toString().trim(), OrderId, vendorId);
                 });
 
