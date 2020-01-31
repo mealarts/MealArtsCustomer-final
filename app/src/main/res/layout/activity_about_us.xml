@@ -25,7 +25,8 @@
                 android:src="@drawable/back_arrow"
                 android:padding="8dp"
                 android:layout_marginStart="10dp"
-                android:layout_gravity="center|start"/>
+                android:layout_gravity="center|start"
+                tools:ignore="ContentDescription" />
 
             <com.mealarts.Helpers.CustomWidget.CustomTextView_SemiBold
                 android:layout_width="match_parent"
@@ -35,7 +36,8 @@
                 android:textColor="@color/colorWhite"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
 
         </FrameLayout>
 
@@ -53,7 +55,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/about_us_temp"
                 android:scaleType="fitStart"
-                android:id="@+id/ivAboutUs"/>
+                android:id="@+id/ivAboutUs"
+                tools:ignore="ContentDescription" />
 
         </ScrollView>
 

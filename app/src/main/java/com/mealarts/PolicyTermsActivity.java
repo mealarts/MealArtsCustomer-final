@@ -3,6 +3,7 @@ package com.mealarts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
 import android.net.http.SslCertificate;
@@ -46,6 +47,7 @@ public class PolicyTermsActivity extends AppCompatActivity {
     String Content;
     CheckExtras connection;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,9 +91,11 @@ public class PolicyTermsActivity extends AppCompatActivity {
         if(Content.equals("Policy")) {
             tvHeader.setText("Privacy Policy of MealArts");
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+                Log.d("/*aboutus","build version > P, PrivacyPolicy");
                 wvAboutUs.setVisibility(View.GONE);
                 ivPolicyTerms.setImageResource(R.drawable.policy);
             }else{
+                Log.d("/*aboutus","build version < P, PrivacyPolicy");
                 ivPolicyTerms.setVisibility(View.GONE);
                 wvAboutUs.loadUrl("https://www.mealarts.com/Cust_json/policy.php");
             }
@@ -99,9 +103,11 @@ public class PolicyTermsActivity extends AppCompatActivity {
         }else{
             tvHeader.setText("Terms of Mealarts");
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                Log.d("/*aboutus","build version > P, Terms");
                 wvAboutUs.setVisibility(View.GONE);
                 ivPolicyTerms.setImageResource(R.drawable.terms);
             }else{
+                Log.d("/*aboutus","build version < P, Terms");
                 ivPolicyTerms.setVisibility(View.GONE);
                 wvAboutUs.loadUrl("https://www.mealarts.com/Cust_json/terms.php");
             }
@@ -109,39 +115,39 @@ public class PolicyTermsActivity extends AppCompatActivity {
         //setContentView(wvAboutUs);
     }
 
-    private class SSLTolerentWebViewClient extends WebViewClient {
-        public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(PolicyTermsActivity.this);
-            AlertDialog alertDialog = builder.create();
-            String message = "SSL Certificate error.";
-            switch (error.getPrimaryError()) {
-                case SslError.SSL_UNTRUSTED:
-                    message = "The certificate authority is not trusted.";
-                    handler.proceed();
-                    break;
-                case SslError.SSL_EXPIRED:
-                    message = "The certificate has expired.";
-                    break;
-                case SslError.SSL_IDMISMATCH:
-                    message = "The certificate Hostname mismatch.";
-                    break;
-                case SslError.SSL_NOTYETVALID:
-                    message = "The certificate is not yet valid.";
-                    break;
-            }
-
-            message += " Do you want to continue anyway?";
-            alertDialog.setTitle("SSL Certificate Error");
-            alertDialog.setMessage(message);
-            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", (dialog, which) -> {
-                // Ignore SSL certificate errors
-                handler.proceed();
-            });
-
-            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", (dialog, which) -> handler.cancel());
-            if(error.getPrimaryError() != SslError.SSL_UNTRUSTED)
-                alertDialog.show();
-        }
-    }
+//    private class SSLTolerentWebViewClient extends WebViewClient {
+//        public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
+//
+//            AlertDialog.Builder builder = new AlertDialog.Builder(PolicyTermsActivity.this);
+//            AlertDialog alertDialog = builder.create();
+//            String message = "SSL Certificate error.";
+//            switch (error.getPrimaryError()) {
+//                case SslError.SSL_UNTRUSTED:
+//                    message = "The certificate authority is not trusted.";
+//                    handler.proceed();
+//                    break;
+//                case SslError.SSL_EXPIRED:
+//                    message = "The certificate has expired.";
+//                    break;
+//                case SslError.SSL_IDMISMATCH:
+//                    message = "The certificate Hostname mismatch.";
+//                    break;
+//                case SslError.SSL_NOTYETVALID:
+//                    message = "The certificate is not yet valid.";
+//                    break;
+//            }
+//
+//            message += " Do you want to continue anyway?";
+//            alertDialog.setTitle("SSL Certificate Error");
+//            alertDialog.setMessage(message);
+//            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", (dialog, which) -> {
+//                // Ignore SSL certificate errors
+//                handler.proceed();
+//            });
+//
+//            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", (dialog, which) -> handler.cancel());
+//            if(error.getPrimaryError() != SslError.SSL_UNTRUSTED)
+//                alertDialog.show();
+//        }
+//    }
 }

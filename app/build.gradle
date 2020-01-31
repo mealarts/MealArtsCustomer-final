@@ -29,7 +29,7 @@ android {
         minSdkVersion 19 //changed from 17 to 19 jellybean to kitkat..changed to 23 for volley usesCleartextTraffic
         targetSdkVersion 28
         multiDexEnabled true
-        versionCode 9
+        versionCode 12
         versionName "1.0"
     }
     useLibrary 'org.apache.http.legacy'

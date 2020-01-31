@@ -1,34 +1,16 @@
 package com.mealarts;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.TargetApi;
-import android.app.DownloadManager;
-import android.content.DialogInterface;
-import android.net.http.SslError;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.webkit.SslErrorHandler;
-import android.webkit.WebResourceError;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.annotation.compiler.GlideIndexer_GlideModule_com_bumptech_glide_integration_okhttp3_OkHttpLibraryGlideModule;
-import com.bumptech.glide.integration.okhttp3.OkHttpGlideModule;
-import com.bumptech.glide.integration.okhttp3.OkHttpLibraryGlideModule;
 import com.mealarts.AsyncTask.SSLCertification;
 
 
@@ -79,11 +61,14 @@ public class AboutUsActivity extends AppCompatActivity {
         });*/
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            Log.d("/*aboutus","build version > P");
             wvAboutUs.setVisibility(View.GONE);
             ivAboutUs.setImageResource(R.drawable.about_us_temp);
-        }else
+        }else {
+            Log.d("/*aboutus","build version < P");
             ivAboutUs.setVisibility(View.GONE);
             wvAboutUs.loadUrl("https://www.mealarts.com/Cust_json/about.php");
+        }
 
         /*wvAboutUs.setWebViewClient(new WebViewClient());
         wvAboutUs.getSettings().setJavaScriptEnabled(true);
@@ -100,39 +85,39 @@ public class AboutUsActivity extends AppCompatActivity {
 
     }
 
-    private class SSLTolerentWebViewClient extends WebViewClient {
-        public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(AboutUsActivity.this);
-            AlertDialog alertDialog = builder.create();
-            String message = "SSL Certificate error.";
-            switch (error.getPrimaryError()) {
-                case SslError.SSL_UNTRUSTED:
-                    message = "The certificate authority is not trusted.";
-                    handler.proceed();
-                    break;
-                case SslError.SSL_EXPIRED:
-                    message = "The certificate has expired.";
-                    break;
-                case SslError.SSL_IDMISMATCH:
-                    message = "The certificate Hostname mismatch.";
-                    break;
-                case SslError.SSL_NOTYETVALID:
-                    message = "The certificate is not yet valid.";
-                    break;
-            }
-
-            message += " Do you want to continue anyway?";
-            alertDialog.setTitle("SSL Certificate Error");
-            alertDialog.setMessage(message);
-            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", (dialog, which) -> {
-                // Ignore SSL certificate errors
-                handler.proceed();
-            });
-
-            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", (dialog, which) -> handler.cancel());
-            if(error.getPrimaryError() != SslError.SSL_UNTRUSTED)
-                alertDialog.show();
-        }
-    }
+//    private class SSLTolerentWebViewClient extends WebViewClient {
+//        public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
+//
+//            AlertDialog.Builder builder = new AlertDialog.Builder(AboutUsActivity.this);
+//            AlertDialog alertDialog = builder.create();
+//            String message = "SSL Certificate error.";
+//            switch (error.getPrimaryError()) {
+//                case SslError.SSL_UNTRUSTED:
+//                    message = "The certificate authority is not trusted.";
+//                    handler.proceed();
+//                    break;
+//                case SslError.SSL_EXPIRED:
+//                    message = "The certificate has expired.";
+//                    break;
+//                case SslError.SSL_IDMISMATCH:
+//                    message = "The certificate Hostname mismatch.";
+//                    break;
+//                case SslError.SSL_NOTYETVALID:
+//                    message = "The certificate is not yet valid.";
+//                    break;
+//            }
+//
+//            message += " Do you want to continue anyway?";
+//            alertDialog.setTitle("SSL Certificate Error");
+//            alertDialog.setMessage(message);
+//            alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", (dialog, which) -> {
+//                // Ignore SSL certificate errors
+//                handler.proceed();
+//            });
+//
+//            alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", (dialog, which) -> handler.cancel());
+//            if(error.getPrimaryError() != SslError.SSL_UNTRUSTED)
+//                alertDialog.show();
+//        }
+//    }
 }

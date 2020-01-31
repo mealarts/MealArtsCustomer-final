@@ -95,7 +95,7 @@ public class URLServices {
     public static String Offline = basicURL + "offline_status.php";
     //-> check SpreadSheet for response
 
-    public static final boolean IS_PAYTM_STAGING = true;
+    public static final boolean IS_PAYTM_STAGING = false;
     public static final String PAYTM_CALLBACK_TEST = "https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=";
     public static final String PAYTM_CALLBACK_URL = "https://securegw.paytm.in/theia/paytmCallback?ORDER_ID=";
     public static String PAYTM_CHECKSUM = "https://www.mealarts.com/PAYTM_Kit/generateChecksum.php";
